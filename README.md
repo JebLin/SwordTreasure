@@ -1,3 +1,3 @@
 # SwordTreasure
 
-welcome every to communicate the technology with me .
+welcome everyone to communicate the technology with me .
