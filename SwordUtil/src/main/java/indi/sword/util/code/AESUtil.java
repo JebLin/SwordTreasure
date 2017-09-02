@@ -83,8 +83,7 @@ public class AESUtil {
 	 * @Description: AES加密
 	 * @param content 需要加密的内容
 	 * @param password 加密密码
-	 * @author WangYanan 347576073@qq.com
-	 * @date 2015年7月14日上午10:47:55
+	 * @author Jun 26, 2017 11:54:29 AM
 	 */
 	private static byte[] encrypt(String content, String password) {
 		password = generatePassword(password); //免得password为空
