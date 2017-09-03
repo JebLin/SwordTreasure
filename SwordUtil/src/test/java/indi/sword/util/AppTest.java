@@ -1,4 +1,4 @@
-package indi.sword.SwordUtil;
+package indi.sword.util;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
