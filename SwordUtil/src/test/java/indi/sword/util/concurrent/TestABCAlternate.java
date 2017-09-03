@@ -52,24 +52,29 @@ public class TestABCAlternate {
 }
 
 class AlternateDemo {
-	private int number = 1;
+	private int number = 1; //当前正在执行线程的标记
 	private Lock lock = new ReentrantLock();
 	private Condition condition1 = lock.newCondition();
 	private Condition condition2 = lock.newCondition();
 	private Condition condition3 = lock.newCondition();
-
+	/**
+	 * @param totalLoop : 循环第几轮
+	 */
 	public void LoopA(int totalLoop) {
 		lock.lock();
 		try {
+			//1. 判断
 			if (number != 1) {
 				condition1.await();
 			}
+			//2. 打印
 			System.out.println(Thread.currentThread().getName() + "-" + totalLoop);
-			number = 2;
+			//3. 唤醒
+			number = 2; 
 			condition2.signal();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.printStackTrace(); 
 		} finally {
 			lock.unlock();
 		}
