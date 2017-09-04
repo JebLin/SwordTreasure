@@ -24,7 +24,7 @@ package indi.sword.util.concurrent;
  * @author rd_jianbin_lin
  * @Date Sep 2, 2017 7:20:01 PM
  */
-public class TestVolatile {
+public class _01_TestVolatile {
 
 	public static void main(String[] args) {
 		MyThread_Volatile mt = new MyThread_Volatile();

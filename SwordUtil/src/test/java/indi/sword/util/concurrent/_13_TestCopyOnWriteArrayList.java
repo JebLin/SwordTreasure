@@ -11,7 +11,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * @author rd_jianbin_lin
  * @Date Sep 2, 2017 7:20:01 PM
  */
-public class TestCopyOnWriteArrayList {
+public class _13_TestCopyOnWriteArrayList {
 
 	public static void main(String[] args) {
 		MyThread_CopyOnWriteArrayList mt = new MyThread_CopyOnWriteArrayList();

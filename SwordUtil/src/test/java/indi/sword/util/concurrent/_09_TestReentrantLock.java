@@ -29,7 +29,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * lock方法会忽略中断请求，继续获取锁直到成功；而lockInterruptibly则直接抛出中断异常，由上层调用者处理中断。
  *
  */
-public class TestReentrantLock {
+public class _09_TestReentrantLock {
     public static void main(String[] args){
 
         Thread t1 = new Thread(new MyThread_Interrupted(),"t1");

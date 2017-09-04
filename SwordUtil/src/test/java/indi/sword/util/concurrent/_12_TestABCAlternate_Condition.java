@@ -13,7 +13,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author rd_jianbin_lin
  * @Date Sep 3, 2017 4:58:18 PM
  */
-public class TestABCAlternate {
+public class _12_TestABCAlternate_Condition {
 	public static void main(String[] args) {
 
 		AlternateDemo demo = new AlternateDemo();

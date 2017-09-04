@@ -10,7 +10,7 @@ import java.util.concurrent.FutureTask;
  * @author rd_jianbin_lin
  * @Date Sep 3, 2017 1:18:41 PM
  */
-public class TestCallable02 {
+public class _07_TestCallable02 {
 
 	public static void main(String[] args){
 		MyThread_callable02 mt = new MyThread_callable02();

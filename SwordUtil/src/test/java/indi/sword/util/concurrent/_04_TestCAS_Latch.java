@@ -16,7 +16,7 @@ import java.util.concurrent.CountDownLatch;
  * @author rd_jianbin_lin
  * @Date Aug 30, 2017 10:35:39 AM
  */
-public class TestCAS_Latch {
+public class _04_TestCAS_Latch {
 
     public static void main(String[] args) {
     	final CountDownLatch latch = new CountDownLatch(100);

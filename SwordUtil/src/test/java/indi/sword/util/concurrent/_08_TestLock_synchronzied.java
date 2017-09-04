@@ -24,7 +24,7 @@ import java.util.concurrent.locks.ReentrantLock;
    
  *  Lock可以知道线程有没有成功获取到锁。这个是synchronized无法办到的。
  */
-public class TestLock_synchronzied {
+public class _08_TestLock_synchronzied {
 
 	
 	public static void main(String[] args) {

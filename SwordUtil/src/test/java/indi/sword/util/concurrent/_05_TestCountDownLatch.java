@@ -10,7 +10,7 @@ import java.util.concurrent.CountDownLatch;
  * @author rd_jianbin_lin
  * @Date Sep 2, 2017 7:20:01 PM
  */
-public class TestCountDownLatch {
+public class _05_TestCountDownLatch {
 
 	public static void main(String[] args) {
 		final CountDownLatch latch = new CountDownLatch(50);

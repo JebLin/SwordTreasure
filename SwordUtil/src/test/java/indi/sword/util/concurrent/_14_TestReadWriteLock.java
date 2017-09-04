@@ -15,7 +15,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * 读读 不需要互斥
  * 
  */
-public class TestReadWriteLock {
+public class _14_TestReadWriteLock {
 	public static void main(String[] args){
 		ReadWriteDemo rw = new ReadWriteDemo();
 		

@@ -31,7 +31,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author rd_jianbin_lin
  * @Date Sep 2, 2017 7:20:01 PM
  */
-public class TestAtomic {
+public class _02_TestAtomic {
 
 	public static void main(String[] args) {
 		MyThread_Atomic mt = new MyThread_Atomic();

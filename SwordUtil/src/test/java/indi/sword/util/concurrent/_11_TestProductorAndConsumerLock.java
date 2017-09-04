@@ -11,7 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author rd_jianbin_lin
  * @Date Sep 3, 2017 4:24:52 PM
  */
-public class TestProductorAndConsumerLock {
+public class _11_TestProductorAndConsumerLock {
 
 	public static void main(String[] args){
 		Saler_Lock saler = new Saler_Lock();

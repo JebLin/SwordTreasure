@@ -7,7 +7,7 @@ package indi.sword.util.concurrent;
  * @author rd_jianbin_lin
  * @Date Sep 3, 2017 4:24:52 PM
  */
-public class TestProductorAndConsumer {
+public class _10_TestProductorAndConsumer {
 
 	public static void main(String[] args){
 		Saler saler = new Saler();

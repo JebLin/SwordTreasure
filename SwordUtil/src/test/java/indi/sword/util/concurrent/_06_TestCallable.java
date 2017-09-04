@@ -14,7 +14,7 @@ import java.util.concurrent.FutureTask;
  * @author rd_jianbin_lin
  * @Date Sep 3, 2017 12:38:26 PM
  */
-public class TestCallable {
+public class _06_TestCallable {
 
 	public static void main(String[] args){
 		
