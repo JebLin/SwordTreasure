@@ -85,8 +85,13 @@ public class _17_TestThreadPool_4Common {
 	}
 
 	/**
+	 * 线程池配置，也就是说，当你有n个线程要跑的时候，
+	 * 规定线程池里面到底能同时跑几个线程，是固定线程数，然后剩余的排队等待，
+	 * 还是说，不上限，要几个有几个。等等一系列配置。
+	 * 
 	 * newScheduledThreadPool 创建一个定长线程池，支持定时及周期性任务执行。 
 	 * 表示延迟1秒后每2秒执行一次。
+	 * 
 	 * @Descrption
 	 * @author rd_jianbin_lin
 	 * @Date Sep 4, 2017 7:34:13 PM
