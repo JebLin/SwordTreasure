@@ -50,9 +50,8 @@ public class _15_TestSynchronized_static {
 		}).start();*/
 		
 	}
-
 }
-
+ 
 class Number{
 	
 	public static synchronized void getOne(){//Number.class
