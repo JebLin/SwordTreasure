@@ -27,3 +27,32 @@ git config --global user.email "Sword52888@163.com"
 git add .
 git commit -m "modify"
 git push 
+git pull
+git add .
+git commit "static lock"
+git commit -m "static lock"
+git push -u origin master
+ll
+vi README.md 
+rm -rf %HOMEDRIVE%%HOMEPATH%/
+git add .
+git commit -m "d"
+ git config --global user.email "Sword52888@163.com"  
+git init
+git init
+git commit -m "d"
+git add .
+git status
+git commit -m "m"
+git push -u orginal master
+git push -u orgina master
+git push -u origin master
+git add .
+git commit -m "Executors"
+git push -u origin master
+git add .
+git commit -m "ThreadPool"
+git push -u origin master
+git add .
+git commit -m "update"
+git push -u origin master

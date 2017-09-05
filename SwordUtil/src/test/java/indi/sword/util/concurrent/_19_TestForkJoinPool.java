@@ -55,7 +55,7 @@ public class _19_TestForkJoinPool {
         Instant start = Instant.now();
         ForkJoinPool pool = new ForkJoinPool();
         ForkJoinTask<Long> task = new ForkJoinDemo(0L,5000000000l);
-
+	
         long sum = pool.invoke(task);
         if(task.isCompletedAbnormally()){
             System.out.println("gg" + task.getException());
@@ -94,7 +94,7 @@ class ForkJoinDemo extends RecursiveTask<Long> {
             }
             return sum;
         }else {
-            long middle = (start + end) / 2;
+            long middle = (start + end) >>> 2;
             ForkJoinDemo left = new ForkJoinDemo(start,middle);
             ForkJoinTask<Long> taskLeft = left.fork();  // 拆分的左边进行计算
             if(taskLeft.isCompletedAbnormally()){
