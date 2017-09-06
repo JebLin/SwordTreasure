@@ -4,7 +4,9 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinTask;
+import java.util.concurrent.RecursiveAction;
 import java.util.concurrent.RecursiveTask;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by rd_jianbin_lin on 2017/9/5.
@@ -50,66 +52,70 @@ import java.util.concurrent.RecursiveTask;
  * 任务分割出的子任务会添加到当前工作线程所维护的双端队列中，进入队列的头部。
  * 当一个工作线程的队列里暂时没有任务时，它会随机从其他工作线程的队列的尾部获取一个任务。
  */
-public class _19_TestForkJoinPool {
-    public static void main(String[] args) {
+public class _20_TestForkJoinPool_RecursiveAction {
+    public static void main(String[] args) throws Exception{
         Instant start = Instant.now();
+        
+        
         ForkJoinPool pool = new ForkJoinPool();
-        ForkJoinTask<Long> task = new ForkJoinDemo(0L,5000000000l);
-	
-        long sum = pool.invoke(task);
-        if(task.isCompletedAbnormally()){
-            System.out.println("gg" + task.getException());
-        }
-        System.out.println(sum);
+        pool.submit(new ForkJoin_RecursiveAction(0L,50000l)); // submit execute invoke 我觉得都一样
+        pool.awaitTermination(5, TimeUnit.SECONDS);  // 任务全部完成之后呢，等待2秒再往下跑
+        pool.shutdown();
+        
         Instant end = Instant.now();
 
+        System.out.println("------------------------------------------------");
+        System.out.println("------------------------------------------------");
         System.out.println("耗费时间为：" + Duration.between(start,end).toMillis());
 
 
     }
 }
 
+class ForkJoin_RecursiveAction extends RecursiveAction{
 
-class ForkJoinDemo extends RecursiveTask<Long> {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -259195479995561737L;
+	
+	private long start;
+	private long end;
+	
+	private static final long THURSHOLD = 10L;  //临界值
+	
+	public ForkJoin_RecursiveAction(long start, long end) {
+		this.start = start;
+		this.end = end;
+	}
 
-    private long start;
-    private long end;
-
-    private static final long THRESHOLD = 10000L; // 临界值
-
-    public ForkJoinDemo(long start,long end){
-        this.start = start;
-        this.end = end;
-    }
-
-    @Override
-    protected Long compute() {
-        long length = end - start;
-
-        if(length < THRESHOLD){
-            long sum = 0L;
-            for(long i = start;i < length;i++){
-                sum += i;
-                int g = 10 / 0;
-            }
-            return sum;
-        }else {
-            long middle = (start + end) >>> 2;
-            ForkJoinDemo left = new ForkJoinDemo(start,middle);
-            ForkJoinTask<Long> taskLeft = left.fork();  // 拆分的左边进行计算
-            if(taskLeft.isCompletedAbnormally()){
-                System.out.println("LLGg");
-            }else {
-                System.out.println("LLpp");
-            }
-            ForkJoinDemo right = new ForkJoinDemo(middle + 1, end);
-            ForkJoinTask<Long> taskRight  = right.fork(); // 拆分的右边进行计算
-            if(taskRight.isCompletedAbnormally()){
-                System.out.println("RRGg");
-            }else {
-                System.out.println("RRpp");
-            }
-            return left.join() + right.join(); // 把左右两边的结果整合起来
-        }
-    }
+	@Override
+	protected void compute() {
+		long length = end - start;
+//		try {
+//			Thread.sleep(1000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+		
+		if(length <= THURSHOLD){
+			for (long i = start; i <= end; i++) {
+				System.out.println(Thread.currentThread().getName()  + ",i -> " +  i);
+			}
+		}else{
+			long middle = (start + end) / 2;
+			
+			ForkJoin_RecursiveAction left = new ForkJoin_RecursiveAction(start, middle); 
+			left.fork(); //进行拆分，同时压入线程队列
+			
+			ForkJoin_RecursiveAction right = new ForkJoin_RecursiveAction(middle+1, end);
+			right.fork(); //
+			
+			left.join();
+			right.join();
+		}
+	}
+	
 }
