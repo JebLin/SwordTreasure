@@ -195,4 +195,20 @@ public class _01_TestBuffer {
         System.out.println(buf.capacity());
 		
 	}
+	
+	@Test
+	public void test(){
+		ByteBuffer buf = ByteBuffer.allocate(1024);
+		buf.put("gg".getBytes());
+		System.out.println(buf.position());
+		System.out.println(buf.limit());
+		
+		// flip 完只是说 最好用来读，不是说不能用来put ,put的话 会覆盖的
+		buf.flip();
+		buf.put("cc".getBytes());
+		System.out.println(buf.position());
+		System.out.println(buf.limit());
+		buf.flip();
+		System.out.println((char)buf.get());
+	}
 }
