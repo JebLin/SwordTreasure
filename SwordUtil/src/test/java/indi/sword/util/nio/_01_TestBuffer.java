@@ -65,7 +65,8 @@ import org.junit.Test;
  * 缺点：
  * 在缓存 I/O 机制中，DMA 方式可以将数据直接从磁盘读到页缓存中，或者将数据从页缓存直接写回到磁盘上， * 而不能直接在应用程序地址空间和磁盘之间进行数据传输，
  * 这样，数据在传输过程中需要在应用程序地址空间（用户空间）和缓存（内核空间）之间进行多次数据拷贝操作，这些数据拷贝操作所带来的CPU以及内存开销是非常大的。
- * 
+ * (DMA(Direct Memory Access，直接内存存取) )
+ *
  * 直接缓冲区：
  * 优点：
  * 直接IO就是应用程序直接访问磁盘数据，而不经过内核缓冲区，这样做的目的是减少一次从内核缓冲区到用户程序缓存的数据复制。
@@ -81,95 +82,95 @@ import org.junit.Test;
 public class _01_TestBuffer {
 	
 	@Test
-	public void test_base(){
-		
-		String str = "abcde";
-		
-		// 1、分配一个指定大小的缓冲区
-		ByteBuffer buf = ByteBuffer.allocate(1024);
-		
-		System.out.println("-------------- allocate ---------------");
-		System.out.println(buf.position()); // 下标
-		System.out.println(buf.limit()); // 读写限制
-		System.out.println(buf.capacity()); //容量
-		
-		// 2、 利用 put() 存入数据到缓冲区
-		buf.put(str.getBytes());
-		
-		System.out.println("-------------- put ---------------");
-		System.out.println(buf.position()); // 下标
-		System.out.println(buf.limit()); // 读写限制
-		System.out.println(buf.capacity()); //容量
-		
-		// 3、 切换读取数据模式
-		buf.flip();
-		
-		System.out.println("-------------- flip ---------------");
-		System.out.println(buf.position()); // 下标
-		System.out.println(buf.limit()); // 读写限制
-		System.out.println(buf.capacity()); //容量
-		
-		// 4、 利用 get() 读取缓冲区里面的数据
-		byte[] dst = new byte[buf.limit()];
-		buf.get(dst); // 把缓冲区的数据 读到dst中去
-		
-		System.out.println("-------------- get ---------------");
-		System.out.println(new String(dst,0,buf.limit()));
-		System.out.println(buf.position()); // 下标
-		System.out.println(buf.limit()); // 读写限制
-		System.out.println(buf.capacity()); //容量
-		
-		// 5、rewind() ：可以重复读，也就是重新读的意思。
-		buf.rewind(); //The position is set to zero and the mark is discarded.
-	     
-		System.out.println("-------------- rewind ---------------");
-		System.out.println(buf.position()); // 下标
-		System.out.println(buf.limit()); // 读写限制
-		System.out.println(buf.capacity()); //容量
-		
-		// 5、clear() : 
-		buf.clear();  //Clears this buffer.  The position is set to zero, the limit is set to the capacity, 
-					  // and the mark is discarded.This method does not actually erase the data in the buffer.
-		System.out.println("-------------- clear ---------------");
-		System.out.println(buf.position()); // 下标
-		System.out.println(buf.limit()); // 读写限制
-		System.out.println(buf.capacity()); //容量
-		
-		System.out.println((char)buf.get(1)); // 并不是真的抹除数据，而是移个下标而已
-	}
-	
-	
-	@Test
 	public void test_mark_reset(){
 		String str = "abcde";
-		
+
 		ByteBuffer buf = ByteBuffer.allocate(1024);
-		
+
 		buf.put(str.getBytes());
-		
+
 		buf.flip();
-		
+
 		byte[] dst = new byte[buf.limit()];
 		buf.get(dst,0,3);
 		System.out.println(new String(dst,0,3));
 		System.out.println(buf.position());
-		
+
 		// mark（） ： Sets this buffer's mark at its position.
-		buf.mark(); 
+		buf.mark();
 		buf.get(dst, 3, 2);
 		System.out.println(new String(dst,3,2));
 
 		// reset() ：Resets this buffer's position to the previously-marked position.
 		buf.reset();
-		System.out.println(buf.position()); 
-		
+		System.out.println(buf.position());
+
 		//  Tells whether there are any elements between the current position and the limit.
 		if(buf.hasRemaining()){
 			System.out.println(buf.remaining()); // Returns the number of elements between the current position and the limit.
 		}
-		
+
 	}
-	
+
+
+	@Test
+	public void test_base(){
+
+		String str = "abcde";
+
+		// 1、分配一个指定大小的缓冲区
+		ByteBuffer buf = ByteBuffer.allocate(1024);
+
+		System.out.println("-------------- allocate ---------------");
+		System.out.println(buf.position()); // 下标
+		System.out.println(buf.limit()); // 读写限制
+		System.out.println(buf.capacity()); //容量
+
+		// 2、 利用 put() 存入数据到缓冲区
+		buf.put(str.getBytes());
+
+		System.out.println("-------------- put ---------------");
+		System.out.println(buf.position()); // 下标
+		System.out.println(buf.limit()); // 读写限制
+		System.out.println(buf.capacity()); //容量
+
+		// 3、 切换读取数据模式
+		buf.flip();
+
+		System.out.println("-------------- flip ---------------");
+		System.out.println(buf.position()); // 下标
+		System.out.println(buf.limit()); // 读写限制
+		System.out.println(buf.capacity()); //容量
+
+		// 4、 利用 get() 读取缓冲区里面的数据
+		byte[] dst = new byte[buf.limit()];
+		buf.get(dst); // 把缓冲区的数据 读到dst中去
+
+		System.out.println("-------------- get ---------------");
+		System.out.println(new String(dst,0,buf.limit()));
+		System.out.println(buf.position()); // 下标
+		System.out.println(buf.limit()); // 读写限制
+		System.out.println(buf.capacity()); //容量
+
+		// 5、rewind() ：可以重复读，也就是重新读的意思。
+		buf.rewind(); //The position is set to zero and the mark is discarded.
+
+		System.out.println("-------------- rewind ---------------");
+		System.out.println(buf.position()); // 下标
+		System.out.println(buf.limit()); // 读写限制
+		System.out.println(buf.capacity()); //容量
+
+		// 5、clear() :
+		buf.clear();  //Clears this buffer.  The position is set to zero, the limit is set to the capacity,
+		// and the mark is discarded.This method does not actually erase the data in the buffer.
+		System.out.println("-------------- clear ---------------");
+		System.out.println(buf.position()); // 下标
+		System.out.println(buf.limit()); // 读写限制
+		System.out.println(buf.capacity()); //容量
+
+		System.out.println((char)buf.get(1)); // 并不是真的抹除数据，而是移个下标而已
+	}
+
 	@Test
 	public void test_get(){
 		String str = "abcde";
