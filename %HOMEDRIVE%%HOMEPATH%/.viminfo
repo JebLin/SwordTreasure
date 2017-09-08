@@ -11,6 +11,8 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:q
+|2,0,1504837523,,"q"
 :wq
 |2,0,1504434765,,"wq"
 
@@ -28,16 +30,30 @@
 |3,1,1,1,1,0,1504434760,"gg20170902"
 
 # 文件标记:
-'0  2  0  /e/code/gitProject/SwordTreasure/README.md
-|4,48,2,0,1504434765,"/e/code/gitProject/SwordTreasure/README.md"
+'0  2  0  /e/code/gitProject/SwordTreasure/.git/MERGE_MSG
+|4,48,2,0,1504837523,"/e/code/gitProject/SwordTreasure/.git/MERGE_MSG"
+'1  2  0  /e/code/gitProject/SwordTreasure/README.md
+|4,49,2,0,1504434765,"/e/code/gitProject/SwordTreasure/README.md"
 
 # 跳转列表 (从新到旧):
+-'  2  0  /e/code/gitProject/SwordTreasure/.git/MERGE_MSG
+|4,39,2,0,1504837523,"/e/code/gitProject/SwordTreasure/.git/MERGE_MSG"
+-'  1  0  /e/code/gitProject/SwordTreasure/.git/MERGE_MSG
+|4,39,1,0,1504837498,"/e/code/gitProject/SwordTreasure/.git/MERGE_MSG"
+-'  2  0  /e/code/gitProject/SwordTreasure/README.md
+|4,39,2,0,1504434765,"/e/code/gitProject/SwordTreasure/README.md"
 -'  2  0  /e/code/gitProject/SwordTreasure/README.md
 |4,39,2,0,1504434765,"/e/code/gitProject/SwordTreasure/README.md"
 -'  1  0  /e/code/gitProject/SwordTreasure/README.md
 |4,39,1,0,1504434758,"/e/code/gitProject/SwordTreasure/README.md"
+-'  1  0  /e/code/gitProject/SwordTreasure/README.md
+|4,39,1,0,1504434758,"/e/code/gitProject/SwordTreasure/README.md"
 
 # 文件内的标记历史记录 (从新到旧):
+
+> /e/code/gitProject/SwordTreasure/.git/MERGE_MSG
+	*	1504837519	0
+	"	2	0
 
 > /e/code/gitProject/SwordTreasure/README.md
 	*	1504434764	0
