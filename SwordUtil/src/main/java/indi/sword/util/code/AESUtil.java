@@ -202,8 +202,8 @@ public class AESUtil {
 	} 
 	
 	public  static void main(String[] args){
-		
-//		
+
+		System.out.println("gg");
 //		  if(null==args||args.length==0){
 //	            args=new String[1];
 //	            args[0]="ABCDefgh~！@#$%^&*()|'?>.<;1234567823401";

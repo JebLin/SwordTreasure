@@ -1,28 +1,15 @@
 package indi.sword.util.base;
 
-import java.util.Properties;
-
-import javax.activation.DataHandler;
-import javax.activation.FileDataSource;
-import javax.mail.BodyPart;
-import javax.mail.Flags;
-import javax.mail.Flags.Flag;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
-import javax.mail.internet.MimeUtility;
-import javax.mail.Message;
-import javax.mail.MessageRemovedException;
-import javax.mail.MessagingException;
-import javax.mail.Multipart;
-import javax.mail.Session;
-import javax.mail.Transport;
-
+import indi.sword.util.base.bean.TextFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import indi.sword.util.base.bean.TextFile;
+import javax.activation.DataHandler;
+import javax.activation.FileDataSource;
+import javax.mail.*;
+import javax.mail.Flags.Flag;
+import javax.mail.internet.*;
+import java.util.Properties;
 
 /**
  * 协议普及 ： POP3 、IMAP 、SMPT
