@@ -18,7 +18,7 @@ public class NumberUtils {
 	 * @author rd_jianbin_lin
 	 * @Date Jul 15, 2017 5:53:17 PM
 	 */
-	public static String decimalbyte2hexStr(byte[] b) {
+	public static String parseByte2HexStr(byte[] b) {
 		int length = b.length;
 		char[] buf = new char[length * 2];
 		for (int i = 0, j = 0, k; i < length;) {
@@ -36,7 +36,7 @@ public class NumberUtils {
 	 * @author rd_jianbin_lin
 	 * @Date Jul 15, 2017 5:28:42 PM
 	 */
-	public static byte[] hex2DecimalByte(String hex) {
+	public static byte[] parseHexStr2Byte(String hex) {
 		int len = hex.length();
 		byte[] buf = new byte[((len + 1) / 2)];
 
@@ -82,8 +82,6 @@ public class NumberUtils {
 	}
 	
 	public static void main(String[] args){
-		byte[] bs = hex2DecimalByte("20");
-		System.out.println(decimalbyte2hexStr(bs));
 	}
 
 }

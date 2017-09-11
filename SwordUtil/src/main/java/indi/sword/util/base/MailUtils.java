@@ -1,8 +1,9 @@
 package indi.sword.util.base;
 
-import indi.sword.util.base.bean.TextFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import indi.sword.util.base.bean.TextFile;
 
 import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
@@ -41,18 +42,18 @@ public class MailUtils {
     public MailUtils(){}
     /**
      * @Description: TODO 构造邮件对象
-     * @author WangYanan 347576073@qq.com
+     * @author rd_jianbin_lin
      * @date 2015年8月28日 上午9:53:13
      */
     public MailUtils(boolean isSSL, String hostName, int port){
     	//构建邮箱服务
         setSmtpHost(isSSL, hostName, port);
-        //构建邮箱主体
+        //构建邮箱主体E
         createMimeMessage();
     }
     /**
      * @Description: 构建邮箱服务
-     * @author WangYanan 347576073@qq.com
+     * @author rd_jianbin_lin
      * @date 2015年8月28日 上午10:02:01
      */
     private void setSmtpHost(boolean isSSL, String hostName, int port) {
@@ -66,7 +67,7 @@ public class MailUtils {
     }
     /**
      * @Description: 创建MIME邮件对象
-     * @author WangYanan 347576073@qq.com
+     * @author rd_jianbin_lin
      * @date 2015年8月28日 上午10:02:27
      */
     private boolean createMimeMessage()   
