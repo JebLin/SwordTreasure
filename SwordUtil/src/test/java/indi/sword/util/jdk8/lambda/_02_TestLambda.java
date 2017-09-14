@@ -61,7 +61,7 @@ public class _02_TestLambda {
 	public void show(Map<String, Integer> map){
 
 	}
-	
+
 	//需求：对一个数进行运算
 	@Test
 	public void test6(){
