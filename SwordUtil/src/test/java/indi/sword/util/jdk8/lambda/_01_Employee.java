@@ -76,6 +76,12 @@ public class _01_Employee {
 		return result;
 	}
 
+	// 返回 true
+	public boolean returnTrue(){
+		return true;
+	}
+
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
