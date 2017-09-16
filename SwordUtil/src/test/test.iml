@@ -19,5 +19,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maven: net.sourceforge.htmlunit:htmlunit:2.19" level="project" />
   </component>
 </module>

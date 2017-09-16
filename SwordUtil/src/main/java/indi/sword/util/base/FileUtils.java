@@ -40,7 +40,7 @@ public final class FileUtils {
      */
     private static String root() {
         String path = "";
-        if(getCurrentOsName().toLowerCase().startsWith("win")){ // windows
+        if(SystemPropertyUtils.getCurrentOsName().toLowerCase().startsWith("win")){ // windows
             path = ROOT_WIN;
         }else{
             path = ROOT_LINUX;
@@ -550,32 +550,6 @@ public final class FileUtils {
     }
 
     /**
-     * 获取当前操作系统名称
-     *
-     * @Descrption
-     * @author rd_jianbin_lin
-     * @Date Jul 1, 2017 12:00:00 PM
-     * @return
-     */
-    public static String getCurrentOsName() {
-        String osName = System.getProperty("os.name");
-        return osName;
-    }
-
-    /**
-     * 获取当前操作系统文件分隔符
-     *
-     * @Descrption
-     * @author rd_jianbin_lin
-     * @Date Jul 1, 2017 12:00:14 PM
-     * @return
-     */
-    public static String getCurrentFileSeparator() {
-        String separator = System.getProperty("file.separator");
-        return separator;
-    }
-
-    /**
      * @Descrption 复制单个文件
      * @author rd_jianbin_lin
      * @Date Jul 12, 2017 2:21:11 PM
@@ -720,8 +694,5 @@ public final class FileUtils {
     }
 
     public static void main(String[] args) {
-        String str = "E:\\code\\wscloud_newSVN\\ws_record\\file\\resume\\mailScan\\17070110\\";
-        System.out.println(getCurrentOsName());
-        System.out.println(str.contains(getCurrentFileSeparator()));
     }
 }

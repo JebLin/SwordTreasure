@@ -180,7 +180,6 @@ public class StringUtils {
 	 * @param separator
 	 *            键-值的分隔符（一般如'：' '='）
 	 * @return key_value[] 以字符串数据存储的分割后的键值对，key_value[0]为键，key_value[1]为值
-	 * @author rongyang_lu
 	 * @date 2015年8月17日 上午9:04:28
 	 */
 	public static String[] splitKeyValue(String key_value, String separator) {
@@ -238,10 +237,9 @@ public class StringUtils {
 	/**
 	 * 获取要下载的请求的文件类型
 	 * 
-	 * @param file_full_path
+	 * @param
 	 * @param content_type
 	 * @return
-	 * @author rongyang_lu
 	 * @date 2015年9月29日 下午4:19:18
 	 */
 	public static String getAttachmentSuffix(String content_type) {
@@ -418,8 +416,7 @@ public class StringUtils {
 	 * @Descrption 在字符串后添加空格使之长度为指定长度
 	 * @author rd_jianbin_lin
 	 * @Date Jul 15, 2017 4:01:31 PM
-	 * @param int
-	 *            指定长度
+	 * @param i 指定长度
 	 */
 	public static String padStringWidth(String s, int i) {
 		StringBuffer stringbuffer = null;
@@ -441,28 +438,28 @@ public class StringUtils {
 	}
 
 	/**
-	 * @see padStringWidth(String, int)
+	 * @see (String, int)
 	 */
 	public static String padStringWidth(int i, int j) {
 		return padStringWidth(String.valueOf(i), j);
 	}
 
 	/**
-	 * @see padStringWidth(String, int)
+	 * @see (String, int)
 	 */
 	public static String padStringWidth(float f, int i) {
 		return padStringWidth(String.valueOf(f), i);
 	}
 
 	/**
-	 * @see padStringWidth(String, int)
+	 * @see (String, int)
 	 */
 	public static String padStringWidth(long l, int i) {
 		return padStringWidth(String.valueOf(l), i);
 	}
 
 	/**
-	 * @see padStringWidth(String, int)
+	 * @see (String, int)
 	 */
 	public static String padStringWidth(double d, int i) {
 		return padStringWidth(String.valueOf(d), i);
@@ -474,22 +471,6 @@ public class StringUtils {
 	 * @Date Jul 15, 2017 4:58:36 PM
 	 */
 	public static String stackToString(Throwable e) {
-		try {
-			StringWriter sw = new StringWriter();
-			PrintWriter pw = new PrintWriter(sw);
-			e.printStackTrace(pw);
-			return "------\r\n" + sw.toString() + "------\r\n";
-		} catch (Exception e2) {
-			return "(bad stack2string) " + e.getMessage();
-		}
-	}
-
-	/**
-	 * @Descrption 异常信息转换成字符串
-	 * @author rd_jianbin_lin
-	 * @Date Jul 15, 2017 4:58:36 PM
-	 */
-	public static String stackToString(Exception e) {
 		try {
 			StringWriter sw = new StringWriter();
 			PrintWriter pw = new PrintWriter(sw);
@@ -561,118 +542,6 @@ public class StringUtils {
 		}
 
 		return output.toString();
-	}
-	
-	private final static String[] JAVA_KEYWORDS =
-		{
-			"assert",
-			"abstract",
-			"continue",
-			"for",
-			"new",
-			"switch",
-			"boolean",
-			"default",
-			"goto",
-			"null",
-			"synchronized",
-			"break",
-			"do",
-			"if",
-			"package",
-			"this",
-			"byte",
-			"double",
-			"implements",
-			"private",
-			"threadsafe",
-			"byvalue",
-			"else",
-			"import",
-			"protected",
-			"throw",
-			"case",
-			"extends",
-			"instanceof",
-			"public",
-			"transient",
-			"catch",
-			"false",
-			"int",
-			"return",
-			"true",
-			"char",
-			"final",
-			"interface",
-			"short",
-			"try",
-			"class",
-			"finally",
-			"long",
-			"static",
-			"void",
-			"const",
-			"float",
-			"native",
-			"super",
-			"while",
-			"volatile",
-			"strictfp" };
-
-	/**
-	 * 
-	 * @Descrption 是否合法的Java标识符
-	 * @author rd_jianbin_lin
-	 * @Date Jul 15, 2017 6:50:06 PM
-	 */
-	public static boolean isJavaIdentifier(String s)
-	{
-		if (isEmpty(s))
-			return false;
-		else
-		{
-			char[] chars = s.toCharArray();
-			for (int i = 0; i < chars.length; i++)
-			{
-				if (!Character.isJavaIdentifierPart(chars[i])
-					|| (i == 0 && !Character.isJavaIdentifierStart(chars[i])))
-				{
-					return false;
-				}
-			}
-			if (Arrays.asList(JAVA_KEYWORDS).contains(s))
-				return false;
-		}
-		return true;
-	}
-
-	/**
-	 * @Descrption 是否合法的Java Class Name 
-	 * @author rd_jianbin_lin
-	 * @Date Jul 15, 2017 6:50:18 PM
-	 */
-	public static boolean isJavaClassName(String name)
-	{
-		if (isEmpty(name))
-			return true;
-		if (name.startsWith(" ")
-			|| name.startsWith(".")
-			|| name.endsWith(" ")
-			|| name.endsWith("."))
-		{
-			return false;
-		} else
-		{
-			String[] pks = name.split(".");
-			for (int i = 0; i < pks.length; i++)
-			{
-				if (!isJavaIdentifier(pks[i]))
-				{
-					return false;
-				}
-			}
-		}
-		return true;
 	}
 	
 	/**

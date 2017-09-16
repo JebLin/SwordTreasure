@@ -9,8 +9,13 @@ import java.util.regex.Pattern;
 
 import javax.activation.FileDataSource;
 
+/**
+ * @Description 用于附件操作
+ * @Author:rd_jianbin_lin
+ * @Date: 11:50 2017/9/16
+ */
 public class TextFile extends FileDataSource {  
-    private static final String DEFAULT_CONTENT_TYPE = "application/octet-stream";  
+    private static final String DEFAULT_CONTENT_TYPE = "application/octet-stream"; // .*（ 二进制流，不知道下载文件类型）
     private final static Pattern pattern = Pattern.compile("^text/");  
       
     private String contentType;  
@@ -74,6 +79,12 @@ public class TextFile extends FileDataSource {
             return true;  
         }  
         return false;  
-    }  
-      
+    }
+
+    public static void main(String[] args) {
+        File file = new File("E:\\BaiduNetdiskDownload\\java8\\source\\java8-day01\\src\\com\\atguigu\\java8\\Employee.java");
+        TextFile textFile = new TextFile(file);
+        System.out.println(textFile.getContentType());
+
+    }
 }  
