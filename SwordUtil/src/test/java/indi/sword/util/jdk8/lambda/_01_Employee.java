@@ -1,12 +1,12 @@
 package indi.sword.util.jdk8.lambda;
 
-
 public class _01_Employee {
 
 	private int id;
 	private String name;
 	private int age;
 	private double salary;
+	private Status status;
 
 	public _01_Employee() {
 	}
@@ -25,6 +25,26 @@ public class _01_Employee {
 		this.name = name;
 		this.age = age;
 		this.salary = salary;
+	}
+
+	public _01_Employee(int id, String name, int age, double salary, Status status) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.salary = salary;
+		this.status = status;
+	}
+
+	public boolean returnTrue(){
+		return true;
+	}
+
+	public Status getStatus() {
+		return status;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
 	}
 
 	public int getId() {
@@ -76,12 +96,6 @@ public class _01_Employee {
 		return result;
 	}
 
-	// 返回 true
-	public boolean returnTrue(){
-		return true;
-	}
-
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -107,7 +121,12 @@ public class _01_Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", salary=" + salary + "]";
+		return "_01_Employee [id=" + id + ", name=" + name + ", age=" + age + ", salary=" + salary + ", status=" + status
+				+ "]";
+	}
+
+	public enum Status {
+		FREE, BUSY, VOCATION;
 	}
 
 }

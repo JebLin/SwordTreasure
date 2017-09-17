@@ -35,10 +35,20 @@ import java.util.stream.Stream;
  *
  *
  */
-public class _05_TestStreamAPI {
+public class _05_TestStreamAPI_CenterOp {
+
+    List<_01_Employee> employees = Arrays.asList(
+            new _01_Employee(11,"张三",10,11.11),
+            new _01_Employee(15,"张四",30,21.11),
+            new _01_Employee(14,"张五",50,11.11),
+            new _01_Employee(12,"张六",20,41.11),
+            new _01_Employee(18,"张七",40,21.11),
+            new _01_Employee(17,"张八",20,51.11),
+            new _01_Employee(16,"张九",10,61.11)
+    );
 
     @Test
-    public void test1(){
+    public void test_createStream(){
 
         // 1、Collection提供了两个方法，stream() 与 parallelStream()
         List<String> list = new ArrayList<>();
@@ -70,17 +80,8 @@ public class _05_TestStreamAPI {
         distinct——筛选，通过流所生成元素的 hashCode() 和 equals() 去除重复元素
      */
     @Test
-    public void test2(){
+    public void test_demo(){
         // 2、中间操作
-        List<_01_Employee> employees = Arrays.asList(
-            new _01_Employee(11,"张三",10,11.11),
-            new _01_Employee(15,"张四",30,21.11),
-            new _01_Employee(14,"张五",50,11.11),
-            new _01_Employee(12,"张六",20,41.11),
-            new _01_Employee(18,"张七",40,21.11),
-            new _01_Employee(17,"张八",20,51.11),
-            new _01_Employee(16,"张九",10,61.11)
-        );
 
         // 所有中间操作不会做任何处理
         Stream<_01_Employee> stream1 = employees.stream() // 返回一个顺序流
@@ -96,10 +97,49 @@ public class _05_TestStreamAPI {
         // 只有当做终止操作时，所有中间操作都会一次性执行，称为 “惰性求值”，延迟加载
         stream1.forEach(System.out::println);
 
+    }
+
+    //2. 中间操作
+	/*
+		映射
+		map——接收 Lambda ， 将元素转换成其他形式或提取信息。
+		接收一个函数作为参数，该函数会被应用到每个元素上，并将其映射成一个新的元素。
+		flatMap——接收一个函数作为参数，将流中的每个值都换成另一个流，然后把所有流连接成一个流
+	 */
+    @Test
+    public void test_Map(){
+
+        List list = Arrays.asList("a","b",1,2,3,employees); // [a, b, 1, 2, 3, [Employee [id=11, name=张三, age=10, salary=11.11], Employee [id=15, name=张四, age=30, salary=21.11], Employee [id=14, name=张五, age=50, salary=11.11], Employee [id=12, name=张六, age=20, salary=41.11], Employee [id=18, name=张七, age=40, salary=21.11], Employee [id=17, name=张八, age=20, salary=51.11], Employee [id=16, name=张九, age=10, salary=61.11]]]
+        System.out.println(list);
+        System.out.println("--------------------------------------");
 
 
+        Stream<String> empNameStream = employees.stream().map(e -> e.getName());  // 流里面就这些东西：["张三","张四","张五","张六","张七","张八","张九"]
+        empNameStream.forEach(System.out::println);
+        System.out.println("--------------------------------------");
+
+
+        List<String> strList = Arrays.asList("aa","bb","cc");
+        Stream<String> stream = strList.stream().map(String::toUpperCase); // 流里面就这些东西 ： ["AAA","BBB","CCC"]
+        stream.forEach(System.out::println);
+        System.out.println("--------------------------------------");
+
+        Stream<Stream<Character>> stream_map = strList.stream()
+                .map(_05_TestStreamAPI_CenterOp::filterCharacter);                   // map 流里面就这些东西 ： [['a','a','a'],['b','b','b'],['c','c','c']] 类似于List.add()
+        stream_map.forEach((sm) -> sm.forEach(System.out::println));
+        System.out.println("--------------------------------------");
+
+        Stream<Character> stream_flatMap = strList.stream().flatMap(_05_TestStreamAPI_CenterOp::filterCharacter);
+        stream_flatMap.forEach(System.out::println);      // flatMap 流里面就这些东西 ： ['a','a','a','b','b','b','c','c','c'] 类似于List.addAll()
 
     }
 
-
+    public static Stream<Character> filterCharacter(String str){
+        List<Character> list = new ArrayList<>();
+        for (Character ch :
+                str.toCharArray()) {
+            list.add(ch);
+        }
+        return list.stream();
+    }
 }
