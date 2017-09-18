@@ -19,21 +19,31 @@
       <file leaf-file-name="_05_TestStreamAPI_CenterOp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_05_TestStreamAPI_CenterOp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
+            <state relative-caret-position="-1364">
               <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_06_TestStreamAPI_TerminateOp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_06_TestStreamAPI_TerminateOp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_06_TestStreamAPI_TerminateOp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="-594">
               <caret line="189" column="40" lean-forward="true" selection-start-line="189" selection-start-column="40" selection-end-line="189" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_04_TestMethodRef.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_04_TestMethodRef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="94" column="52" lean-forward="false" selection-start-line="94" selection-start-column="52" selection-end-line="94" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,34 +60,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_07_TestStreamAPI_Quiz02.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_07_TestStreamAPI_Quiz02.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_07_TestStreamAPI_Quiz02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="131" column="19" lean-forward="true" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="22" />
               <folding>
-                <element signature="e#4762#4763#0" expanded="true" />
-                <element signature="e#4789#4790#0" expanded="true" />
-                <element signature="e#4829#4830#0" expanded="true" />
-                <element signature="e#4861#4862#0" expanded="true" />
-                <element signature="e#4892#4893#0" expanded="true" />
-                <element signature="e#4919#4920#0" expanded="true" />
-                <element signature="e#4959#4960#0" expanded="true" />
-                <element signature="e#4991#4992#0" expanded="true" />
-                <element signature="e#5037#5038#0" expanded="true" />
-                <element signature="e#5107#5108#0" expanded="true" />
-                <element signature="e#5458#5459#0" expanded="true" />
-                <element signature="e#5487#5488#0" expanded="true" />
-                <element signature="e#5531#5532#0" expanded="true" />
+                <element signature="e#4798#4799#0" expanded="true" />
+                <element signature="e#4825#4826#0" expanded="true" />
+                <element signature="e#4865#4866#0" expanded="true" />
+                <element signature="e#4897#4898#0" expanded="true" />
+                <element signature="e#4928#4929#0" expanded="true" />
+                <element signature="e#4955#4956#0" expanded="true" />
+                <element signature="e#4995#4996#0" expanded="true" />
+                <element signature="e#5027#5028#0" expanded="true" />
+                <element signature="e#5073#5074#0" expanded="true" />
+                <element signature="e#5143#5144#0" expanded="true" />
+                <element signature="e#5494#5495#0" expanded="true" />
+                <element signature="e#5523#5524#0" expanded="true" />
                 <element signature="e#5567#5568#0" expanded="true" />
-                <element signature="e#5595#5596#0" expanded="true" />
-                <element signature="e#5622#5623#0" expanded="true" />
-                <element signature="e#5659#5660#0" expanded="true" />
-                <element signature="e#5691#5692#0" expanded="true" />
-                <element signature="e#5720#5721#0" expanded="true" />
-                <element signature="e#5748#5749#0" expanded="true" />
-                <element signature="e#5787#5788#0" expanded="true" />
-                <element signature="e#5821#5822#0" expanded="true" />
+                <element signature="e#5603#5604#0" expanded="true" />
+                <element signature="e#5631#5632#0" expanded="true" />
+                <element signature="e#5658#5659#0" expanded="true" />
+                <element signature="e#5695#5696#0" expanded="true" />
+                <element signature="e#5727#5728#0" expanded="true" />
+                <element signature="e#5756#5757#0" expanded="true" />
+                <element signature="e#5784#5785#0" expanded="true" />
+                <element signature="e#5823#5824#0" expanded="true" />
+                <element signature="e#5857#5858#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,16 +108,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
               <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Predicate.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/function/Predicate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -390,32 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit._07_TestStreamAPI_Quiz02.test07">
-    <configuration name="_07_TestStreamAPI_Quiz02.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="indi.sword.util.jdk8.lambda.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SwordUtil" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="indi.sword.util.jdk8.lambda" />
-      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jdk8.lambda._07_TestStreamAPI_Quiz02" />
-      <option name="METHOD_NAME" value="test03" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="JUnit._07_TestStreamAPI_Quiz02.test08">
     <configuration name="_07_TestStreamAPI_Quiz02.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -504,6 +479,31 @@
       <option name="PACKAGE_NAME" value="indi.sword.util.jdk8.lambda" />
       <option name="MAIN_CLASS_NAME" value="indi.sword.util.jdk8.lambda._07_TestStreamAPI_Quiz02" />
       <option name="METHOD_NAME" value="test07" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="_07_TestStreamAPI_Quiz02.test08" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="indi.sword.util.jdk8.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SwordUtil" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="indi.sword.util.jdk8.lambda" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jdk8.lambda._07_TestStreamAPI_Quiz02" />
+      <option name="METHOD_NAME" value="test08" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -911,19 +911,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test03" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test04" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test05" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test06" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test07" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test04" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test05" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test06" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test07" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test08" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test07" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test06" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test05" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test04" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test03" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test08" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test07" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test06" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test05" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz02.test04" />
       </list>
     </recent_temporary>
   </component>
@@ -959,17 +959,11 @@
       <workItem from="1505399339556" duration="4374000" />
       <workItem from="1505430803758" duration="3235000" />
       <workItem from="1505609595151" duration="6018000" />
-      <workItem from="1505706380637" duration="19001000" />
+      <workItem from="1505706380637" duration="20613000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_07_TestStreamAPI_Quiz02_test05 - 2017.09.18 at 20h 38m 06s.xml">
-      <configuration name="_07_TestStreamAPI_Quiz02.test05" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="_07_TestStreamAPI_Quiz02_test05 - 2017.09.18 at 20h 38m 17s.xml">
-      <configuration name="_07_TestStreamAPI_Quiz02.test05" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="_07_TestStreamAPI_Quiz02_test05 - 2017.09.18 at 20h 38m 48s.xml">
       <configuration name="_07_TestStreamAPI_Quiz02.test05" configurationId="JUnit" />
     </history-entry>
@@ -994,9 +988,15 @@
     <history-entry file="_07_TestStreamAPI_Quiz02_test07 - 2017.09.18 at 20h 49m 49s.xml">
       <configuration name="_07_TestStreamAPI_Quiz02.test07" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="_07_TestStreamAPI_Quiz02_test08 - 2017.09.18 at 23h 10m 01s.xml">
+      <configuration name="_07_TestStreamAPI_Quiz02.test08" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_07_TestStreamAPI_Quiz02_test08 - 2017.09.18 at 23h 17m 59s.xml">
+      <configuration name="_07_TestStreamAPI_Quiz02.test08" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100705000" />
+    <option name="totallyTimeSpent" value="102317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1" width="1898" height="1022" extended-state="0" />
@@ -1313,14 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_04_TestMethodRef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="94" column="52" lean-forward="false" selection-start-line="94" selection-start-column="52" selection-end-line="94" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
@@ -1454,24 +1446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_06_TestStreamAPI_TerminateOp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="189" column="40" lean-forward="true" selection-start-line="189" selection-start-column="40" selection-end-line="189" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_05_TestStreamAPI_CenterOp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/Optional.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -1490,31 +1464,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_07_TestStreamAPI_Quiz02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="131" column="19" lean-forward="true" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="22" />
           <folding>
-            <element signature="e#4762#4763#0" expanded="true" />
-            <element signature="e#4789#4790#0" expanded="true" />
-            <element signature="e#4829#4830#0" expanded="true" />
-            <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#4892#4893#0" expanded="true" />
-            <element signature="e#4919#4920#0" expanded="true" />
-            <element signature="e#4959#4960#0" expanded="true" />
-            <element signature="e#4991#4992#0" expanded="true" />
-            <element signature="e#5037#5038#0" expanded="true" />
-            <element signature="e#5107#5108#0" expanded="true" />
-            <element signature="e#5458#5459#0" expanded="true" />
-            <element signature="e#5487#5488#0" expanded="true" />
-            <element signature="e#5531#5532#0" expanded="true" />
+            <element signature="e#4798#4799#0" expanded="true" />
+            <element signature="e#4825#4826#0" expanded="true" />
+            <element signature="e#4865#4866#0" expanded="true" />
+            <element signature="e#4897#4898#0" expanded="true" />
+            <element signature="e#4928#4929#0" expanded="true" />
+            <element signature="e#4955#4956#0" expanded="true" />
+            <element signature="e#4995#4996#0" expanded="true" />
+            <element signature="e#5027#5028#0" expanded="true" />
+            <element signature="e#5073#5074#0" expanded="true" />
+            <element signature="e#5143#5144#0" expanded="true" />
+            <element signature="e#5494#5495#0" expanded="true" />
+            <element signature="e#5523#5524#0" expanded="true" />
             <element signature="e#5567#5568#0" expanded="true" />
-            <element signature="e#5595#5596#0" expanded="true" />
-            <element signature="e#5622#5623#0" expanded="true" />
-            <element signature="e#5659#5660#0" expanded="true" />
-            <element signature="e#5691#5692#0" expanded="true" />
-            <element signature="e#5720#5721#0" expanded="true" />
-            <element signature="e#5748#5749#0" expanded="true" />
-            <element signature="e#5787#5788#0" expanded="true" />
-            <element signature="e#5821#5822#0" expanded="true" />
+            <element signature="e#5603#5604#0" expanded="true" />
+            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#5658#5659#0" expanded="true" />
+            <element signature="e#5695#5696#0" expanded="true" />
+            <element signature="e#5727#5728#0" expanded="true" />
+            <element signature="e#5756#5757#0" expanded="true" />
+            <element signature="e#5784#5785#0" expanded="true" />
+            <element signature="e#5823#5824#0" expanded="true" />
+            <element signature="e#5857#5858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_04_TestMethodRef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="94" column="52" lean-forward="false" selection-start-line="94" selection-start-column="52" selection-end-line="94" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_05_TestStreamAPI_CenterOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1364">
+          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_06_TestStreamAPI_TerminateOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="189" column="40" lean-forward="true" selection-start-line="189" selection-start-column="40" selection-end-line="189" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

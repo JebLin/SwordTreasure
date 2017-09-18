@@ -130,10 +130,13 @@ public class _07_TestStreamAPI_Quiz02 {
     //8. 找到交易额最小的交易
     @Test
     public void test08(){
-        Optional<Integer> op1 =
-                transactions.stream().map(t -> t.getValue()).max(Integer::compareTo);
 
+        Optional<Transaction> op1 = transactions.stream().min((t1,t2) -> {
+            return Integer.compare(t1.getValue(),t2.getValue());
+        });
         System.out.println(op1.get());
+
+
     }
 }
 
