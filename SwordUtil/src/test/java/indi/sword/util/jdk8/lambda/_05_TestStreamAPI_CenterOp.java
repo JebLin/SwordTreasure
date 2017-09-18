@@ -23,6 +23,9 @@ import java.util.stream.Stream;
  * 2、Stream不会改变原对象。相反，他们会返回一个持有结果的新Stream。
  * 3、Stream操作时延时执行的。这意味着他们会等到需要结果时才执行。
  *
+ * sorted()——自然排序
+ * sorted(Comparator com)——定制排序
+ *
  *
  * 操作步奏：
  * 1、创建 Stream
@@ -138,6 +141,7 @@ public class _05_TestStreamAPI_CenterOp {
         List<Character> list = new ArrayList<>();
         for (Character ch :
                 str.toCharArray()) {
+//            System.out.println(ch);
             list.add(ch);
         }
         return list.stream();
