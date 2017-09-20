@@ -1,6 +1,5 @@
 package indi.sword.util.jdk8.lambda;
 
-import org.apache.xpath.SourceTree;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,7 +14,7 @@ import java.util.stream.Collectors;
  * @Author:rd_jianbin_lin
  * @Date: 19:15 2017/9/18
  */
-public class _07_TestStreamAPI_Quiz02 {
+public class _08_TestStreamAPI_Quiz02 {
 
     List<Transaction> transactions = null;
 
