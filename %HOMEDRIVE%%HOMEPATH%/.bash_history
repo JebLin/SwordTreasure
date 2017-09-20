@@ -81,3 +81,17 @@ git commit -m "MailUtils"
 git add .
 git commit -m 'tools'
 git push
+git pull
+git add .
+git commit -m 'simple jsoup test'
+git push
+git add .
+git commit -m "quiz"
+git push 
+git add .
+git commit -m "quiz"
+git push 
+git add .
+git commit -m "property"
+git push
+git pull
