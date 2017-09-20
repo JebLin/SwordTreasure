@@ -22,7 +22,18 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.21</version>
         </dependency>
-
+        <!-- slf4j-api和log4j中间的适配器,初始化Log4j，达到最终日志的输出。 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
         <!--===================== 本地测试相关 ===================== -->
         <dependency>
             <groupId>junit</groupId>

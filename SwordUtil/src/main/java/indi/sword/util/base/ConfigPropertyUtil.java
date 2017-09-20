@@ -29,7 +29,7 @@ public class ConfigPropertyUtil {
         try {
             // 第一种，通过类加载器进行获取properties文件流
 //            in = ConfigPropertyUtil.class.getClassLoader().getResourceAsStream("job51.properties");
-            in = ConfigPropertyUtil.class.getClass().getResourceAsStream("/src/main/resources/jdbc.properties");
+            in = ConfigPropertyUtil.class.getClass().getResourceAsStream("/jdbc.properties");
             props.load(in);
         } catch (FileNotFoundException e) {
             logger.error("jdbc.properties文件未找到");
@@ -64,5 +64,6 @@ public class ConfigPropertyUtil {
 
     public static void main(String[] args) {
         System.out.println(ConfigPropertyUtil.getProperty("jdbc.password"));
+//        System.out.println("111");
     }
 }
