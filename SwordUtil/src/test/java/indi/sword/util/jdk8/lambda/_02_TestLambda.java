@@ -38,6 +38,8 @@ import org.junit.Test;
  * 二、Lambda 表达式需要“函数式接口”的支持
  * 函数式接口：接口中只有一个抽象方法的接口，成为函数式接口。
  * 可以使用@FunctionalInterface修饰 检查是否是函数式接口
+ *
+ * 只包含一个抽象方法、只包含一个抽象方法、只包含一个抽象方法
  */
 public class _02_TestLambda {
 	
