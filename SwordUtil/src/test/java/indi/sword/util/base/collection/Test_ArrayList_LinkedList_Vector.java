@@ -29,7 +29,7 @@ import java.util.*;
  *            getFirst（）
  *            getLast（）
  *
- *            removeFirst（）获取头部元素bingshanchu
+ *            removeFirst（）获取头部元素并且删除
  *            removeLast（）
  *
  * -----------------------------------------------------
@@ -47,13 +47,14 @@ import java.util.*;
  * @Author:rd_jianbin_lin
  * @Date: 14:34 2017/9/22
  */
-public class Test_ArrayList_LinkedList {
+public class Test_ArrayList_LinkedList_Vector {
 
     public static final int N = 50000;
     public static List values;
 
     @Before
     public void before() {
+
         System.out.println("before ...");
         Integer vals[] = new Integer[N];
         Random r = new Random();
