@@ -112,7 +112,7 @@ public class _05_TestStreamAPI_CenterOp {
     @Test
     public void test_Map(){
 
-        List list = Arrays.asList("a","b",1,2,3,employees); // [a, b, 1, 2, 3, [Employee [id=11, name=张三, age=10, salary=11.11], Employee [id=15, name=张四, age=30, salary=21.11], Employee [id=14, name=张五, age=50, salary=11.11], Employee [id=12, name=张六, age=20, salary=41.11], Employee [id=18, name=张七, age=40, salary=21.11], Employee [id=17, name=张八, age=20, salary=51.11], Employee [id=16, name=张九, age=10, salary=61.11]]]
+        List list = Arrays.asList("a","b",1,2,3,employees); // [a, b, 1, 2, 3, [_01_Employee [id=11, name=张三, age=10, salary=11.11], _01_Employee [id=15, name=张四, age=30, salary=21.11], _01_Employee [id=14, name=张五, age=50, salary=11.11], _01_Employee [id=12, name=张六, age=20, salary=41.11], _01_Employee [id=18, name=张七, age=40, salary=21.11], _01_Employee [id=17, name=张八, age=20, salary=51.11], _01_Employee [id=16, name=张九, age=10, salary=61.11]]]
         System.out.println(list);
         System.out.println("--------------------------------------");
 
