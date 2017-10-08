@@ -14,7 +14,6 @@ import java.lang.reflect.Proxy;
 public class Client {
 
     public static void main(String[] args) throws Throwable{
-        // TODO Auto-generated method stub
 
         Subject rs=new RealSubject();//这里指定被代理类
         InvocationHandler ds=new DynamicSubject(rs);
@@ -60,3 +59,9 @@ public class Client {
         subject.request();
     }
 }
+/*
+    PS：这个结果的信息非常重要，至少对我来说。因为我在动态代理犯晕的根源就在于将上面的 subject.request()理解错了，至少是被表面所迷惑，没有发现这个subject和Proxy之间的联系，一度纠结于最后调用的这个 request()是怎么和invoke()联系上的，而invoke又是怎么知道request存在的。其实上面的true和class $Proxy0就能解决很多的疑问，再加上下面将要说的$Proxy0的源码，完全可以解决动态代理的疑惑了。
+
+    从以上代码和结果可以看出，我们并没有显示的调用invoke()方法，但是这个方法确实执行了。下面就整个的过程进行分析一下：
+
+ */
