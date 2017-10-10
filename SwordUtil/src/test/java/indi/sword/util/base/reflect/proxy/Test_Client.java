@@ -13,9 +13,22 @@ import java.lang.reflect.Proxy;
  * @Date 19:54 2017/10/8
  */
 //客户端：生成代理实例，并调用了request()方法
-public class Client {
+public class Test_Client {
 
-    public static void main(String[] args) throws Throwable{
+    @Test
+    public void test_DynaProxyDemo(){
+        MyInvocationHandler handler = new MyInvocationHandler();
+        Subject subject = (Subject)handler.bind(new RealSubject());
+        subject.request();
+    }
+
+
+/*
+    PS：下面结果的信息非常重要，至少对我来说。因为我在动态代理犯晕的根源就在于将上面的 subject.request()理解错了，至少是被表面所迷惑，没有发现这个subject和Proxy之间的联系，一度纠结于最后调用的这个 request()是怎么和invoke()联系上的，而invoke又是怎么知道request存在的。其实上面的true和class $Proxy0就能解决很多的疑问，再加上下面将要说的$Proxy0的源码，完全可以解决动态代理的疑惑了。
+    从以上代码和结果可以看出，我们并没有显示的调用invoke()方法，但是这个方法确实执行了。下面就整个的过程进行分析一下：
+ */
+    @Test
+    public void testClient(){
 
         Subject rs=new RealSubject();//这里指定被代理类
         InvocationHandler ds=new DynamicSubject(rs);
@@ -61,16 +74,22 @@ public class Client {
         subject.request();
     }
 
+    /**
+     * JAVA中有三种类加载器：
+     * BootStrap ClassLoader : 此加载器由C++编写，一般开发中是看不到的。
+     * Extension ClassLoader : 用来进行扩展类的加载，一般对应的是 jre\lib\ext目录中的类。
+     * AppClassLoader : 加载classPath指定的类，是最常使用的一种加载器
+     *
+     * @Description
+     * @Author rd_jianbin_lin
+     * @Date 8:30 2017/10/10
+     */
+
     @Test
-    public void test_DynaProxyDemo(){
-        MyInvocationHandler handler = new MyInvocationHandler();
-        Subject subject = (Subject)handler.bind(new RealSubject());
-        subject.request();
+    public void testClassLoader(){
+        RealSubject subject = new RealSubject();
+        ClassLoader classLoader = subject.getClass().getClassLoader(); //得到类加载器
+        System.out.println("类加载器：" + classLoader.getClass().getName()); // sun.misc.Launcher$AppClassLoader
     }
+
 }
-/*
-    PS：这个结果的信息非常重要，至少对我来说。因为我在动态代理犯晕的根源就在于将上面的 subject.request()理解错了，至少是被表面所迷惑，没有发现这个subject和Proxy之间的联系，一度纠结于最后调用的这个 request()是怎么和invoke()联系上的，而invoke又是怎么知道request存在的。其实上面的true和class $Proxy0就能解决很多的疑问，再加上下面将要说的$Proxy0的源码，完全可以解决动态代理的疑惑了。
-
-    从以上代码和结果可以看出，我们并没有显示的调用invoke()方法，但是这个方法确实执行了。下面就整个的过程进行分析一下：
-
- */
