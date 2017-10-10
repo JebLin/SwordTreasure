@@ -1,4 +1,4 @@
-package indi.sword.util.base.proxy;
+package indi.sword.util.base.reflect.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -23,6 +23,7 @@ public class DynamicSubject implements InvocationHandler
     }
 
     //这个方法不是我们显示的去调用
+    @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable
     {
         System.out.println("before calling " + method);

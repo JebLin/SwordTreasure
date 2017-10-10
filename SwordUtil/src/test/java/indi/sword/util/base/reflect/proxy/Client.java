@@ -1,4 +1,6 @@
-package indi.sword.util.base.proxy;
+package indi.sword.util.base.reflect.proxy;
+
+import org.junit.Test;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
@@ -56,6 +58,13 @@ public class Client {
         }
 
         System.out.println("\n\n"+"运行结果为：");
+        subject.request();
+    }
+
+    @Test
+    public void test_DynaProxyDemo(){
+        MyInvocationHandler handler = new MyInvocationHandler();
+        Subject subject = (Subject)handler.bind(new RealSubject());
         subject.request();
     }
 }

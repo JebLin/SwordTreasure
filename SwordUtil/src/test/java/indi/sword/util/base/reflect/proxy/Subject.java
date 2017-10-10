@@ -1,4 +1,4 @@
-package indi.sword.util.base.proxy;
+package indi.sword.util.base.reflect.proxy;
 
 /**
  * @Description
