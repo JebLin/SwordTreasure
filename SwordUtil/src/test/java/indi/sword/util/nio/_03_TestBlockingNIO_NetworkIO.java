@@ -28,7 +28,7 @@ import org.junit.Test;
  * 
  * 2、缓冲区（Buffer）：负责数据的存储
  * 
- * 3、选择器（Selector）：是SelectableChannel 的多路复用器。用于监控SelectableChannel的 IO状况
+ * 3、选择器（Selector）：是SelectableChannel 的多路复用器。用于监控SelectableChannel的 IO 状况
  * 
  * @Descrption
  * @author rd_jianbin_lin

@@ -59,7 +59,6 @@ public class _06_TestNIO_File_Path {
         Path move(Path src, Path dest, CopyOption…how) : 将 src 移动到 dest 位置
         long size(Path path) : 返回 path 指定文件的大小
 
-
         boolean exists(Path path, LinkOption … opts) : 判断文件是否存在
         boolean isDirectory(Path path, LinkOption … opts) : 判断是否是目录
         boolean isExecutable(Path path) : 判断是否是可执行文件
@@ -77,6 +76,8 @@ public class _06_TestNIO_File_Path {
         Path path2 = Paths.get("e:/nio/2.txt");
         Path path3 = Paths.get("e:/nio/3.txt");
         Files.copy(path1,path3, StandardCopyOption.REPLACE_EXISTING);
+
+
 
         Path path4 = Paths.get("e:/nio/dir/");
 //        Files.createDirectory(path4);

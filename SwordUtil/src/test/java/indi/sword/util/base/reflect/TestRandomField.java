@@ -35,7 +35,7 @@ public class TestRandomField {
      */
     private <clazz> clazz getResultByResponse(String response, Class<?> clazz) {
         Result result = new Result();
-        
+
         return (clazz)result;
     }
 
