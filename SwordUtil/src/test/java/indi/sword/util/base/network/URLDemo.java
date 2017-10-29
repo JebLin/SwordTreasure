@@ -2,6 +2,8 @@ package indi.sword.util.base.network;
 
 import java.net.URL ;
 import java.io.InputStream ;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner ;
 public class URLDemo{
 	public static void main(String args[]) throws Exception {	// 所有异常抛出

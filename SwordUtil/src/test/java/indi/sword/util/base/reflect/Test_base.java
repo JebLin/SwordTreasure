@@ -69,6 +69,12 @@ public class Test_base {
 
     @Test
     public void test_Method() {
+        Class<?> clazz = null;
+        try {
+            clazz =  Class.forName("indi.sword.util.base.reflect.BasePerson"); // 传入完整的“包.类”名称实例化Class对象
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         /**
          * 注意：public methods.
          * getMethods()
@@ -77,13 +83,13 @@ public class Test_base {
          * Class} object, including those declared by the class or interface and
          * those inherited from superclasses and superinterfaces.
          */
-        Method[] method = clazz.getMethods();
-        System.out.println("clazz.getMethods().length -> " + method.length); //得到本类中的全部public方法
+        Method[] method = clazz.getMethods(); //得到本类中的全部public方法，包括继承来的或者接口来的
+        System.out.println("clazz.getMethods().length -> " + method.length);
         String methodsStr = Arrays.stream(method).map(methodArgs -> methodArgs.getName()).collect(Collectors.joining(",", "---", "---"));
         System.out.println("clazz.getMethods() -> " + methodsStr);
 
         System.out.println("---------------------------------");
-        System.out.println("Object.class.getMethods().length -> " + Object.class.getMethods().length);
+        System.out.println("Object.class.getMethods().length -> " + Object.class.getMethods().length); // 拿出Object的方法
         Arrays.stream(Object.class.getMethods()).map(methodArgs -> methodArgs.getName()).forEach(name -> {
             System.out.print(name + ",");
         });
@@ -97,11 +103,10 @@ public class Test_base {
          * Class} object, including public, protected, default (package)
          * access, and private methods, but excluding inherited methods.
          */
-        Method[] declaredMethods = clazz.getDeclaredMethods();//得到本类中的全部方法，但是父类的不算
+        Method[] declaredMethods = clazz.getDeclaredMethods();//得到本类中的全部方法，public  private default protected都取出来，但是父类的不算
         System.out.println("clazz.getDeclaredMethods().length -> " + declaredMethods.length);
         String declaredMethodsStr = Arrays.stream(declaredMethods).map(methodArgs -> methodArgs.getName()).collect(Collectors.joining(",", "---", "---"));
         System.out.println("clazz.getDeclaredMethods() -> " + declaredMethodsStr);
-
     }
 
     @Test

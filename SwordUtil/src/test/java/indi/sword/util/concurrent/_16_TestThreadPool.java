@@ -53,7 +53,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 public class _16_TestThreadPool {
 	public static void main(String[] args) throws Exception{
-		
+
 		// -------------------------- 实现Runnable ---------------------------
 		//1、创建线程池
 		ExecutorService pool = Executors.newFixedThreadPool(10);
