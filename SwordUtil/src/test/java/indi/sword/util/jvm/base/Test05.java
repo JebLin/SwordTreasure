@@ -1,4 +1,4 @@
-package indi.sword.util.jvm;
+package indi.sword.util.jvm.base;
 
 /*
     假如类存在直接的父类，并且这个父类还没有被初始化，那就先初始化直接的父类。

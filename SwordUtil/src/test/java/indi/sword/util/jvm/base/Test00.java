@@ -1,4 +1,4 @@
-package indi.sword.util.jvm;
+package indi.sword.util.jvm.base;
 
 /**
  * @Decription  测试类的 加载、连接、初始化

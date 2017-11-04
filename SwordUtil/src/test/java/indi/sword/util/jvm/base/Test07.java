@@ -1,4 +1,4 @@
-package indi.sword.util.jvm;
+package indi.sword.util.jvm.base;
 
 public class Test07 {
         public static void main(String[] args) throws Exception{
@@ -8,9 +8,9 @@ public class Test07 {
 
         // 调用 ClassLoader 类的 loadClass 方法加载一个类，并不是对类的主动使用，不会导致类的初始化。
         // 加载 连接 初始化。 只是加载
-        Class<?> clazz = loader.loadClass("indi.sword.util.jvm.CL");
+        Class<?> clazz = loader.loadClass("indi.sword.util.jvm.base.CL");
         System.out.println("--------------------");
-        clazz = Class.forName("indi.sword.util.jvm.CL");
+        clazz = Class.forName("indi.sword.util.jvm.base.CL");
     }
 }
 
