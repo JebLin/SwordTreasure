@@ -226,7 +226,7 @@ public class _02_TestChannel {
 		/*
 		 * If the file exists but is a directory rather than a regular file,
 		 * does not exist but cannot be created, or cannot be opened for any
-		 * other reason then a <code>FileNotFoundException</code> is thrown.
+		 * _other reason then a <code>FileNotFoundException</code> is thrown.
 		 */
 		FileOutputStream fos = new FileOutputStream("F:/2.mkv");
 

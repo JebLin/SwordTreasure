@@ -350,7 +350,7 @@ public class TestQry {
     }
 
     /**
-     * Performs a deep copy on <i>other</i>.
+     * Performs a deep copy on <i>_other</i>.
      */
     public qryTest_args(qryTest_args other) {
       __isset_bitfield = other.__isset_bitfield;
@@ -706,7 +706,7 @@ public class TestQry {
     }
 
     /**
-     * Performs a deep copy on <i>other</i>.
+     * Performs a deep copy on <i>_other</i>.
      */
     public qryTest_result(qryTest_result other) {
       if (other.isSetSuccess()) {

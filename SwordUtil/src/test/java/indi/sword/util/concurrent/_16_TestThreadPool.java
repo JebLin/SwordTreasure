@@ -37,7 +37,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  *   <li> Methods that create and return a {@link ThreadFactory}
  *        that sets newly created threads to a known state.
  *   <li> Methods that create and return a {@link Callable}
- *        out of other closure-like forms, so they can be used
+ *        out of _other closure-like forms, so they can be used
  *        in execution methods requiring {@code Callable}.
  * </ul>
  * 

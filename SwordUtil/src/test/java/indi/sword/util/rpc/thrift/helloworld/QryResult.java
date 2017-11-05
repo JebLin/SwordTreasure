@@ -151,7 +151,7 @@ public class QryResult implements org.apache.thrift.TBase<QryResult, QryResult._
   }
 
   /**
-   * Performs a deep copy on <i>other</i>.
+   * Performs a deep copy on <i>_other</i>.
    */
   public QryResult(QryResult other) {
     __isset_bitfield = other.__isset_bitfield;

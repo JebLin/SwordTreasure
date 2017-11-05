@@ -1,4 +1,4 @@
-package indi.sword.util.base;
+package indi.sword.util.base._other;
 
 import org.junit.Test;
 

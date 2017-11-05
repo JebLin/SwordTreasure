@@ -13,36 +13,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyClassLoader.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/MyClassLoader.java">
+      <file leaf-file-name="TestMyClassLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/TestMyClassLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="134" column="31" lean-forward="true" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
+            <state relative-caret-position="366">
+              <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="26" />
               <folding>
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/Class.java">
+      <file leaf-file-name="TestExtendClazz.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/_other/TestExtendClazz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="676" column="23" lean-forward="false" selection-start-line="676" selection-start-column="23" selection-end-line="676" selection-end-column="23" />
+            <state relative-caret-position="1752">
+              <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestRandomGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/_other/TestRandomGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestUUId_Concurrent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/_other/TestUUId_Concurrent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestNameZone.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/TestNameZone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyClassLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MyClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1320">
+              <caret line="79" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyClassLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/MyClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassLoader.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/ClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="766" column="48" lean-forward="true" selection-start-line="766" selection-start-column="48" selection-end-line="766" selection-end-column="48" />
+              <folding>
+                <element signature="e#11991#11992#0" expanded="true" />
+                <element signature="e#12045#12046#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestNameZone.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestNameZone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="18" column="63" lean-forward="true" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestUnloadClassLoader.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/TestUnloadClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -62,6 +136,7 @@
     <findStrings>
       <find>Object</find>
       <find>线程</find>
+      <find>path</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -72,14 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/HelloWorld.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/note" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/Test_Reflect.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/proxy/Subject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/proxy/DynamicSubject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/proxy/MyInvocationHandler.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/proxy/Client.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/proxy/Test_Client.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/TestRandomField.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/filter/MyServletContextAttributeListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/nio/_06_TestNIO_File_Path.java" />
@@ -111,9 +178,7 @@
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/Test07.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/Test01.java" />
         <option value="$USER_HOME$/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar!/javassist/Loader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Sample.java" />
         <option value="$PROJECT_DIR$/src/test/java/MyClassLoader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Dog.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/MyClassLoader.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/Dog.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/base/Test04.java" />
@@ -122,7 +187,17 @@
         <option value="$PROJECT_DIR$/src/test/java/java/lang/Object.java" />
         <option value="$PROJECT_DIR$/src/test/java/java/lang/Spy.java" />
         <option value="$PROJECT_DIR$/src/test/java/java/lang/Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/_00interview/TestPrintHW.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/base/Test08.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/MyClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/TestMyClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java/Dog.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Sample.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Dog.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/_other/TestUUId_Concurrent.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestNameZone.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/TestNameZone.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/TestUnloadClassLoader.java" />
       </list>
     </option>
   </component>
@@ -132,7 +207,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="2" />
     <option name="width" value="1278" />
     <option name="height" value="984" />
@@ -190,6 +265,25 @@
             </path>
             <path>
               <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
+              <item name="UserClassLoader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -215,10 +309,17 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="java" />
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\gitProject\SwordTreasure\SwordUtil\src\test\java" />
       <recent name="E:\code\gitProject\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\jvm\UserClassLoader" />
       <recent name="E:\code\gitProject\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\jvm" />
-      <recent name="E:\code\gitProject\SwordTreasure\SwordUtil\src\test\java" />
       <recent name="E:\code\gitProject\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\base\network" />
       <recent name="E:\code\gitProject\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\rpc\thrift\helloworld" />
     </key>
@@ -235,10 +336,60 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyClassLoader">
-    <configuration name="MyClassLoader (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TestUnloadClassLoader">
+    <configuration name="TestMyClassLoader.testNameZone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="indi.sword.util.jvm.UserClassLoader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SwordUtil" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="indi.sword.util.jvm.UserClassLoader" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jvm.UserClassLoader.TestMyClassLoader" />
+      <option name="METHOD_NAME" value="testNameZone" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestMyClassLoader.testParent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="indi.sword.util.jvm.UserClassLoader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SwordUtil" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="indi.sword.util.jvm.UserClassLoader" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jvm.UserClassLoader.TestMyClassLoader" />
+      <option name="METHOD_NAME" value="testParent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestNameZone (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="MyClassLoader" />
+      <option name="MAIN_CLASS_NAME" value="TestNameZone" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -250,14 +401,14 @@
       <module name="SwordUtil" />
       <envs />
     </configuration>
-    <configuration name="MyClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestNameZone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="indi.sword.util.jvm.UserClassLoader.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jvm.UserClassLoader.MyClassLoader" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jvm.UserClassLoader.TestNameZone" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -269,52 +420,14 @@
       <module name="SwordUtil" />
       <envs />
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="java.lang.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="java.lang.Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SwordUtil" />
-      <envs />
-    </configuration>
-    <configuration name="Test06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUnloadClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="indi.sword.util.jvm.UserClassLoader.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jvm.base.Test06" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SwordUtil" />
-      <envs />
-    </configuration>
-    <configuration name="Test07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="indi.sword.util.jvm.UserClassLoader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jvm.base.Test07" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jvm.UserClassLoader.TestUnloadClassLoader" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -722,19 +835,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Test06" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Test07" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MyClassLoader" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MyClassLoader (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestMyClassLoader.testParent" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestMyClassLoader.testNameZone" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestNameZone" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestNameZone (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestUnloadClassLoader" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MyClassLoader" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MyClassLoader (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Test07" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Test06" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestUnloadClassLoader" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestNameZone" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestMyClassLoader.testParent" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestNameZone (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestMyClassLoader.testNameZone" />
       </list>
     </recent_temporary>
   </component>
@@ -754,47 +867,47 @@
       <workItem from="1509001205418" duration="3057000" />
       <workItem from="1509016302700" duration="19814000" />
       <workItem from="1509361537020" duration="5093000" />
-      <workItem from="1509601845618" duration="32540000" />
+      <workItem from="1509601845618" duration="48869000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_base_test_Method - 2017.10.29 at 09h 56m 00s.xml">
-      <configuration name="Test_base.test_Method" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_test - 2017.11.05 at 13h 43m 16s.xml">
+      <configuration name="TestMyClassLoader.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_base_test_Method - 2017.10.29 at 10h 09m 50s.xml">
-      <configuration name="Test_base.test_Method" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 11m 55s.xml">
+      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_base_test_Method - 2017.10.29 at 10h 10m 02s.xml">
-      <configuration name="Test_base.test_Method" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 13m 16s.xml">
+      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="_01_TestBuffer_test_mark_reset - 2017.10.26 at 20h 35m 57s.xml">
-      <configuration name="_01_TestBuffer.test_mark_reset" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 38m 06s.xml">
+      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="_04_TestNonBlockingNIO_TCP_client - 2017.10.26 at 20h 46m 38s.xml">
-      <configuration name="_04_TestNonBlockingNIO_TCP.client" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 38m 19s.xml">
+      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="_04_TestNonBlockingNIO_TCP_client - 2017.10.26 at 20h 46m 40s.xml">
-      <configuration name="_04_TestNonBlockingNIO_TCP.client" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 42m 52s.xml">
+      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="_04_TestNonBlockingNIO_TCP_client - 2017.10.26 at 20h 46m 59s.xml">
-      <configuration name="_04_TestNonBlockingNIO_TCP.client" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 45m 47s.xml">
+      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="_04_TestNonBlockingNIO_TCP_client - 2017.10.26 at 20h 47m 40s.xml">
-      <configuration name="_04_TestNonBlockingNIO_TCP.client" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 46m 18s.xml">
+      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="_04_TestNonBlockingNIO_TCP_server - 2017.10.26 at 20h 46m 35s.xml">
-      <configuration name="_04_TestNonBlockingNIO_TCP.server" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_testParent - 2017.11.05 at 13h 43m 23s.xml">
+      <configuration name="TestMyClassLoader.testParent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="_04_TestNonBlockingNIO_TCP_server - 2017.10.26 at 20h 47m 41s.xml">
-      <configuration name="_04_TestNonBlockingNIO_TCP.server" configurationId="JUnit" />
+    <history-entry file="TestMyClassLoader_testParent - 2017.11.05 at 15h 35m 10s.xml">
+      <configuration name="TestMyClassLoader.testParent" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90896000" />
+    <option name="totallyTimeSpent" value="107225000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -814,6 +927,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10520833" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -826,7 +940,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -890,99 +1003,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/network/URLConnectionDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/network/URLDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/Test_Reflect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="96" column="37" lean-forward="true" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/reflect/Test_base.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="83" column="45" lean-forward="true" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_17_TestThreadPool_4Common.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_19_TestForkJoinPool_RecursiveTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_09_TestReentrantLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="44" column="6" lean-forward="false" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_14_TestReadWriteLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="56" column="4" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_01_TestVolatile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="53" column="6" lean-forward="false" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_02_TestAtomic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/concurrent/ExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5496">
-          <caret line="263" column="14" lean-forward="false" selection-start-line="263" selection-start-column="14" selection-end-line="263" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_06_TestCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22104">
-          <caret line="974" column="0" lean-forward="false" selection-start-line="974" selection-start-column="0" selection-end-line="974" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/jre/lib/rt.jar!/java/lang/Double.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1153,26 +1173,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Sample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Dog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="79" column="26" lean-forward="false" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1225,51 +1229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/note">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/Dog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/Sample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="405" column="35" lean-forward="false" selection-start-line="405" selection-start-column="35" selection-end-line="405" selection-end-column="35" />
-          <folding>
-            <element signature="e#11991#11992#0" expanded="true" />
-            <element signature="e#12045#12046#0" expanded="true" />
-            <element signature="e#12720#12721#0" expanded="true" />
-            <element signature="e#12790#12791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="676" column="23" lean-forward="false" selection-start-line="676" selection-start-column="23" selection-end-line="676" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1294,26 +1253,185 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/jre/lib/rt.jar!/java/util/Arrays.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="1122" column="23" lean-forward="false" selection-start-line="1122" selection-start-column="23" selection-end-line="1122" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#70081#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="3127" column="23" lean-forward="false" selection-start-line="3127" selection-start-column="23" selection-end-line="3127" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/_00interview/TestPrintHW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/note">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/base/Test08.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding>
+            <element signature="e#80#81#0" expanded="false" />
+            <element signature="e#172#173#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="392" column="13" lean-forward="false" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/_other/TestRandomGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/_other/TestExtendClazz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1752">
+          <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/_other/TestUUId_Concurrent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MyClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="79" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestNameZone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="63" lean-forward="true" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/TestMyClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/MyClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="134" column="31" lean-forward="true" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
+        <state relative-caret-position="188">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="766" column="48" lean-forward="true" selection-start-line="766" selection-start-column="48" selection-end-line="766" selection-end-column="48" />
+          <folding>
+            <element signature="e#11991#11992#0" expanded="true" />
+            <element signature="e#12045#12046#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/TestNameZone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/TestUnloadClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
