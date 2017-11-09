@@ -10,7 +10,7 @@ import java.util.List;
  *         一、稳定性:
  * 假定在待排序的记录序列中，存在多个具有相同的关键字的记录，若经过排序，这些记录的相对次序保持不变，即在原序列中， ri=rj，且ri在rj之前，而在排序后的序列中，ri仍在rj之前，则称这种排序算法是稳定的；否则称为不稳定的。
  *
- *         　 稳定：冒泡排序、插入排序、归并排序和基数排序
+ *         　 稳定：冒泡排序、插入排序、二分插入排序、归并排序和基数排序
  *
  *         　 不稳定：选择排序、快速排序、希尔排序、堆排序
  *
@@ -67,7 +67,7 @@ public class TestSort {
         // midInsertSort(a);
 
         // 3.希尔排序
-         shellSort(a);
+//         shellSort(a);
 
         // 二、选择排序
 
@@ -75,18 +75,18 @@ public class TestSort {
         // selectionSort(a);
 
         // 2.堆排序
-        // heapSort(a);
+//         heapSort(a);
 
         // 三、交换排序
 
         // 1.冒泡排序
-        // bubbleSort(a);
+//         bubbleSort(a);
 
         // 2.快速排序
         // quickSort1(a);
 
         // 四、归并排序
-        // mergeSort(a);
+//         mergeSort(a);
 
         // 五、基数排序
         //radixSort(a);
@@ -263,7 +263,7 @@ public class TestSort {
      *
      * ②堆排序（大根堆为例）
      *
-     * 　思想:初始时把要排序的数的序列看作是一棵顺序存储的二叉树，调整它们的存储序，使之成为一个 堆，这时堆的根节点的数最大。
+     * 　思想:初始时把要排序的数的序列看作是一棵顺序存储的二叉树，调整它们的存储序，使之成为一个堆，这时堆的根节点的数最大。
      *
      *   然后将根节点与堆的最后一个节点交换（把最大的都往后放），然后对前面(n-1)个数重新调整使之成为堆。依此类推，直到只有两个节点的堆，
      *
@@ -291,13 +291,14 @@ public class TestSort {
 
     public static void heapSort(int[] a) {
 
-        int arrayLength = a.length;
         // 循环建堆
-        for (int i = 0; i < arrayLength - 1; i++) {
-            // 建堆
-            buildMaxHeap(a, arrayLength - 1 - i);
-            // 交换堆顶和最后一个元素
-            swap(a, 0, arrayLength - 1 - i);
+        for (int i = 0; i < a.length - 1; i++) {
+
+            int lastIndex = a.length - 1 - i;// 最后一个索引
+
+            buildMaxHeap(a, lastIndex); // 建堆
+
+            swap(a, 0, lastIndex); // 交换堆顶和最后一个元素
             //System.out.println(Arrays.toString(a));
         }
     }
@@ -334,6 +335,9 @@ public class TestSort {
             }
         }
     }
+
+
+
     // 交换
     public static void swap(int[] data, int i, int j) {
         int tmp = data[i];
@@ -390,7 +394,6 @@ public class TestSort {
      * 快速排序是不稳定的排序。
      * 快速排序的时间复杂度为O(nlogn)。
      * 当n较大时使用快排比较好，当序列基本有序时用快排反而不好。
-     *
      *
      */
 
@@ -454,17 +457,16 @@ public class TestSort {
     public static void mergeS(int[] a, int left, int right) {
         if (left < right) {
             int middle = (left + right) / 2;
-            // 对左边进行递归
+            // 对左边进行递归拆分
             mergeS(a, left, middle);
-            // 对右边进行递归
+            // 对右边进行递归拆分
             mergeS(a, middle + 1, right);
             // 合并
-            merge(a, left, middle, right);
+            merge(a, left,middle,right);
         }
     }
 
-    public static void merge(int[] a, int left, int middle, int right) {
-
+    public static void merge(int[] a, int left, int middle,int right) {
         int[] tempArr = new int[a.length]; // 申请一个新的数组
         int mid = middle + 1; // 右边的起始位置
         int tempIndex = left; // 暂时不变的，以后用来赋值给原数组的
@@ -503,8 +505,7 @@ public class TestSort {
      *
      * @param
      *
-     *            基数排序是稳定的排序算法。
-     *
+     *      基数排序是稳定的排序算法
      *            　　 基数排序的时间复杂度为O(d(n+r)),d为位数，r为基数。
      */
 
