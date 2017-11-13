@@ -19,6 +19,7 @@ import java.util.concurrent.CountDownLatch;
 public class _04_TestCAS_Latch {
 
     public static void main(String[] args) {
+
     	final CountDownLatch latch = new CountDownLatch(100);
     	final CAS_02 cas02 = new CAS_02();
         
@@ -122,5 +123,5 @@ class LatchThread implements Runnable{
 		}
 		
 	}
-	
+
 }

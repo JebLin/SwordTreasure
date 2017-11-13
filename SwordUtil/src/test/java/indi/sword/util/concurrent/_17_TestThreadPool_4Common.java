@@ -20,8 +20,8 @@ public class _17_TestThreadPool_4Common {
 //		method_newCachedThreadPool();
 //		method_newFixedThreadPool();
 //		newScheduledThreadPool();
-//		method_newSingleThreadExecutor();
-		System.out.println("并发数：" + Runtime.getRuntime().availableProcessors());
+		method_newSingleThreadExecutor();
+//		System.out.println("并发数：" + Runtime.getRuntime().availableProcessors());
 	}
 
 	/**
@@ -40,6 +40,7 @@ public class _17_TestThreadPool_4Common {
 			final int index = i;
 			try {
 				Thread.sleep(index * 1000);
+//				Thread.sleep(0);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

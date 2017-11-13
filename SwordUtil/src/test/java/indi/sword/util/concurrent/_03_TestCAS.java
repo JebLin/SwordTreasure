@@ -12,15 +12,23 @@ public class _03_TestCAS {
         final CAS cas = new CAS();
 
         for (int i = 0; i < 10; i++) {
+//            try {
+//                Thread.sleep(300);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
             new Thread(new Runnable() {
-
                 @Override
                 public void run() {
                     int expectedValue = cas.get();
-                    boolean b = cas.compareAndSet(expectedValue, (int)(Math.random() * 101));
-                    System.out.println(b);
+                    int newValue = (int)(Math.random() * 101);
+                    System.out.println("expectedValue = " + expectedValue +  " ,newValue = " + newValue );
+//                    boolean b = cas.compareAndSet(expectedValue, newValue);
+                    while (!cas.compareAndSet(expectedValue, newValue)){ // 设置不成功就继续去update该位置的值，也就是取最新值
+                        expectedValue = cas.get();
+                    }
                 }
-            }).start();
+            },"Thread-"+i).start();
         }
 
     }
@@ -41,6 +49,7 @@ class CAS{
         int oldValue = value;
 
         if(oldValue == expectedValue){
+            System.out.println(Thread.currentThread().getName() + " set value " + oldValue + " -> " + newValue);
             this.value = newValue;
         }
 
@@ -48,7 +57,7 @@ class CAS{
     }
 
     //设置
-    public synchronized boolean compareAndSet(int expectedValue, int newValue){
-        return expectedValue == compareAndSwap(expectedValue, newValue);
+    public boolean compareAndSet(int expectedValue, int newValue){ // 设置成功就返回true
+        return newValue == compareAndSwap(expectedValue, newValue);
     }
 }

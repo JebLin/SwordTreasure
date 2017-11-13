@@ -2,6 +2,7 @@ package indi.sword.util.concurrent;
 
 /*
  * @Descrption
+ *
  * 场景： main 线程中一直拿的是主存中的一开始的 false
  * 分线程 改成true后 main线程一直没拿到，所以没退出
  * 一、volatile 关键字：当多个线程进行操作共享数据时，可以保证内存中的数据可见。
@@ -33,20 +34,20 @@ public class _01_TestVolatile {
 		// while(true) 调用的是 计算机相对底层的代码，执行效率非常之高，高到main线程没机会 去主存获取新的数据
 		// 但是如果加一段延迟的话，那就可以得到
 		while (true) {
-			/*
-			try {
+			/*try {
 				Thread.sleep(100); //假如没有这个延迟，那么while会一直不去读主存中的值
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}*/
 			
-			*/
 			//加了 volatile之后，才会去直接取 主存中的值
-			if (mt.isFlag()) { 
+			if (mt.isFlag()) {
 				System.out.println("------------------");
 				break;
 			}
+
+
 		}
 	}
 }

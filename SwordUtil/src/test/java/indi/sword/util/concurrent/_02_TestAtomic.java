@@ -60,10 +60,10 @@ class MyThread_Atomic implements Runnable{
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		if(getNumber() > 0){
+		int number = getNumber();
+		if(number > 0){
 			saleTicket();
-			System.out.println("name -> " + Thread.currentThread().getName() + ",sale the ticket ...");
-			System.out.println(number);
+			System.out.println("name -> " + Thread.currentThread().getName() + ",sale the ticket ... " + "number == " + number);
 		}else{
 			System.out.println("the ticket is over ...");
 		}
