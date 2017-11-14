@@ -107,8 +107,8 @@
       <file leaf-file-name="_04_TestCAS_Latch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_04_TestCAS_Latch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+            <state relative-caret-position="477">
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -893,7 +893,7 @@
       <workItem from="1509016302700" duration="19814000" />
       <workItem from="1509361537020" duration="5093000" />
       <workItem from="1509601845618" duration="50385000" />
-      <workItem from="1510050958469" duration="38799000" />
+      <workItem from="1510050958469" duration="40067000" />
     </task>
     <servers />
   </component>
@@ -930,7 +930,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147540000" />
+    <option name="totallyTimeSpent" value="148808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1420,8 +1420,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_04_TestCAS_Latch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        <state relative-caret-position="477">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding />
         </state>
       </provider>

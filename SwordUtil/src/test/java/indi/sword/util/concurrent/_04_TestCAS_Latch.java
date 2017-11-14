@@ -30,6 +30,7 @@ public class _04_TestCAS_Latch {
         }
         
         try {
+        	
         	// 注意： await() 如果上面 new CountDownLatch的初始值 减到了0了 就说明释放锁了，不管不顾了
 			latch.await(); // 如果不加等待的话，那么就无法形成闭锁 
 		} catch (InterruptedException e) {
