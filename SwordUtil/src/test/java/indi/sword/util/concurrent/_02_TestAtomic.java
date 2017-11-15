@@ -40,7 +40,6 @@ public class _02_TestAtomic {
 			new Thread(mt).start();
 		}
 	}
-	
 }
 
 class MyThread_Atomic implements Runnable{
