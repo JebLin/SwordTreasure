@@ -16,12 +16,12 @@ import java.util.concurrent.CountDownLatch;
  * @author rd_jianbin_lin
  * @Date Aug 30, 2017 10:35:39 AM
  */
-public class _04_TestCAS_Latch {
+public class _04_01_TestCAS_Latch {
 
     public static void main(String[] args) {
 
     	final CountDownLatch latch = new CountDownLatch(100);
-    	final CAS_02 cas02 = new CAS_02();
+    	final CAS_02 cas02 = new CAS_02(100);
         
     	long startTime = System.currentTimeMillis();
     	
@@ -30,26 +30,34 @@ public class _04_TestCAS_Latch {
         }
         
         try {
-        	
+
         	// 注意： await() 如果上面 new CountDownLatch的初始值 减到了0了 就说明释放锁了，不管不顾了
-			latch.await(); // 如果不加等待的话，那么就无法形成闭锁 
+			latch.await(); // 如果不加等待的话，那么就无法形成闭锁
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        
-        long endTime = System.currentTimeMillis();
+		System.out.println("cas02.value = " + cas02.value);
+
+		long endTime = System.currentTimeMillis();
         System.out.println("it cost time : " + (endTime - startTime) + "millisecond");
     }
 
 }
 
+// 自定义的，模拟CAS
 class CAS_02{
-	
-    private int value;
+
+	int value;
+
+	public CAS_02(){
+	}
+	public CAS_02(int value){
+		this.value = value;
+	}
 
     //获取内存值
-    public synchronized int get(){
+	public synchronized int get(){
         return value;
     }
 
@@ -115,7 +123,7 @@ class LatchThread implements Runnable{
 	public void run() {
 
 		try {
-			System.out.println("Thread - " + Thread.currentThread().getName() + "," + cas02.decreament());
+			System.out.println(Thread.currentThread().getName() + "," + cas02.decreament());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

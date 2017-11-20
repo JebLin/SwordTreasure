@@ -6,7 +6,7 @@ package indi.sword.util.concurrent;
  * @author rd_jianbin_lin
  * @Date Sep 2, 2017 7:31:43 PM
  */
-public class _03_TestCAS {
+public class _03_01_TestCAS {
 
     public static void main(String[] args) {
         final CAS cas = new CAS();
