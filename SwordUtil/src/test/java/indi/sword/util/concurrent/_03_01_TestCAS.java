@@ -1,5 +1,7 @@
 package indi.sword.util.concurrent;
 
+import java.util.Arrays;
+
 /**
  * 
  * @Descrption 模拟 CAS 算法
@@ -9,6 +11,7 @@ package indi.sword.util.concurrent;
 public class _03_01_TestCAS {
 
     public static void main(String[] args) {
+
         final CAS cas = new CAS();
 
         for (int i = 0; i < 10; i++) {

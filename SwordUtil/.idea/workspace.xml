@@ -13,24 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_04_01_TestCAS_Latch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_04_01_TestCAS_Latch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="110" column="6" lean-forward="false" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
-              <folding>
-                <element signature="e#1322#1323#0" expanded="true" />
-                <element signature="e#1347#1348#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_04_02_TestCAS_AtomicStampedReference_Latch.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_04_02_TestCAS_AtomicStampedReference_Latch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_04_02_TestCAS_AtomicStampedReference_Latch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="456">
+              <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#382#391#0" expanded="true" />
@@ -39,41 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_02_01_TestAtomic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_02_01_TestAtomic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassLoader.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/ClassLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="759" column="0" lean-forward="false" selection-start-line="759" selection-start-column="0" selection-end-line="759" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_05_TestCountDownLatch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_05_TestCountDownLatch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-326">
-              <caret line="16" column="68" lean-forward="false" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_02_03_TestAtomicStampedReference.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_02_03_TestAtomicStampedReference.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="744">
-              <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+              <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
               <folding>
                 <element signature="e#833#842#0" expanded="true" />
                 <element signature="e#1029#1767#0" expanded="true" />
@@ -88,8 +45,58 @@
       <file leaf-file-name="_03_01_TestCAS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_03_01_TestCAS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="336">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_03_TestLambda_4Interface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_03_TestLambda_4Interface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-418">
+              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_09_TestOptional.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_09_TestOptional.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3244">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_07_TestStreamAPI_Quiz.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_07_TestStreamAPI_Quiz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeUnit.java" pinned="false" current-in-tab="true">
+        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/concurrent/TimeUnit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="106" column="61" lean-forward="true" selection-start-line="106" selection-start-column="61" selection-end-line="106" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collectors.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/stream/Collectors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="277" column="53" lean-forward="false" selection-start-line="277" selection-start-column="53" selection-end-line="277" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -107,31 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AtomicStampedReference.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/concurrent/atomic/AtomicStampedReference.java">
+      <file leaf-file-name="_21_ABA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_21_ABA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="144" column="19" lean-forward="false" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#6688#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1477#1478#0" expanded="true" />
-                <element signature="e#1533#1534#0" expanded="true" />
-                <element signature="e#1688#1689#0" expanded="true" />
-                <element signature="e#1725#1726#0" expanded="true" />
-                <element signature="e#1870#1871#0" expanded="true" />
-                <element signature="e#1903#1904#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Unsafe.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="303" column="32" lean-forward="false" selection-start-line="303" selection-start-column="32" selection-end-line="303" selection-end-column="32" />
+            <state relative-caret-position="864">
+              <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -162,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/Test02.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/Test03.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/Test04.java" />
@@ -205,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_22_TestAtomicStampedReference.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_22_TestAtomicReference.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_23_TestAtomicStampedReference.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_03_01_TestCAS.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_04_01_estCAS_Latch.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/LatchThread_AtomicStampedReference.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_03_02_TestAtomicStampedReference.java" />
@@ -213,6 +198,8 @@
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_02_03_TestAtomicStampedReference.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_02_01_TestAtomic.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_04_02_TestCAS_AtomicStampedReference_Latch.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_03_01_TestCAS.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_07_TestStreamAPI_Quiz.java" />
       </list>
     </option>
   </component>
@@ -223,9 +210,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="2" />
+    <option name="width" value="1278" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -282,37 +269,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="_04_01_TestCAS_Latch.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="_04_02_TestCAS_AtomicStampedReference_Latch.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="_05_TestCountDownLatch.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
@@ -336,7 +293,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../woshou/woshou/woshou" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://D:/software/code/Java/jdk-SE8.0/install/src.zip!/java/lang/Class.java" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -371,26 +328,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._04_02_TestCAS_AtomicStampedReference_Latch">
-    <configuration name="_02_02_TestAtomicReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="indi.sword.util.concurrent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="indi.sword.util.concurrent._02_02_TestAtomicReference" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SwordUtil" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="JUnit._07_TestStreamAPI_Quiz.test01">
     <configuration name="_02_03_TestAtomicStampedReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -410,30 +348,24 @@
       <module name="SwordUtil" />
       <envs />
     </configuration>
-    <configuration name="_02_03_TestAtomicStampedReference.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="_03_01_TestCAS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="indi.sword.util.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="SwordUtil" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.concurrent._03_01_TestCAS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="indi.sword.util.concurrent" />
-      <option name="MAIN_CLASS_NAME" value="indi.sword.util.concurrent._02_03_TestAtomicStampedReference" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="SwordUtil" />
       <envs />
-      <patterns />
     </configuration>
     <configuration name="_04_01_TestCAS_Latch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -472,6 +404,31 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="SwordUtil" />
       <envs />
+    </configuration>
+    <configuration name="_07_TestStreamAPI_Quiz.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="indi.sword.util.jdk8.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SwordUtil" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="indi.sword.util.jdk8.lambda" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jdk8.lambda._07_TestStreamAPI_Quiz" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -870,18 +827,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application._02_03_TestAtomicStampedReference" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit._02_03_TestAtomicStampedReference.test" />
-      <item index="2" class="java.lang.String" itemvalue="Application._02_02_TestAtomicReference" />
-      <item index="3" class="java.lang.String" itemvalue="Application._04_02_TestCAS_AtomicStampedReference_Latch" />
-      <item index="4" class="java.lang.String" itemvalue="Application._04_01_TestCAS_Latch" />
+      <item index="1" class="java.lang.String" itemvalue="Application._04_02_TestCAS_AtomicStampedReference_Latch" />
+      <item index="2" class="java.lang.String" itemvalue="Application._04_01_TestCAS_Latch" />
+      <item index="3" class="java.lang.String" itemvalue="Application._03_01_TestCAS" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz.test01" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application._04_02_TestCAS_AtomicStampedReference_Latch" />
-        <item index="1" class="java.lang.String" itemvalue="Application._02_03_TestAtomicStampedReference" />
-        <item index="2" class="java.lang.String" itemvalue="Application._04_01_TestCAS_Latch" />
-        <item index="3" class="java.lang.String" itemvalue="Application._02_02_TestAtomicReference" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit._02_03_TestAtomicStampedReference.test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit._07_TestStreamAPI_Quiz.test01" />
+        <item index="1" class="java.lang.String" itemvalue="Application._03_01_TestCAS" />
+        <item index="2" class="java.lang.String" itemvalue="Application._04_02_TestCAS_AtomicStampedReference_Latch" />
+        <item index="3" class="java.lang.String" itemvalue="Application._02_03_TestAtomicStampedReference" />
+        <item index="4" class="java.lang.String" itemvalue="Application._04_01_TestCAS_Latch" />
       </list>
     </recent_temporary>
   </component>
@@ -903,23 +860,11 @@
       <workItem from="1509361537020" duration="5093000" />
       <workItem from="1509601845618" duration="50385000" />
       <workItem from="1510050958469" duration="54186000" />
-      <workItem from="1511168574851" duration="4640000" />
+      <workItem from="1511168574851" duration="9239000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 38m 06s.xml">
-      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 38m 19s.xml">
-      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 42m 52s.xml">
-      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 45m 47s.xml">
-      <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestMyClassLoader_testNameZone - 2017.11.05 at 13h 46m 18s.xml">
       <configuration name="TestMyClassLoader.testNameZone" configurationId="JUnit" />
     </history-entry>
@@ -935,16 +880,27 @@
     <history-entry file="Test_Map_test_concurrentHashMap_remove - 2017.11.13 at 11h 15m 19s.xml">
       <configuration name="Test_Map.test_concurrentHashMap_remove" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="_07_TestStreamAPI_Quiz_test01 - 2017.11.20 at 19h 59m 08s.xml">
+      <configuration name="_07_TestStreamAPI_Quiz.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_07_TestStreamAPI_Quiz_test01 - 2017.11.20 at 20h 00m 54s.xml">
+      <configuration name="_07_TestStreamAPI_Quiz.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_07_TestStreamAPI_Quiz_test01 - 2017.11.20 at 20h 01m 10s.xml">
+      <configuration name="_07_TestStreamAPI_Quiz.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_07_TestStreamAPI_Quiz_test01 - 2017.11.20 at 20h 02m 03s.xml">
+      <configuration name="_07_TestStreamAPI_Quiz.test01" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="_22_TestAtomicStampedReference_test - 2017.11.20 at 11h 30m 34s.xml">
       <configuration name="_22_TestAtomicStampedReference.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167567000" />
+    <option name="totallyTimeSpent" value="172166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -960,7 +916,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1050,28 +1006,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/java/lang/Test.java" />
-    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/jre/lib/rt.jar!/java/util/Arrays.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="1122" column="23" lean-forward="false" selection-start-line="1122" selection-start-column="23" selection-end-line="1122" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="3127" column="23" lean-forward="false" selection-start-line="3127" selection-start-column="23" selection-end-line="3127" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/_00interview/TestPrintHW.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jvm/UserClassLoader/note">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1309,16 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="119" column="4" lean-forward="false" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#14144#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/concurrent/atomic/AtomicReference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1335,30 +1259,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_21_ABA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1660#1661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/LatchThread_AtomicStampedReference.java" />
     <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="759" column="0" lean-forward="false" selection-start-line="759" selection-start-column="0" selection-end-line="759" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_03_01_TestCAS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1402,8 +1307,8 @@
         <state relative-caret-position="213">
           <caret line="110" column="6" lean-forward="false" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
           <folding>
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1429,7 +1334,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_02_03_TestAtomicStampedReference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="744">
-          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
           <folding>
             <element signature="e#833#842#0" expanded="true" />
             <element signature="e#1029#1767#0" expanded="true" />
@@ -1442,12 +1347,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_04_02_TestCAS_AtomicStampedReference_Latch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="456">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#382#391#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_21_ABA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/concurrent/_03_01_TestCAS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_03_TestLambda_4Interface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_09_TestOptional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3244">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/stream/Collectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="277" column="53" lean-forward="false" selection-start-line="277" selection-start-column="53" selection-end-line="277" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_07_TestStreamAPI_Quiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/concurrent/TimeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="106" column="61" lean-forward="true" selection-start-line="106" selection-start-column="61" selection-end-line="106" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
