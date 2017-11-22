@@ -48,8 +48,8 @@ class MyThread_Interrupted implements Runnable{
     public void run(){
         try{
             //---------------------------------a
-//            lock.lock(); //中断继续等待
-            lock.lockInterruptibly(); //中断直接抛出异常
+            lock.lock(); //中断继续等待
+//            lock.lockInterruptibly(); //中断直接抛出异常
 
             System.out.println(Thread.currentThread().getName() + " running");
             TimeUnit.SECONDS.sleep(5);

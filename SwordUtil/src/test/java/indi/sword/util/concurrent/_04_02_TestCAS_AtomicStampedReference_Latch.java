@@ -59,7 +59,7 @@ class LatchThread_AtomicStampedReference implements Runnable{
                         break;
                     }
                 }
-                Thread.sleep(200);
+                Thread.sleep(50);
             }
         } catch (Exception e) {
             e.printStackTrace();
