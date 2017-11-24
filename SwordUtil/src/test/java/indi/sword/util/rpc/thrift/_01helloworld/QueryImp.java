@@ -1,4 +1,4 @@
-package indi.sword.util.rpc.thrift.helloworld;
+package indi.sword.util.rpc.thrift._01helloworld;
 
 import org.apache.thrift.TException;
 

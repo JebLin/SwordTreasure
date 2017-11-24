@@ -1,4 +1,4 @@
-package indi.sword.util.rpc.thrift.helloworld;
+package indi.sword.util.rpc.thrift._01helloworld;
 
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -7,7 +7,8 @@ import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TTransport;
 
 public class ThriftClientDemo {
-    private final static int DEFAULT_QRY_CODE = 1;
+    private final static int DEFAULT_QRY_CODE = 0;
+    private final static int DEFAULT_PORT = 30001;
     public static void main(String[] args) {
         try {
             TTransport tTransport = getTTransport();
@@ -21,7 +22,7 @@ public class ThriftClientDemo {
     }
     private static TTransport getTTransport() throws Exception{
         try{
-            TTransport tTransport = getTTransport("127.0.0.1", 30001, 5000);
+            TTransport tTransport = getTTransport("127.0.0.1", DEFAULT_PORT, 5000);
             if(!tTransport.isOpen()){
                 tTransport.open();
             }

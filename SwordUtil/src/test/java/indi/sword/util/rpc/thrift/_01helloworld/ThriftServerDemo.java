@@ -1,4 +1,4 @@
-package indi.sword.util.rpc.thrift.helloworld;
+package indi.sword.util.rpc.thrift._01helloworld;
 
 import org.apache.thrift.TProcessorFactory;
 import org.apache.thrift.protocol.TBinaryProtocol;
@@ -16,10 +16,12 @@ public class ThriftServerDemo {
         try {
             TNonblockingServerSocket socket = new TNonblockingServerSocket(DEFAULT_PORT);
             TestQry.Processor processor = new TestQry.Processor(new QueryImp());
+
             TNonblockingServer.Args arg = new TNonblockingServer.Args(socket);
             arg.protocolFactory(new TBinaryProtocol.Factory());
             arg.transportFactory(new TFramedTransport.Factory());
             arg.processorFactory(new TProcessorFactory(processor));
+
             server = new TNonblockingServer(arg);
             System.out.println("start server ... port : " + DEFAULT_PORT);
             server.serve();
