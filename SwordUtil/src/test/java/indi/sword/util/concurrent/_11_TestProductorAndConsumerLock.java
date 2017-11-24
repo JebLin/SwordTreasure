@@ -30,7 +30,6 @@ public class _11_TestProductorAndConsumerLock {
 class Saler_Lock {
 
 	private int number = 0;
-	
 	private Lock lock = new ReentrantLock();
 	private Condition condition = lock.newCondition();
 
