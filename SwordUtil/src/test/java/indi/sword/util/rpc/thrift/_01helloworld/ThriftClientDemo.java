@@ -12,8 +12,13 @@ public class ThriftClientDemo {
     public static void main(String[] args) {
         try {
             TTransport tTransport = getTTransport();
+
+            // 注意使用的消息封装格式，一定要和服务器端使用的一致
             TProtocol protocol = new TBinaryProtocol(tTransport);
+            // 这是客户端对非阻塞异步网络通信方式的支持。
             TestQry.Client client = new TestQry.Client(protocol);
+
+            // 准备调用参数(这个QryResult，是我们通过IDL定义，并且生成的)
             QryResult result = client.qryTest(DEFAULT_QRY_CODE);
             System.out.println("code=" + result.code + " msg=" + result.msg);
         } catch (Exception e) {

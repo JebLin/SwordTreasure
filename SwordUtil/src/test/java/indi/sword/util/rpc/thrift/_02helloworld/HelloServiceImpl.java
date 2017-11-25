@@ -2,6 +2,11 @@ package indi.sword.util.rpc.thrift._02helloworld;
 
 import org.apache.thrift.TException;
 
+/**
+ * @Decription 这个是放在Server端的实现类
+ * @Author: rd_jianbin_lin
+ * @Date : 2017/11/24 18:31
+ */
 public class HelloServiceImpl implements Hello.Iface {
     @Override
     public boolean helloBoolean(boolean para) throws TException {
@@ -22,7 +27,7 @@ public class HelloServiceImpl implements Hello.Iface {
     }
     @Override
     public String helloString(String para) throws TException {
-        return para;
+        return "this is server " + para;
     }
     @Override
     public void helloVoid() throws TException {

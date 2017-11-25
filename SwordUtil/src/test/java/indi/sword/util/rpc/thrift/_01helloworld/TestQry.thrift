@@ -20,4 +20,6 @@ service TestQry{
         * @param qryCode测试参数
         */
         QryResult qryTest(1:i32 qryCode)
+
+
 }
