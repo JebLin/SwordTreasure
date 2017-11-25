@@ -12,6 +12,9 @@ import org.apache.thrift.async.TAsyncClientManager;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.transport.TNonblockingSocket;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class HelloNonClient {
 
@@ -37,6 +40,9 @@ public class HelloNonClient {
         HelloWorldService.AsyncClient asyncClient =
                 new HelloWorldService.AsyncClient.Factory(clientManager, new TBinaryProtocol.Factory()).getAsyncClient(transport);
 
+        List<Object> flag = new ArrayList<>();
+
+
         // 既然是非阻塞异步模式，所以客户端一定是通过“事件回调”方式，接收到服务器的响应通知的
         asyncClient.send(request,new  AsyncMethodCallback<HelloWorldService.AsyncClient.send_call>() {
             /**
@@ -53,6 +59,7 @@ public class HelloNonClient {
                     return;
                 }
                 HelloNonClient.LOGGER.info("response = " + response);
+                flag.add(new Object());
             }
 
             /**
@@ -65,9 +72,16 @@ public class HelloNonClient {
             }
         });
 
+
+//        synchronized (HelloNonClient.WAITOBJECT) {
+//            HelloNonClient.WAITOBJECT.wait();
+//        }
+
         //这段代码保证客户端在得到服务器回复前，应用程序本身不会终止
-        synchronized (HelloNonClient.WAITOBJECT) {
-            HelloNonClient.WAITOBJECT.wait();
+        while(flag.size() == 0){
+            Thread.sleep(20);
         }
+
+
     }
 }

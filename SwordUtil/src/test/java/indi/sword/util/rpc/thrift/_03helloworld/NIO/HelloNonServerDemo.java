@@ -30,7 +30,7 @@ public class HelloNonServerDemo {
     public void startServer() {
         try {
             // log4j日志，如果您工程里面没有加入log4j的支持，请待用system.out
-            HelloNonServerDemo.LOGGER.info("HelloWorld TSimpleServer start ....");
+            HelloNonServerDemo.LOGGER.info("HelloWorld HelloWorld TSimpleServer start ....");
 
             // 服务执行控制器（告诉apache thrift，实现了HelloWorldService.Iface接口的是具体的哪一个类）
             // HelloWorldServiceImpl类的代码，就不在赘述了，无论采用哪种通信模型，它的代码都不会变化
