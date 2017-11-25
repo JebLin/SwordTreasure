@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.*;
 
 /**
- * @Description ArrayList 、LinkList、Vector区别
+ * @Description ArrayList 、LinkedList、Vector区别
  *
  * List：有序，可重复，有索引。
     |--ArrayList：底层是数组数据结构。是线程不同步的。查询元素的速度很快。但是增删元素的效率稍低。
