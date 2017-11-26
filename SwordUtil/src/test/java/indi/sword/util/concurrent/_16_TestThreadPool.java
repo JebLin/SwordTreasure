@@ -15,7 +15,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * Executor:
  * The {@code Executor} implementations provided in this package
  * implement {@link ExecutorService}, which is a more extensive
- * interface.  The {@link ThreadPoolExecutor} class provides an
+ * intef.  The {@link ThreadPoolExecutor} class provides an
  * extensible thread pool implementation. The {@link Executors} class
  * provides convenient factory methods for these Executors.
  * 

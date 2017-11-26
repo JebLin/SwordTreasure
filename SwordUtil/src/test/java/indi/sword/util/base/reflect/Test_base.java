@@ -52,7 +52,7 @@ public class Test_base {
 
         /**
          * 注意：仅仅这个object，不包括父类
-         * Determines the interfaces implemented by the class or interface
+         * Determines the interfaces implemented by the class or intef
          * represented by this object.
          */
         Class<?>[] XInterfaces = XClazz.getInterfaces();
@@ -79,8 +79,8 @@ public class Test_base {
          * 注意：public methods.
          * getMethods()
          * Returns an array containing {@code Method} objects reflecting all the
-         * public methods of the class or interface represented by this {@code
-         * Class} object, including those declared by the class or interface and
+         * public methods of the class or intef represented by this {@code
+         * Class} object, including those declared by the class or intef and
          * those inherited from superclasses and superinterfaces.
          */
         Method[] method = clazz.getMethods(); //得到本类中的全部public方法，包括继承来的或者接口来的
@@ -99,7 +99,7 @@ public class Test_base {
         /**
          * 注意：excluding inherited methods
          * Returns an array containing {@code Method} objects reflecting all the
-         * declared methods of the class or interface represented by this {@code
+         * declared methods of the class or intef represented by this {@code
          * Class} object, including public, protected, default (package)
          * access, and private methods, but excluding inherited methods.
          */
@@ -146,7 +146,7 @@ public class Test_base {
          * 注意：excludes inherited fields.
          * getDeclaredFields()
          * Returns an array of {@code Field} objects reflecting all the fields
-         * declared by the class or interface represented by this
+         * declared by the class or intef represented by this
          * {@code Class} object. This includes public, protected, default
          * (package) access, and private fields, but excludes inherited fields.
          */
@@ -160,7 +160,7 @@ public class Test_base {
          * 注意，public的field.
          * getFields()
          * Returns an array containing {@code Field} objects reflecting all
-         * the accessible public fields of the class or interface represented by
+         * the accessible public fields of the class or intef represented by
          * this {@code Class} object.
          */
         Field[] fields = clazz.getFields();

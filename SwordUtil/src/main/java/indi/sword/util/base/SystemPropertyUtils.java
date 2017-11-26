@@ -53,7 +53,7 @@ public class SystemPropertyUtils {
                     "true",
                     "char",
                     "final",
-                    "interface",
+                    "intef",
                     "short",
                     "try",
                     "class",
