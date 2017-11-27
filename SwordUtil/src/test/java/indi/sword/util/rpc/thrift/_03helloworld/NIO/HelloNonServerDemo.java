@@ -1,10 +1,7 @@
 package indi.sword.util.rpc.thrift._03helloworld.NIO;
 
-import java.nio.channels.Selector;
-import java.util.concurrent.Executors;
-
-import indi.sword.util.rpc.thrift._03helloworld.thrift.HelloWorldService;
 import indi.sword.util.rpc.thrift._03helloworld.impl.HelloWorldServiceImpl;
+import indi.sword.util.rpc.thrift._03helloworld.thrift.HelloWorldService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.BasicConfigurator;
@@ -12,6 +9,9 @@ import org.apache.thrift.TProcessor;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.server.THsHaServer;
 import org.apache.thrift.transport.TNonblockingServerSocket;
+
+import java.nio.channels.Selector;
+import java.util.concurrent.Executors;
 
 
 public class HelloNonServerDemo {

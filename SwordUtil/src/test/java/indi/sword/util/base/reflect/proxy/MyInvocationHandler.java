@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * 动态代理，相当于代理的总代理，减少了一大堆代理实现类XXXProxy。
- * （就是你实现了一个借口，我就能帮你动态产生一个实例）
+ * （就是你实现了一个接口，我就能帮你动态产生一个实例）
  *
  * @Description
  * @Author rd_jianbin_lin

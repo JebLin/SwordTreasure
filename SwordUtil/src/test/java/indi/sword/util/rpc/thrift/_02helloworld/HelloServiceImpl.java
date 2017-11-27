@@ -27,6 +27,7 @@ public class HelloServiceImpl implements Hello.Iface {
     }
     @Override
     public String helloString(String para) throws TException {
+        System.out.println("this is server  " + para);
         return "this is server " + para;
     }
     @Override

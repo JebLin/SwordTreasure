@@ -170,6 +170,7 @@ public class Test_base {
 }
 
 interface interface001 {}
+
 interface interface002 {}
 
 class X implements interface001 ,interface002{

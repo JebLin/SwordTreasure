@@ -183,7 +183,7 @@ public class Test_Reflect {
      * @Date 7:32 2017/10/10
      */
     @Test
-    public void test_InvokeFileDemo(){
+    public void test_InvokeFiledDemo(){
         try {
             Object obj = person_Clazz.newInstance();
             Field nameField = person_Clazz.getDeclaredField("name"); //取得name属性

@@ -104,7 +104,7 @@ public class _06_TestStreamAPI_TerminateOp {
     @Test
     public void test_Find(){
         Optional<_01_Employee> op = employees.stream()
-                .sorted((e1, e2) -> -Double.compare(e1.getSalary(),e2.getSalary())).findFirst();
+                .sorted((e1, e2) -> Double.compare(e1.getSalary(),e2.getSalary())).findFirst();
 
         System.out.println(op.get());
 
