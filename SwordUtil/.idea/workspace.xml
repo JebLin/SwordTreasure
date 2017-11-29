@@ -26,14 +26,14 @@
       <file leaf-file-name="JsonUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/indi/sword/util/base/JsonUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+            <state relative-caret-position="328">
+              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2389#2390#0" expanded="true" />
-                <element signature="e#2441#2442#0" expanded="true" />
-                <marker date="1511924737572" expanded="false" signature="2504:2515" ph=" { " />
-                <marker date="1511924737572" expanded="false" signature="2550:2556" ph=" }" />
+                <element signature="e#2331#2332#0" expanded="true" />
+                <element signature="e#2383#2384#0" expanded="true" />
+                <marker date="1511925337826" expanded="false" signature="2446:2457" ph=" { " />
+                <marker date="1511925337826" expanded="false" signature="2492:2498" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -957,7 +957,7 @@
       <workItem from="1509601845618" duration="50385000" />
       <workItem from="1510050958469" duration="54186000" />
       <workItem from="1511168574851" duration="54688000" />
-      <workItem from="1511660392590" duration="23690000" />
+      <workItem from="1511660392590" duration="23751000" />
     </task>
     <servers />
   </component>
@@ -994,7 +994,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241305000" />
+    <option name="totallyTimeSpent" value="241366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1534,14 +1534,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/indi/sword/util/base/JsonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+        <state relative-caret-position="328">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2389#2390#0" expanded="true" />
-            <element signature="e#2441#2442#0" expanded="true" />
-            <marker date="1511924737572" expanded="false" signature="2504:2515" ph=" { " />
-            <marker date="1511924737572" expanded="false" signature="2550:2556" ph=" }" />
+            <element signature="e#2331#2332#0" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
+            <marker date="1511925337826" expanded="false" signature="2446:2457" ph=" { " />
+            <marker date="1511925337826" expanded="false" signature="2492:2498" ph=" }" />
           </folding>
         </state>
       </provider>

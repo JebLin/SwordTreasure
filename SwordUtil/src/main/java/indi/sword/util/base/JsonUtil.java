@@ -11,10 +11,9 @@ import java.util.*;
 import java.util.Map.Entry;
  
 /**
- * @ClassName JsonFormateUtil  
- * @Description 辅助转化Json，防止出现空指针
- * @author WangYanan 347576073@qq.com  
- * @date 2015年6月25日 上午11:31:39 
+ * @Decription 辅助转化Json
+ * @Author: rd_jianbin_lin
+ * @Date : 2017/11/29 11:15
  */
 public class JsonUtil {
 
