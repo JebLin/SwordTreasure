@@ -33,7 +33,20 @@ public class _03_NotifyTest {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    test.testWait();
+                    /*
+                        如果这里写this的话，this是方法的调用者，也就是run()方法的调用者，也就是说，是thread对象
+                     */
+                    synchronized (test){
+//                        System.out.println(this); //都是不一样的 indi.sword.util.base.Thread._03_NotifyTest$1@5795dfe4
+                        System.out.println(Thread.currentThread().getName() + " Start-----");
+                        try {
+                            test.wait(0);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        System.out.println(Thread.currentThread().getName() + " End-------");
+                    }
+//                    test.testWait();
                 }
             }).start();
         }
@@ -47,5 +60,6 @@ public class _03_NotifyTest {
         synchronized (test) {
             test.notifyAll();
         }
+        System.out.println("END");
     }
 }

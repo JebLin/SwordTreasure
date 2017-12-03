@@ -15,15 +15,15 @@ package indi.sword.util.base.Thread;
          * object's monitor or to notify other threads waiting on an object's
          * monitor without owning the specified monitor.
         线程试图等待对象的监视器或者试图通知其他正在等待对象监视器的线程，但本身没有对应的监视器的所有权。
-        wait方法是一个本地方法，其底层是通过一个叫做监视器锁的对象来完成的。所以上面之所以会抛出异常，
-        是因为在调用wait方式时没有获取到monitor对象的所有权.
+        wait方法是一个本地方法，其底层是通过一个叫做监视器锁的对象来完成的。
+        所以上面之所以会抛出异常，是因为在调用wait方式时没有获取到monitor对象的所有权.
  */
 public class _02_WaitTest {
 
     public synchronized void testWait(){
         System.out.println("Start-----");
         try {
-            wait(1000);
+            wait(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -32,11 +32,13 @@ public class _02_WaitTest {
 
     public static void main(String[] args) {
         final _02_WaitTest test = new _02_WaitTest();
+        System.out.println("test begin...");
         new Thread(new Runnable() {
             @Override
             public void run() {
                 test.testWait();
             }
         }).start();
+        System.out.println("test end...");
     }
 }

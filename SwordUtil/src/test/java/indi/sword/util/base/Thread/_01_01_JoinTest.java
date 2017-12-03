@@ -8,6 +8,12 @@ import java.util.concurrent.TimeUnit;
  * t.join()方法阻塞调用此方法的线程(calling thread)，直到线程t完成，此线程再继续；
  * 通常用于在main()主线程内，等待其它线程完成再结束main()主线程。
  */
+/*
+    大家重点关注一下join(long millis)方法的实现，可以看出join方法就是通过wait方法来将线程的阻塞，
+    如果join的线程还在执行，则将当前线程阻塞起来，直到join的线程执行完成，当前线程才能执行。
+    不过有一点需要注意，这里的join只调用了wait方法，却没有对应的notify方法，
+    原因是Thread的start方法中做了相应的处理，所以当join的线程执行完成以后，会自动唤醒主线程继续往下执行。
+ */
 public class _01_01_JoinTest implements Runnable {
 
     private String name;

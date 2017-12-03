@@ -12,7 +12,7 @@ public class _01_02_JoinTest implements Runnable {
         synchronized (thread) {
             System.out.println("getObjectLock");
             try {
-                Thread.sleep(9000);
+                Thread.sleep(4000);
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
@@ -28,7 +28,7 @@ public class _01_02_JoinTest implements Runnable {
         thread.start();
 
         try {
-//            thread.join();
+            thread.join();
             getLockThread.join();
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
