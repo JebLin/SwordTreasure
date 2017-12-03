@@ -18,7 +18,7 @@ package indi.sword.util.base.Thread;
         wait方法是一个本地方法，其底层是通过一个叫做监视器锁的对象来完成的。
         所以上面之所以会抛出异常，是因为在调用wait方式时没有获取到monitor对象的所有权.
  */
-public class _02_WaitTest {
+public class _02_00_WaitTest {
 
     public synchronized void testWait(){
         System.out.println("Start-----");
@@ -31,12 +31,12 @@ public class _02_WaitTest {
     }
 
     public static void main(String[] args) {
-        final _02_WaitTest test = new _02_WaitTest();
+        final _02_00_WaitTest test = new _02_00_WaitTest();
         System.out.println("test begin...");
         new Thread(new Runnable() {
             @Override
             public void run() {
-                test.testWait();
+                test.testWait(); // thread调用wait方法
             }
         }).start();
         System.out.println("test end...");

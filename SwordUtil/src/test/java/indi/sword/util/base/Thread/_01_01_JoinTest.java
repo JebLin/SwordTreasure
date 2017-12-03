@@ -13,6 +13,9 @@ import java.util.concurrent.TimeUnit;
     如果join的线程还在执行，则将当前线程阻塞起来，直到join的线程执行完成，当前线程才能执行。
     不过有一点需要注意，这里的join只调用了wait方法，却没有对应的notify方法，
     原因是Thread的start方法中做了相应的处理，所以当join的线程执行完成以后，会自动唤醒主线程继续往下执行。
+
+    锁是线程，锁对象执行完毕后，会调用自身对象上的notify();
+    当线程运行结束的时候，notify是被线程的子系统调用的
  */
 public class _01_01_JoinTest implements Runnable {
 
