@@ -17,7 +17,7 @@ public class _01_00_JoinTest {
             join方法呢，是会在start()方法结束，也就是线程结束之后把demo给唤醒的。
             下面写个count就是这个目的，因为线程唤醒main这边的demo的时候，那边的线程还是alive状态。
             所以进入while之后会继续wait，导致main线程没法子结束。
-            
+
           */
         //
         System.out.println("-------------");
