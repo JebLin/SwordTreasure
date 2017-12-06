@@ -150,4 +150,36 @@ public class Test_Map {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
     }
+
+    @Test
+    public void test_hashMap_Algorithem(){
+        /*
+            JDK1.8以前的hashMap内部计算hashcode方法
+             h ^= (h >>> 20) ^ (h >>> 12);
+            return h ^ (h >>> 7) ^ (h >>> 4);
+         */
+        int h = 0xffffffff;
+        int h1 = h >>> 20;
+        int h2 = h >>> 12;
+        int h3 = h ^ h1 ^ h2;
+        int h5 = h3 >>> 7;
+        int h6 = h3 >>> 4;
+        int h7 = h3 ^ h5 ^ h6;
+
+        printBin ( h );
+        printBin ( h1 );
+        printBin ( h2 );
+        printBin ( h3 );
+        System.out.println("h ^= (h >>> 20) ^ (h >>> 12); ");
+        printBin ( h5 );
+        printBin ( h6 );
+        printBin ( h7 );
+        System.out.println("h ^ (h >>> 7) ^ (h >>> 4);");
+    }
+    void printBin ( int h ) {
+        System.out.println ( String.format ( "%32s",
+                Integer.toBinaryString ( h ) ).replace ( ' ', '0' ) );
+    }
+
+
 }
