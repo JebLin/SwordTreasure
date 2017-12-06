@@ -51,18 +51,18 @@
       <file leaf-file-name="TestHashCodeMethod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/collection/TestHashCodeMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="59" column="2" lean-forward="true" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+            <state relative-caret-position="435">
+              <caret line="62" column="37" lean-forward="true" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
         <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/HashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-151">
-              <caret line="696" column="34" lean-forward="true" selection-start-line="696" selection-start-column="34" selection-end-line="696" selection-end-column="34" />
+            <state relative-caret-position="209">
+              <caret line="711" column="51" lean-forward="false" selection-start-line="711" selection-start-column="51" selection-end-line="711" selection-end-column="51" />
               <folding>
                 <element signature="e#19296#19297#0" expanded="true" />
                 <element signature="e#19379#19380#0" expanded="true" />
@@ -70,6 +70,29 @@
                 <element signature="e#24363#24364#0" expanded="true" />
                 <element signature="e#66429#66430#0" expanded="true" />
                 <element signature="e#66486#66487#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_12_TestInstant.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_12_TestInstant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="33" column="60" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Duration.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/time/Duration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="470" column="55" lean-forward="true" selection-start-line="470" selection-start-column="55" selection-end-line="470" selection-end-column="55" />
+              <folding>
+                <element signature="e#26016#26017#0" expanded="true" />
+                <element signature="e#26046#26047#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,26 +123,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="79" column="53" lean-forward="false" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Predicate.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/function/Predicate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -180,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_03helloworld/thrift/helloworld03.thrift" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_03helloworld/impl/HelloWorldServiceImpl.java" />
         <option value="$USER_HOME$/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/BasicConfigurator.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/log/TestLogStorge.java" />
@@ -231,6 +233,7 @@
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/collection/Test_Map.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/collection/TestHashMapSource.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/collection/TestHashCodeMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_12_TestInstant.java" />
       </list>
     </option>
   </component>
@@ -239,11 +242,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2" />
-    <option name="width" value="1278" />
-    <option name="height" value="984" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -330,7 +328,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="jdk8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
@@ -339,38 +337,8 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="collection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="thrift" type="462c0819:PsiDirectoryNode" />
-              <item name="_03helloworld" type="462c0819:PsiDirectoryNode" />
+              <item name="jdk8" type="462c0819:PsiDirectoryNode" />
+              <item name="lambda" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
@@ -427,7 +395,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestHashCodeMethod">
+  <component name="RunManager" selected="JUnit._12_TestInstant.test_Duration">
     <configuration name="TestHashCodeMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -460,31 +428,6 @@
       <option name="PACKAGE_NAME" value="indi.sword.util.base.collection" />
       <option name="MAIN_CLASS_NAME" value="indi.sword.util.base.collection.Test_Map" />
       <option name="METHOD_NAME" value="test_hashMap_Algorithem" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="Test_Reflect.test_InvokeFiledDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="indi.sword.util.base.reflect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SwordUtil" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="indi.sword.util.base.reflect" />
-      <option name="MAIN_CLASS_NAME" value="indi.sword.util.base.reflect.Test_Reflect" />
-      <option name="METHOD_NAME" value="test_InvokeFiledDemo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -535,6 +478,31 @@
       <option name="PACKAGE_NAME" value="indi.sword.util.jdk8.lambda" />
       <option name="MAIN_CLASS_NAME" value="indi.sword.util.jdk8.lambda._06_TestStreamAPI_TerminateOp" />
       <option name="METHOD_NAME" value="test_Find" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="_12_TestInstant.test_Duration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="indi.sword.util.jdk8.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SwordUtil" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="indi.sword.util.jdk8.lambda" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.jdk8.lambda._12_TestInstant" />
+      <option name="METHOD_NAME" value="test_Duration" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -943,19 +911,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Test_Reflect.test_InvokeFiledDemo" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Test_base.test_Method" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit._06_TestStreamAPI_TerminateOp.test_Find" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Test_Map.test_hashMap_Algorithem" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestHashCodeMethod" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Test_base.test_Method" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit._06_TestStreamAPI_TerminateOp.test_Find" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Test_Map.test_hashMap_Algorithem" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestHashCodeMethod" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit._12_TestInstant.test_Duration" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestHashCodeMethod" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Test_Map.test_hashMap_Algorithem" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Test_base.test_Method" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit._06_TestStreamAPI_TerminateOp.test_Find" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Test_Reflect.test_InvokeFiledDemo" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit._12_TestInstant.test_Duration" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestHashCodeMethod" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Test_Map.test_hashMap_Algorithem" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Test_base.test_Method" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit._06_TestStreamAPI_TerminateOp.test_Find" />
       </list>
     </recent_temporary>
   </component>
@@ -978,7 +946,7 @@
       <workItem from="1509601845618" duration="50385000" />
       <workItem from="1510050958469" duration="54186000" />
       <workItem from="1511168574851" duration="54688000" />
-      <workItem from="1511660392590" duration="30769000" />
+      <workItem from="1511660392590" duration="44947000" />
     </task>
     <servers />
   </component>
@@ -992,15 +960,6 @@
     <history-entry file="Test_Map_test_hashMap_Algorithem - 2017.12.05 at 14h 05m 12s.xml">
       <configuration name="Test_Map.test_hashMap_Algorithem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_Reflect_test_InvokeFiledDemo - 2017.11.27 at 11h 56m 57s.xml">
-      <configuration name="Test_Reflect.test_InvokeFiledDemo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test_Reflect_test_MethodInvoke - 2017.11.26 at 15h 27m 12s.xml">
-      <configuration name="Test_Reflect.test_MethodInvoke" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test_Reflect_test_MethodInvoke - 2017.11.26 at 16h 06m 22s.xml">
-      <configuration name="Test_Reflect.test_MethodInvoke" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Test_base_test_Method - 2017.11.27 at 11h 57m 41s.xml">
       <configuration name="Test_base.test_Method" configurationId="JUnit" />
     </history-entry>
@@ -1013,12 +972,22 @@
     <history-entry file="_06_TestStreamAPI_TerminateOp_test_Find - 2017.11.27 at 12h 46m 09s.xml">
       <configuration name="_06_TestStreamAPI_TerminateOp.test_Find" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="_12_TestInstant_test_Duration - 2017.12.06 at 13h 51m 04s.xml">
+      <configuration name="_12_TestInstant.test_Duration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_12_TestInstant_test_Duration - 2017.12.06 at 13h 52m 00s.xml">
+      <configuration name="_12_TestInstant.test_Duration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_12_TestInstant_test_Duration - 2017.12.06 at 13h 52m 52s.xml">
+      <configuration name="_12_TestInstant.test_Duration" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248384000" />
+    <option name="totallyTimeSpent" value="262562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1029,7 +998,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23940678" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28283897" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28283897" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1129,38 +1098,7 @@
       </configuration>
     </watches-manager>
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/thrift/libthrift/0.9.3/libthrift-0.9.3.jar!/org/apache/thrift/server/TServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding>
-            <element signature="e#1663#1664#0" expanded="true" />
-            <element signature="e#1712#1713#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_04helloworld/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_02helloworld/HelloServiceClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_02helloworld/HelloServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -1539,14 +1477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/collection/TestHashCodeMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="59" column="2" lean-forward="true" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1557,8 +1487,8 @@
     </entry>
     <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="696" column="34" lean-forward="true" selection-start-line="696" selection-start-column="34" selection-end-line="696" selection-end-column="34" />
+        <state relative-caret-position="209">
+          <caret line="711" column="51" lean-forward="false" selection-start-line="711" selection-start-column="51" selection-end-line="711" selection-end-column="51" />
           <folding>
             <element signature="e#19296#19297#0" expanded="true" />
             <element signature="e#19379#19380#0" expanded="true" />
@@ -1567,6 +1497,41 @@
             <element signature="e#66429#66430#0" expanded="true" />
             <element signature="e#66486#66487#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/collection/TestHashCodeMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="62" column="37" lean-forward="true" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/SOFTWARE/CODE/JDK1.8/INSTALL/src.zip!/java/time/Duration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="470" column="55" lean-forward="true" selection-start-line="470" selection-start-column="55" selection-end-line="470" selection-end-column="55" />
+          <folding>
+            <element signature="e#26016#26017#0" expanded="true" />
+            <element signature="e#26046#26047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/jdk8/lambda/_12_TestInstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="33" column="60" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>

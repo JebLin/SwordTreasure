@@ -73,9 +73,9 @@ public class HelloNonClient {
         });
 
 
-//        synchronized (HelloNonClient.WAITOBJECT) {
-//            HelloNonClient.WAITOBJECT.wait();
-//        }
+        synchronized (HelloNonClient.WAITOBJECT) {
+            HelloNonClient.WAITOBJECT.wait();
+        }
 
         //这段代码保证客户端在得到服务器回复前，应用程序本身不会终止
         while(flag.size() == 0){
