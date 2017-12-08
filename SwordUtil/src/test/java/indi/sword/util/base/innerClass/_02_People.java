@@ -32,7 +32,10 @@ class Man{
 
     }
 
-
+    /*
+        方法名可以定义为 static ，方法内的变量不可以，是因为类加载的时候，不会去调用这个方法，
+        但是你里面假如有静态变量，那么就必须要加载这个方法。所以矛盾了
+      */
     public People getWoman(){
         int i = 5;
         // 局部内部类就像是方法里面的一个局部变量一样，是不能有public、protected、private以及static修饰符的。
@@ -40,6 +43,8 @@ class Man{
             int age = 0;
 
             public int getAge() {
+                // 局部内部类和匿名内部类只能访问局部final变量
+//                i++;
                 age = i + age;
                 System.out.println(age);
                 return age;
