@@ -175,11 +175,16 @@ public class Test_Map {
         printBin ( h6 );
         printBin ( h7 );
         System.out.println("h ^ (h >>> 7) ^ (h >>> 4);");
+
+
     }
     void printBin ( int h ) {
         System.out.println ( String.format ( "%32s",
                 Integer.toBinaryString ( h ) ).replace ( ' ', '0' ) );
     }
 
+    @Test
+    public void test(){
+    }
 
 }
