@@ -25,13 +25,13 @@ public class _12_TestInstant {
 
         System.out.println("--------------------");
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
         }
 
         Instant ins2 = Instant.now();
 
-        System.out.println("所耗费时间为：" + Duration.between(ins1, ins2));
+        System.out.println("所耗费时间为：" + Duration.between(ins1, ins2).getSeconds());
 
         System.out.println("----------------------------------");
 
