@@ -13,16 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GenericsUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/indi/sword/util/core/GenericsUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2893">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="QueryResult.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/indi/sword/util/core/QueryResult.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -33,12 +23,102 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AESUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AESUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/indi/sword/util/code/AESUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
               <caret line="186" column="35" lean-forward="false" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyArray.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/MyArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <folding>
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestMyArray.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/TestMyArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BubbleSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/BubbleSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/InsertSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelectionSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/SelectionSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestSort.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/TestSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestArray.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/TestArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyOrderArray.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/MyOrderArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <folding>
+                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,15 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/observer/weather/intef/Subject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/observer/weather/obj/StatisticsDisplay.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/observer/weather/sub/WeatherData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/observer/weather/test/WeatherStation.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/observer/weather/obj/CurrentConditionsDisplay.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/observer/weather/obj/ForecastDisplay.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/listener/DemoSource.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/listener/DemoEvent.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/listener/DemoListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/listener/DemoListenerInterface.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/listener/DemoListenerImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/listener/TestDemo.java" />
@@ -115,6 +186,15 @@
         <option value="$PROJECT_DIR$/src/main/java/indi/sword/util/base/AESUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/indi/sword/util/code/AESUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/indi/sword/util/base/bean/Result.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/ch01/MyArray.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/TestMyArray.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/MyOrderArray.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/MyArray.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/TestArray.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/TestSort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/InsertSort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/SelectionSort.java" />
       </list>
     </option>
   </component>
@@ -155,55 +235,63 @@
               <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
               <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="Exception" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
               <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="simpleSort" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,6 +313,15 @@
     <property name="project.structure.proportion" value="0.1507498" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_03helloworld" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODE\GITHUB\SwordTreasure\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\base\dataStructure\basic\simpleSort" />
+      <recent name="D:\CODE\GITHUB\SwordTreasure\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\base\dataStructure\basic" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CODE\GITHUB\SwordTreasure\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\base\dataStructure\basic" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -767,15 +864,16 @@
       <workItem from="1511168574851" duration="54688000" />
       <workItem from="1511660392590" duration="47143000" />
       <workItem from="1512619233695" duration="11349000" />
-      <workItem from="1512734904059" duration="15378000" />
+      <workItem from="1512734904059" duration="16449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291485000" />
+    <option name="totallyTimeSpent" value="292556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -791,7 +889,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22693998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22693998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19399707" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -887,75 +985,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/jar/download_maven_home/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/ServletConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/ServletResponse.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/http/HttpServletResponse.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/org/springframework/spring-test/4.1.6.RELEASE/spring-test-4.1.6.RELEASE.jar!/org/springframework/mock/web/MockPageContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/org/springframework/spring-test/4.1.6.RELEASE/spring-test-4.1.6.RELEASE.jar!/org/springframework/mock/web/MockJspWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#4157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/http/Cookie.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1827#1828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/http/HttpSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/jar/download_maven_home/repo/org/springframework/spring-test/4.1.6.RELEASE/spring-test-4.1.6.RELEASE.jar!/org/springframework/mock/web/MockHttpSession.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1129,7 +1158,7 @@
         <state relative-caret-position="176">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1298,6 +1327,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="186" column="35" lean-forward="false" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/MyOrderArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding>
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/TestArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/TestMyArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/MyArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/InsertSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/SelectionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/TestSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding />
         </state>
       </provider>
