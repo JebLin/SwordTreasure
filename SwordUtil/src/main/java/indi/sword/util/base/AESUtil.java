@@ -183,7 +183,7 @@ public class AESUtil {
         System.out.println(AESUtil.generatePassword(null));
 
         System.out.println("--------------------");
-        String encryptResultStr = NumberUtils.parseByte2HexStr("林剑斌".getBytes());
+        String encryptResultStr = NumberUtils.parseByte2HexStr("lllljjjjjbbbbb".getBytes());
         System.out.println(encryptResultStr);
 
         System.out.println(new String(NumberUtils.parseHexStr2Byte("E69E97E58991E6968C")));

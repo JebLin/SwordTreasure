@@ -3,7 +3,7 @@ package indi.sword.util.base.designpattern.singleton;
 public class Test {
     public static void main(String[] args) {
 
-        Singleton.test();
+        Singleton03.test();
         System.out.println("----------------------");
         System.out.println("调用一个类，不会初始化他的内部类");
         System.out.println("----------------------");
