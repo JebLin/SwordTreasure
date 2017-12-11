@@ -22,8 +22,6 @@ import indi.sword.util.base.StringUtils;
  * @Date Jun 26, 2017 11:56:02 AM
  */
 public class AESUtil {
-	
-	
 	/**
 	 * 加密（默认秘钥）
 	 * @Descrption
