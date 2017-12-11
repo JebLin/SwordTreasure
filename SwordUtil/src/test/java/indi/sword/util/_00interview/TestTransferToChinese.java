@@ -131,7 +131,7 @@ public class TestTransferToChinese {
 
     public static void main(String args[]) {
         try {
-            String number = "0001234234567890.55544";
+            String number = "1234560001234234567890.55544";
             System.out.println("The number is: " + number);
             TestTransferToChinese reader = new TestTransferToChinese(number);
             System.out.println("Output String: " + reader.readNum());
