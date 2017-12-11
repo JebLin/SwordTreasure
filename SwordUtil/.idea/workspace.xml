@@ -13,26 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QueryResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/indi/sword/util/core/QueryResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AESUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/indi/sword/util/code/AESUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="186" column="35" lean-forward="false" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MyArray.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/MyArray.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,16 +24,6 @@
                 <element signature="e#297#298#0" expanded="true" />
                 <element signature="e#327#328#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestMyArray.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/TestMyArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -88,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSort.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestSort.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/TestSort.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="644">
@@ -98,26 +68,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestArray.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/TestArray.java">
+      <file leaf-file-name="MyCycleQueue.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/MyCycleQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1434">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding>
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#904#905#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyStack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/MyStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestMyStack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/TestMyStack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyOrderArray.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/array/MyOrderArray.java">
+      <file leaf-file-name="TestMyQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/TestMyQueue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/MyQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,13 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/listener/DemoListenerInterface.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/listener/DemoListenerImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/designpattern/listener/TestDemo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_03helloworld/further/LogProcessor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_03helloworld/NIO/LogProcessor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_03helloworld/NIO/MyTServerEventHandler.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_03helloworld/NIO/HelloNonServerDemo.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_04helloworld/Server.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_02helloworld/HelloServiceServer.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/rpc/thrift/_02helloworld/HelloServiceImpl.java" />
@@ -195,6 +204,13 @@
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/BubbleSort.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/InsertSort.java" />
         <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/simpleSort/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/queue/TestMyStack.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/queue/TestMyQueue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/queue/MyStack.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/queue/MyQueue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/queue/MyCycleQueue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/TestMyQueue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/MyCycleQueue.java" />
       </list>
     </option>
   </component>
@@ -293,6 +309,17 @@
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="simpleSort" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SwordUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="stackAndqueue" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -316,6 +343,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODE\GITHUB\SwordTreasure\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\base\dataStructure\basic\queue" />
       <recent name="D:\CODE\GITHUB\SwordTreasure\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\base\dataStructure\basic\simpleSort" />
       <recent name="D:\CODE\GITHUB\SwordTreasure\SwordTreasure\SwordUtil\src\test\java\indi\sword\util\base\dataStructure\basic" />
     </key>
@@ -335,7 +363,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JustTest">
+  <component name="RunManager" selected="Application.TestMyQueue">
     <configuration name="JustTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -374,14 +402,14 @@
       <module name="SwordUtil" />
       <envs />
     </configuration>
-    <configuration name="TestPrintHW" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMyQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="indi.sword.util._00interview.*" />
+          <option name="PATTERN" value="indi.sword.util.base.dataStructure.basic.stackAndqueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="indi.sword.util._00interview.TestPrintHW" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.base.dataStructure.basic.stackAndqueue.TestMyQueue" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -393,14 +421,14 @@
       <module name="SwordUtil" />
       <envs />
     </configuration>
-    <configuration name="TestTransferToChinese" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMyStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="indi.sword.util._00interview.*" />
+          <option name="PATTERN" value="indi.sword.util.base.dataStructure.basic.stackAndqueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="indi.sword.util._00interview.TestTransferToChinese" />
+      <option name="MAIN_CLASS_NAME" value="indi.sword.util.base.dataStructure.basic.stackAndqueue.TestMyStack" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -827,19 +855,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.TestPrintHW" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TestTransferToChinese" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestTransferToChinese2" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="4" class="java.lang.String" itemvalue="Application.JustTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TestTransferToChinese2" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="2" class="java.lang.String" itemvalue="Application.JustTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestMyStack" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestMyQueue" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.JustTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TestTransferToChinese2" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TestTransferToChinese" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TestPrintHW" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestMyQueue" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestMyStack" />
+        <item index="2" class="java.lang.String" itemvalue="Application.JustTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TestTransferToChinese2" />
       </list>
     </recent_temporary>
   </component>
@@ -864,12 +892,12 @@
       <workItem from="1511168574851" duration="54688000" />
       <workItem from="1511660392590" duration="47143000" />
       <workItem from="1512619233695" duration="11349000" />
-      <workItem from="1512734904059" duration="16449000" />
+      <workItem from="1512734904059" duration="16677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292556000" />
+    <option name="totallyTimeSpent" value="292784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -985,46 +1013,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/jar/download_maven_home/repo/org/springframework/spring-test/4.1.6.RELEASE/spring-test-4.1.6.RELEASE.jar!/org/springframework/mock/web/MockHttpSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/org/springframework/spring-webmvc/4.1.6.RELEASE/spring-webmvc-4.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/support/RedirectAttributes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/org/springframework/spring-webmvc/4.1.6.RELEASE/spring-webmvc-4.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/support/RedirectAttributesModelMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/jar/download_maven_home/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/RequestDispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/jar/download_maven_home/repo/org/springframework/spring-test/4.1.6.RELEASE/spring-test-4.1.6.RELEASE.jar!/org/springframework/mock/web/MockRequestDispatcher.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1402,6 +1390,67 @@
         <state relative-caret-position="644">
           <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/MyQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/MyStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/TestMyStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/TestMyQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indi/sword/util/base/dataStructure/basic/stackAndqueue/MyCycleQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1434">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
