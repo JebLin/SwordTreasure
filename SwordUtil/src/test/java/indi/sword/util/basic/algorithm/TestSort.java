@@ -80,7 +80,7 @@ public class TestSort {
         // 三、交换排序
 
         // 1.冒泡排序
-//         bubbleSort(a);
+         bubbleSort(a);
 
         // 2.快速排序
         // quickSort1(a);
@@ -336,6 +336,7 @@ public class TestSort {
         }
     }
 
+    
 
 
     // 交换
