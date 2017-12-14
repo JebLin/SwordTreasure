@@ -91,6 +91,8 @@ public class TestSort {
         // 五、基数排序
         //radixSort(a);
 
+        cc(a);
+
         System.out.println();
         System.out.println("排序之后：");
         for (int i = 0; i < a.length; i++) {
