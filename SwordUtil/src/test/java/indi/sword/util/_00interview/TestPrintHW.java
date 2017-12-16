@@ -9,7 +9,7 @@ public class TestPrintHW {
         int num = 6;
         Object[] obj = new Object[num];
 
-        // Assigns the specified Object reference to each element of the specified array of Objects.
+        // Assigns the specified Object reference to each element of the specified _01_array of Objects.
         //  把 str 赋值给 obj数组中的每一个元素。
         Arrays.fill(obj, str);
         String s = Arrays.toString(obj);

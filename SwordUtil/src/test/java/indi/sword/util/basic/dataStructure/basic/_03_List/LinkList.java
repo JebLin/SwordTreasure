@@ -1,6 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.List;
-
-import indi.sword.util.basic.dataStructure.basic.List.Node;
+package indi.sword.util.basic.dataStructure.basic._03_List;
 
 /*
  * 链表，相当于火车

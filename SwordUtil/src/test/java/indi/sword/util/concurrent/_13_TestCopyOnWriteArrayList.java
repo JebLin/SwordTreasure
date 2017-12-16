@@ -25,7 +25,7 @@ public class _13_TestCopyOnWriteArrayList {
 
 class MyThread_CopyOnWriteArrayList implements Runnable{
 	
-//	private static List<String> list = Collections.synchronizedList(new ArrayList<String>());
+//	private static _03_List<String> list = Collections.synchronizedList(new ArrayList<String>());
 	
 	private static CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();
 	

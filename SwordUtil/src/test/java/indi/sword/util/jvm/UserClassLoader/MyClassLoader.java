@@ -59,7 +59,7 @@ public class MyClassLoader extends ClassLoader {
         Class<?> clazz = null;
         try {
             byte[] b = loadClassData(name);
-            // Converts an array of bytes into an instance of class
+            // Converts an _01_array of bytes into an instance of class
             if(b.length > 0){
                 clazz = defineClass(name,b,0,b.length);
             }

@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.array;
+package indi.sword.util.basic.dataStructure.basic._01_array;
 
 /**
  * @Description: 自定义数组

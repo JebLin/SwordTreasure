@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.array;
+package indi.sword.util.basic.dataStructure.basic._01_array;
 
 public class TestMyArray {
 	public static void main(String[] args) {

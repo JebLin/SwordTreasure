@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.List;
+package indi.sword.util.basic.dataStructure.basic._03_List;
 /*
  * 链结点，相当于是车厢
  */

@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.stackAndqueue;
+package indi.sword.util.basic.dataStructure.basic._02_stackAndqueue;
 
 public class TestMyStack {
 	public static void main(String[] args) {

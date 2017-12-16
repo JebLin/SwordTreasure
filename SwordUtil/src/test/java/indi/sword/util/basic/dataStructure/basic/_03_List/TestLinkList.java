@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.List;
+package indi.sword.util.basic.dataStructure.basic._03_List;
 
 public class TestLinkList {
 	public static void main(String[] args) {

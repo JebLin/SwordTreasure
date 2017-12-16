@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.array;
+package indi.sword.util.basic.dataStructure.basic._01_array;
 
 /**
  * @Description:  带顺序插入的数组

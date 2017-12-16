@@ -8,7 +8,7 @@ package indi.sword.util.code;
 public class Base64Encoder {
 	
 	/**
-	 * Translates the specified byte array into a Base64 string as per
+	 * Translates the specified byte _01_array into a Base64 string as per
 	 * Preferences.put(byte[]).
 	 */
 	public static String byteArrayToBase64(byte[] a) {
@@ -16,7 +16,7 @@ public class Base64Encoder {
 	}
 
 	/**
-	 * Translates the specified byte array into an "aternate representation"
+	 * Translates the specified byte _01_array into an "aternate representation"
 	 * Base64 string.  This non-standard variant uses an alphabet that does
 	 * not contain the uppercase alphabetic characters, which makes it
 	 * suitable for use in situations where case-folding occurs.
@@ -33,7 +33,7 @@ public class Base64Encoder {
 		StringBuffer result = new StringBuffer(resultLen);
 		char[] intToAlpha = (alternate ? intToAltBase64 : intToBase64);
 
-		// Translate all full groups from byte array elements to Base64
+		// Translate all full groups from byte _01_array elements to Base64
 		int inCursor = 0;
 		for (int i=0; i<numFullGroups; i++) {
 			int byte0 = a[inCursor++] & 0xff;
@@ -65,7 +65,7 @@ public class Base64Encoder {
 		return result.toString();
 	}
 	/**
-	 * This array is a lookup table that translates 6-bit positive integer index
+	 * This _01_array is a lookup table that translates 6-bit positive integer index
 	 * values into their "Base64 Alphabet" equivalents as specified in Table 1
 	 * of RFC 2045.
 	 */
@@ -75,7 +75,7 @@ public class Base64Encoder {
 			'4', '5', '6', '7', '8', '9', '+', '/' };
 
 	/**
-	 * This array is a lookup table that translates 6-bit positive integer index
+	 * This _01_array is a lookup table that translates 6-bit positive integer index
 	 * values into their "Alternate Base64 Alphabet" equivalents. This is NOT
 	 * the real Base64 Alphabet as per in Table 1 of RFC 2045. This alternate
 	 * alphabet does not use the capital letters. It is designed for use in
@@ -88,7 +88,7 @@ public class Base64Encoder {
 
 	/**
 	 * Translates the specified Base64 string (as per Preferences.get(byte[]))
-	 * into a byte array.
+	 * into a byte _01_array.
 	 * 
 	 * @throw IllegalArgumentException if <tt>s</tt> is not a valid Base64
 	 *        string.
@@ -99,7 +99,7 @@ public class Base64Encoder {
 
 	/**
 	 * Translates the specified "aternate representation" Base64 string into a
-	 * byte array.
+	 * byte _01_array.
 	 * 
 	 * @throw IllegalArgumentException or ArrayOutOfBoundsException if
 	 *        <tt>s</tt> is not a valid alternate representation Base64 string.
@@ -126,7 +126,7 @@ public class Base64Encoder {
 		}
 		byte[] result = new byte[3 * numGroups - missingBytesInLastGroup];
 
-		// Translate all full groups from base64 to byte array elements
+		// Translate all full groups from base64 to byte _01_array elements
 		int inCursor = 0, outCursor = 0;
 		for (int i = 0; i < numFullGroups; i++) {
 			int ch0 = base64toInt(s.charAt(inCursor++), alphaToInt);
@@ -169,10 +169,10 @@ public class Base64Encoder {
 	}
 
 	/**
-	 * This array is a lookup table that translates unicode characters drawn
+	 * This _01_array is a lookup table that translates unicode characters drawn
 	 * from the "Base64 Alphabet" (as specified in Table 1 of RFC 2045) into
 	 * their 6-bit positive integer equivalents. Characters that are not in the
-	 * Base64 alphabet but fall within the bounds of the array are translated to
+	 * Base64 alphabet but fall within the bounds of the _01_array are translated to
 	 * -1.
 	 */
 	private static final byte base64ToInt[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
@@ -182,7 +182,7 @@ public class Base64Encoder {
 			30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51 };
 
 	/**
-	 * This array is the analogue of base64ToInt, but for the nonstandard
+	 * This _01_array is the analogue of base64ToInt, but for the nonstandard
 	 * variant that avoids the use of uppercase alphabetic characters.
 	 */
 	private static final byte altBase64ToInt[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,

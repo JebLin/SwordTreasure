@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.stackAndqueue;
+package indi.sword.util.basic.dataStructure.basic._02_stackAndqueue;
 /*
  * 列队类
  */
