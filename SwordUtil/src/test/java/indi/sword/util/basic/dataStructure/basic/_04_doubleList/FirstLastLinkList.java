@@ -124,11 +124,9 @@ public class FirstLastLinkList {
 	public void deleteByValue(long value){
 		if(isEmpty()){
 			return ;
-		}else if(first == last){
-			if(first.data == value){
+		}else if(first == last && first.data == value){
 				first = null;
 				last = null;
-			}
 		}else {
 			Node current = first;
 			Node previous = first;
