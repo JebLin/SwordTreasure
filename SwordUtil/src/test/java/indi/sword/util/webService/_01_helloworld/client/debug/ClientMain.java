@@ -2,7 +2,11 @@ package indi.sword.util.webService._01_helloworld.client.debug;
 
 
 import indi.sword.util.webService._01_helloworld.client.wsdl2java.*;
+import org.apache.cxf.endpoint.Client;
+import org.apache.cxf.frontend.ClientProxy;
+import org.apache.cxf.interceptor.LoggingOutInterceptor;
 
+import java.io.PrintWriter;
 import java.util.List;
 
 /**
@@ -15,7 +19,14 @@ public class ClientMain {
 
         HelloworldWsImpl factory = new HelloworldWsImpl();
 
+        // 此处返回的只是远程 Web Service 的代理。
         HelloworldWsInterface hw = factory.getHelloworldWsImplPort();
+
+        Client client = ClientProxy.getClient(hw);
+        client.getOutInterceptors().add(new MyClientHeaderInterceptor("ljb","123456"));
+        client.getOutInterceptors().add(new LoggingOutInterceptor(new PrintWriter(System.out)));
+
+        System.out.println("-------------- 调用 BEGIN ------------");
         System.out.println(hw.sayHi("许文强"));
         System.out.println("-------------------------------------");
 
@@ -33,7 +44,6 @@ public class ClientMain {
 
         System.out.println("------------------------");
         StringCat stringCat = hw.getAllCats();
-        System.out.println(stringCat == null);
         stringCat.getEntrySet().forEach(entry -> {
             System.out.println(entry.getKey() + "-" + entry.getValue());
         });
