@@ -1,0 +1,5 @@
+
+在 cmd 输入命令：
+wsdl2java -p indi.sword.util.webService._01_helloworld.client.wsdl2java -d e:/mytemp -verbose http://192.168.106.1/ljb?wsdl
+
+生成这一堆文件
