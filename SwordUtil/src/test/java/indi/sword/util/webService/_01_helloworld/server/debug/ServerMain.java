@@ -8,6 +8,7 @@ import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.jaxws.EndpointImpl;
 
 import javax.xml.ws.Endpoint;
+import java.io.PrintWriter;
 
 /**
  * 重要！！
@@ -32,10 +33,10 @@ public class ServerMain {
             2、进阶
                 添加拦截器
          */
-        // 服务器端 In 拦截器
-        ep.getInInterceptors().add(new LoggingInInterceptor());
-        // 服务器端 Out 拦截器
-        ep.getOutInterceptors().add(new LoggingOutInterceptor());
+        // 服务器端 In 拦截器，输出到控制台
+        ep.getInInterceptors().add(new LoggingInInterceptor(new PrintWriter(System.out)));
+        // 服务器端 Out 拦截器，输出到控制台
+        ep.getOutInterceptors().add(new LoggingOutInterceptor(new PrintWriter(System.out)));
 
         System.out.println("Web Service 暴露成功！");
     }
