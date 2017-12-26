@@ -37,13 +37,13 @@ class Man{
         但是你里面假如有静态变量，那么就必须要加载这个方法。所以矛盾了
       */
     public People getWoman(){
-        int i = 5;
+        int i = 5; // 栈是存放线程调用方法时存储局部变量表。static 变量是存放在方法区里面的。所以这里不能用static修饰
         // 局部内部类就像是方法里面的一个局部变量一样，是不能有public、protected、private以及static修饰符的。
         class Woman extends People{   //局部内部类，此作用域在getWoman()方法内,所以可以用到方法内的变量
             int age = 0;
 
             public int getAge() {
-                // 局部内部类和匿名内部类只能访问局部final变量
+                // 局部内部类和匿名内部类只能访问局部final变量 ,之所以只能final是因为方法局部变量生命周期的限制。
 //                i++;
                 age = i + age;
                 System.out.println(age);
