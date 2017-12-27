@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.simpleSort;
+package indi.sword.util.basic.dataStructure.basic._00_simpleSort;
 
 /**
  * @Description: 简单选择排序，从左往右找到最小的，依次排序。交换次数肯定是比冒泡排序少的

@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.simpleSort;
+package indi.sword.util.basic.dataStructure.basic._00_simpleSort;
 
 /**
  * @Description:  冒泡排序，从左往右一个个滚动比较，最小的放左边

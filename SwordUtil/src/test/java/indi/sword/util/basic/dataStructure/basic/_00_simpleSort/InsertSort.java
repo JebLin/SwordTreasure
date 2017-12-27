@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.simpleSort;
+package indi.sword.util.basic.dataStructure.basic._00_simpleSort;
 
 /**
  * @Description: 简单插入排序 在已经排序好的数组内找到合适位置插入数据。

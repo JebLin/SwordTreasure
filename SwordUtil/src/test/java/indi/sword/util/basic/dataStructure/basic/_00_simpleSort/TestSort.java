@@ -1,4 +1,4 @@
-package indi.sword.util.basic.dataStructure.basic.simpleSort;
+package indi.sword.util.basic.dataStructure.basic._00_simpleSort;
 
 public class TestSort {
 	public static void main(String[] args) {
