@@ -17,6 +17,7 @@ public class TestTree {
 
         tree.centralOrder(tree.root);
         System.out.println();
-        tree.afterOrder(tree.root);
+        tree.delete(5);
+        tree.centralOrder(tree.root);
     }
 }

@@ -89,20 +89,20 @@ public class Tree {
             if(null == current){
                 return ;
             }else{
-                // 属于叶子节点
+                // 1.属于叶子节点
                 if(null == current.leftChild && null == current.rightChild ){
                     if(isLeftChild){
                         parent.leftChild = null;
                     }else {
                         parent.rightChild = null;
                     }
-                } else if(null == current.leftChild){ // 如果有右孩子
+                } else if(null == current.leftChild){ // 2.如果有右孩子
                     if(isLeftChild){
                         parent.leftChild = current.rightChild;
                     }else {
                         parent.rightChild = current.rightChild;
                     }
-                } else if(null == current.rightChild){ // 如果有左孩子
+                } else if(null == current.rightChild){ // 3.如果有左孩子
                     if(isLeftChild){
                         parent.leftChild = current.leftChild;
                     }else {
@@ -110,55 +110,42 @@ public class Tree {
                     }
                 } else{
                     /*
-                        就是有两个孩子的话，那么最复杂。思路就是把最左子树给拉上去，这个你画图就知道了
-                        那么最左子树有两种情况：
-                            1.这个最左子树是叶子节点
-                            2.这个最左子树有右孩子（不可能有左孩子，不然这个左孩子就可以上位了。）
-                        针对上述两种情况：
-                            第一种情况，就把最左叶子节点替换到删除的节点那里去，注意安顿好删除节点的孩子
-                            第二种情况，就把右孩子替换到要删除的节点那里去
+                        4.就是有两个孩子的话，
+                        那么最复杂。思路就是找删除节点右子树的最左节点。
+                        然后替代掉删除节点。你画个图就知道了。
                      */
-                    Node leftest = current.leftChild;
-                    Node leftestParent = leftest;// 最左节点的爸爸
-                    while(null != leftest.leftChild){ // 它的左孩子为空话，那它就是最左节点
+                    Node leftestParent = current;// 最左节点的爸爸
+                    Node leftest = current.rightChild; // 节点的右子树,右子树的最左节点
+                    while(null != leftest && null != leftest.leftChild){
                         leftestParent = leftest;
-                        leftest = leftest.leftChild;
+                        leftest = leftest.leftChild; // 继续往下找，直到找到最左节点
                     }
-                    leftestParent.leftChild = null; // 节点移走了，那么原先指向它的要指向空
-                    if(null == leftest.rightChild){ // 这是上面的第一种情况
+                    // 找到了最左节点了，那么这个位置要设置为空
+                    if(leftestParent != current){ // 说明是有进入while的
+                        leftestParent.leftChild = null;
+                    }else{
+                        current.rightChild = null;
+                    }
+
+                    if(current != root){
                         if(isLeftChild){
                             parent.leftChild = leftest;
                         }else{
                             parent.rightChild = leftest;
                         }
-                        leftest.leftChild = current.leftChild;
-                        leftest.rightChild = current.rightChild;
-                    }else{ // 这是上面的第二种情况
-                        if(isLeftChild){
-                            parent.leftChild = leftest.rightChild; // 接上去
-                            leftest.rightChild.leftChild = leftestParent; // 接上去后，接手的爸爸
-                            leftestParent.rightChild = null; // 爸爸的右孩子 = null
-                            leftest.rightChild.rightChild = current.rightChild; // 接上去后，接手current的右孩子
-                        }else{
-                            parent.rightChild = leftest.rightChild;
-                            leftest.rightChild.leftChild = leftestParent;
-                            leftestParent.rightChild = null;  // 爸爸的右孩子 = null
-                            leftest.rightChild = current.rightChild;
-
-                        }
+                    }else{
+                        root = leftest;
                     }
+                    if(null != leftest.rightChild){ // 最左节点的右孩子不为空
+                        leftestParent.leftChild = leftest.rightChild; // 处理它的右孩子
+                    }
+                    leftest.leftChild = current.leftChild; // 接手原来的current左孩子
+                    leftest.rightChild = current.rightChild; // 接手原来的current右孩子
+
 
                 }
-
-
-
             }
-
-
-
         }
-
-
     }
 
     /**
