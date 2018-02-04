@@ -70,7 +70,10 @@ class ExceptionThreadDemo implements Runnable {
 public class _02_TestUncaughtExceptionHandler {
 
     /**
-     * 必须注意一件事情，线程抛出异常之后，不会退出JVM，这点很危险，很容易耗光内存
+     * 必须注意一件事情，线程抛出异常之后，不会退出JVM，这点很危险，很容易耗光内存，
+     * 接下来的测试类会说道 _03_TestExceptionInThreadCount
+     *
+     *
      * @param args
      */
     public static void main(String[] args) {

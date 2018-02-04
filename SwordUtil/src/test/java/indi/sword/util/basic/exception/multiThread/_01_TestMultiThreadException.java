@@ -15,7 +15,7 @@ public class _01_TestMultiThreadException {
         // 就算把线程的执行语句放到 try-catch 块中也无济于事
         try {
             ExecutorService exec = Executors.newCachedThreadPool();
-            exec.execute(new ExceptionThread01());
+            exec.execute(new ExceptionThreadDemo01());
             exec.shutdown();
         } catch (Exception e) {
             System.out.println("Exception has been handled!");
@@ -31,10 +31,3 @@ public class _01_TestMultiThreadException {
 }
 
 
-class ExceptionThread01 implements Runnable{
-    @Override
-    public void run() {
-        throw new RuntimeException("自定义的一个RuntimeException...");
-    }
-
-}
