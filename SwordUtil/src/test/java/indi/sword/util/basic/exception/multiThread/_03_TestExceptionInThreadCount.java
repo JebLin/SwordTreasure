@@ -23,6 +23,7 @@ public class _03_TestExceptionInThreadCount {
             Thread.sleep(200);
             exec.execute(new NormalThread());
         }
+        exec.shutdown();
     }
 }
 
