@@ -30,7 +30,7 @@ public class _09_TestOptional {
     @Test
     public void test_of(){
         //of方法通过工厂方法创建Optional类。需要注意的是，创建对象时传入的参数不能为null。
-        // 如果传入参数为null，则抛出NullPointerException 。 
+        // 如果传入参数为null，则抛出NullPointerException 。
         Optional<_01_Employee> op = Optional.of(new _01_Employee());
         System.out.println(op.get());
 /*
