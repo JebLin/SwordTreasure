@@ -17,7 +17,7 @@ public class Stack2Queue {
     private Stack<Integer> stack2 = new Stack<>();
 
     /**
-     * @Description 每次入栈的时候，先把 stack2 的倒到 stack1 里面去，然后在对 stack1 入栈，然后继续倒进去 stack2 
+     * @Description 每次入栈的时候，先把 stack2 的倒到 stack1 里面去，然后在对 stack1 入栈，然后继续倒进去 stack2
      * @Author rd_jianbin_lin
      * @Date 20:45 2018/2/6
      * @Modified By
