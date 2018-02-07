@@ -8,9 +8,13 @@ import indi.sword.util.basic.dataStructure.basic._06_Hash.Info;
  * @Date 19:43 2018/2/5
  * @Modified By
  */
+/*
+    开放地址法：
+        当冲突发生时，通过查找数组的一个空位，并将数据填入，而不再用哈希函数得到数组的下标，这种方法叫做开放地址法。
+ */
 public class TestHashTable {
     public static void main(String[] args) {
-        MyHashTable ht = new MyHashTable();
+        MyHashTable_openAddress ht = new MyHashTable_openAddress();
         ht.insert(new Info("aa","张三")); // 28
         ht.insert(new Info("dt","李四")); // 128 取模也变成 28 于是覆盖掉了
         ht.insert(new Info("c","王五"));

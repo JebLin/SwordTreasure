@@ -14,15 +14,15 @@ import java.math.BigInteger;
     开放地址法：
         当冲突发生时，通过查找数组的一个空位，并将数据填入，而不再用哈希函数得到数组的下标，这种方法叫做开放地址法。
  */
-public class MyHashTable {
+public class MyHashTable_openAddress {
 
     private Info[] arr;
 
-    public MyHashTable() {
+    public MyHashTable_openAddress() {
         this.arr = new Info[100];
     }
 
-    public MyHashTable(Info[] arr) {
+    public MyHashTable_openAddress(Info[] arr) {
         this.arr = arr;
     }
 
@@ -118,7 +118,7 @@ public class MyHashTable {
     }
 
     public static void main(String[] args) {
-        System.out.println(new MyHashTable().hashCode("ab")); // 2 + 1 * 27 = 29
+        System.out.println(new MyHashTable_openAddress().hashCode("ab")); // 2 + 1 * 27 = 29
     }
 
 }
