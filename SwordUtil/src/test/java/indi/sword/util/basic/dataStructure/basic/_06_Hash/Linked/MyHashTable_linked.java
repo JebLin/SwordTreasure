@@ -10,6 +10,8 @@ import java.math.BigInteger;
  * @Date 16:40 2018/2/7
  * @Modified By
  */
+// 开放地址法效率低下，这种链表法是目前hashmap实现的方法
+
 public class MyHashTable_linked {
     private MyLinkList[] arr;
 
