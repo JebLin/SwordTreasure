@@ -48,7 +48,7 @@ import java.util.List;
  *         　　4.序列初始基本有序（正序），宜用直接插入，冒泡
  */
 
-public class TestSort {
+public class A_TestSort {
     public static void main(String[] args) {
         int[] a = { 1, 2, 49, 38, 65, 97, 76, 13, 27, 49, 78, 34, 12, 64, 2, 1};
 

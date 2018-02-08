@@ -4,8 +4,6 @@ import indi.sword.util.base.bean.Result;
 
 public class TestRandomField {
 
-
-
     public static void main(String[] args) {
 
         TestRandomField java_field=new TestRandomField();

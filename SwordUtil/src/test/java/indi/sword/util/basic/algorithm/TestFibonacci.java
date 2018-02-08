@@ -28,7 +28,7 @@ public class TestFibonacci {
 
     }
 
-    // 递归方法，效率低
+    // 递归方法，效率低. 这种面试0分
     public static int fbnc1(int n){
         if(n == 0 || n == 1){
             return 1;
