@@ -71,6 +71,8 @@ public class Graph {
         1、如果可能，访问一个邻接点的未访问过的顶点。标记它，并把它放入栈中。
         2、当不能执行规则 1 时，如果栈不为空，那么就从栈中弹出一个顶点。
         3、当不能执行规则 1 和 规则 2时，就完成了整个搜索过程
+
+        深度优先： 1打印，2邻接点入栈，打印 ，3找不到邻接点了，出栈出栈再找邻接点
      */
     public void dfs(){
         // 首先访问 0 号顶点
@@ -114,8 +116,8 @@ public class Graph {
 
         eg.
         1、A 入队列
-        2、A 出队列，打印，找邻接点，邻接点全部入队列
-        3、邻接点递归，出队列去找邻接点
+        2、加邻接点进来
+        3、出队列，顺便打印
 
      */
     public void bft() {
@@ -138,7 +140,7 @@ public class Graph {
                 vertexList[v].setVisited(true);
             }
             // 2、出队列
-            currentVertex = queue.poll();
+            queue.poll();
             // 3、出队列的时候打印
             displayVertex(currentVertex);
         }
