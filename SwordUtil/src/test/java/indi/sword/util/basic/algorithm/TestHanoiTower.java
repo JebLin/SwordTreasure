@@ -26,21 +26,21 @@ public class TestHanoiTower {
     public static void main(String[] args) {
         int[] arr = new int[3];
         // 原本是放在 A 的,假设移动到 B.
-        hanio(arr,arr.length,"A","B","C");
+        hanoi(arr,arr.length,"A","B","C");
     }
 
-    public static void hanio(int[] arr,int length,String from,String to,String temp){
+    public static void hanoi(int[] arr, int length, String from, String to, String temp){
         if(length == 1){
             moveBottomBar(arr,arr.length,from,to);
             return;
         }
 
         // 1、把上面的 n - 1 个，从 from -> temp
-        hanio(arr,length - 1,from,temp,to);
+        hanoi(arr,length - 1,from,temp,to);
         // 2、把最下面的那根放到 B，从 from ->to
         moveBottomBar(arr,length,from,to);
         // 3、把刚刚拿走的那一坨移回来，temp -> to
-        hanio(arr,length - 1,temp,to,from);
+        hanoi(arr,length - 1,temp,to,from);
     }
 
     public static void moveBottomBar(int[] arr, int length,String from,String to){
