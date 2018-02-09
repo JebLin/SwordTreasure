@@ -9,6 +9,7 @@ package indi.sword.util.basic.algorithm;
 public class TestNumTransfer {
     public static void main(String[] args) {
         System.out.println(transfer(16,50));
+
     }
 
 
