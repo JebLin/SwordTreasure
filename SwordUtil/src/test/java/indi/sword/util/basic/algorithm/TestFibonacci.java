@@ -1,3 +1,4 @@
+
 package indi.sword.util.basic.algorithm;
 
 /**
@@ -24,6 +25,10 @@ public class TestFibonacci {
         System.out.println();
         for (int i = 0; i < 25; i++) {
             System.out.print(fbnc3(i) + ",");
+        }
+        System.out.println();
+        for (int i = 0; i < 25; i++) {
+            System.out.print(fbnc4(i) + ",");
         }
 
     }
@@ -53,8 +58,25 @@ public class TestFibonacci {
         return f2;
     }
 
+    // 这种中间值都不用给
+    public static int fbnc3(int n){
+        if(n == 0 || n == 1){
+            return 1;
+        }
+        int pre = 1;
+        int result = 1;
+        for(int i = 2; i <= n; i++){
+
+            result = pre + result;
+            pre = result - pre;
+
+        }
+        return result;
+    }
+
+
     // 采用数组形式
-    public static int fbnc3(int n){ // 传进来的是下标
+    public static int fbnc4(int n){ // 传进来的是下标
         if(n == 0 || n == 1){
             return 1;
         }
@@ -66,6 +88,55 @@ public class TestFibonacci {
         }
         return arr[n];
     }
+
+
+    /*
+        斐波拉契数列加强版——时间复杂度O(1)，空间复杂度O(1)
+
+        对于斐波拉契经典问题，我们都非常熟悉，通过递推公式F(n) = F(n - 1) + F(n - 2)，我们可以在线性时间内求出第n项F(n)，
+        现在考虑斐波拉契的加强版，我们要求的项数n的范围为int范围内的非负整数，请设计一个高效算法，计算第n项F(n)。
+        第一个斐波拉契数为F(0) = 1。
+        负数的话，全部为0 F(-|num|) = 0;
+        给定一个非负整数，请返回斐波拉契数列的第n项，为了防止溢出，请将结果Mod 1000000007。
+
+        数学知识补充：
+           线性代数：
+           1、二阶行列式
+           | a11  a12 |
+           |          |   = a11*a22 - a12*a22  "对角线法则"
+           | a21  a22 |
+
+           2、矩阵相乘运算： 矩阵C的元素 Cij 即为矩阵A 的第i行元素与矩阵B的第j列对应元素乘积的和。
+           | a11  a12 |   | b11  b12 |     | a11*b11 + a12*b21  a11*b22 + a12*b22 |
+           |          | * |          |  =  |                                      |
+           | a21  a22 |   | b21  b22 |     | a21*b11 + a22*b21  a21*b12 + a22*b22 |
+
+        考虑下面三个矩阵：
+        | F(n)   F(n-1) |       | 1  1  |       | F(n-1)  F(n-2) |
+        |               |   *   |       |  =    |                |
+        | F(n-1) F(n-2) |       | 1  0  |       | F(n-2)  F(n-3) |
+        分别设为S(n), M, S(n-1).
+
+               | F(1)  F(0)  |     | 1  1 |
+        S(1) = |             |  =  |      |  = M  (important: 关系1)
+               | F(0)  F(-1) |     | 1  0 |
+        由上面的矩阵相乘可以得到：
+            S(n) = M * S(n-1)
+                 = (M ^ 2) * S(n-2)
+                 = (M ^ 3) * S(n-3)
+                 = M ^ (n-1) * S(1)
+                 = M ^ n;   （important: 关系2）
+    */
+    // 采用数组形式
+    public static int fbnc_futher(int n){ // 传进来的是下标
+
+
+        return 0;
+    }
+
+
+
+
 
 
 
