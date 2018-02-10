@@ -78,7 +78,7 @@ public class Test_base {
         /**
          * 注意：public methods.
          * getMethods()
-         * Returns an array containing {@code Method} objects reflecting all the
+         * Returns an _01_array containing {@code Method} objects reflecting all the
          * public methods of the class or intef represented by this {@code
          * Class} object, including those declared by the class or intef and
          * those inherited from superclasses and superinterfaces.
@@ -98,7 +98,7 @@ public class Test_base {
         System.out.println("---------------------------------");
         /**
          * 注意：excluding inherited methods
-         * Returns an array containing {@code Method} objects reflecting all the
+         * Returns an _01_array containing {@code Method} objects reflecting all the
          * declared methods of the class or intef represented by this {@code
          * Class} object, including public, protected, default (package)
          * access, and private methods, but excluding inherited methods.
@@ -114,10 +114,10 @@ public class Test_base {
         /**
          * 注意： 只列举出public的contructor
          * getConstructors()
-         * Returns an array containing {@code Constructor} objects reflecting
+         * Returns an _01_array containing {@code Constructor} objects reflecting
          * all the public constructors of the class represented by this
-         * {@code Class} object.  An array of length 0 is returned if the
-         * class has no public constructors, or if the class is an array class, or
+         * {@code Class} object.  An _01_array of length 0 is returned if the
+         * class has no public constructors, or if the class is an _01_array class, or
          * if the class reflects a primitive type or void.
          */
         Constructor<?>[] constructors = clazz.getConstructors();
@@ -145,7 +145,7 @@ public class Test_base {
         /**
          * 注意：excludes inherited fields.
          * getDeclaredFields()
-         * Returns an array of {@code Field} objects reflecting all the fields
+         * Returns an _01_array of {@code Field} objects reflecting all the fields
          * declared by the class or intef represented by this
          * {@code Class} object. This includes public, protected, default
          * (package) access, and private fields, but excludes inherited fields.
@@ -159,7 +159,7 @@ public class Test_base {
         /**
          * 注意，public的field.
          * getFields()
-         * Returns an array containing {@code Field} objects reflecting all
+         * Returns an _01_array containing {@code Field} objects reflecting all
          * the accessible public fields of the class or intef represented by
          * this {@code Class} object.
          */

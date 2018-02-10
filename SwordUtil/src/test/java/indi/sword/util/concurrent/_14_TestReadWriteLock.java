@@ -19,7 +19,7 @@ public class _14_TestReadWriteLock {
 	public static void main(String[] args){
 		ReadWriteDemo rw = new ReadWriteDemo();
 		
-		// 1个人读  ，500个人写   ,如果不加锁，会造成读取情况不一致
+		// 500个人读  ，1 个人写   ,如果不加锁，会造成读取情况不一致
 		for(int i = 0; i < 500 ; i++){
 			new Thread(new Runnable(){
 				@Override

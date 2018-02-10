@@ -217,7 +217,7 @@ public class Test_Reflect {
         int temp[] = {1,2,3};
         /**
          * Returns the {@code Class} representing the component type of an
-         * array.  If this class does not represent an array class this method
+         * _01_array.  If this class does not represent an _01_array class this method
          * returns null.
          */
         Class<?> clazz = temp.getClass().getComponentType();

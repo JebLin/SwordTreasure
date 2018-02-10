@@ -33,7 +33,7 @@ public class _15_TestSynchronized_static {
 				number.getOne();
 			} 
 		}).start();
-		
+
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
@@ -41,14 +41,14 @@ public class _15_TestSynchronized_static {
 				number2.getTwo();
 			}
 		}).start();
-		
-		/*new Thread(new Runnable() {
+/*
+		new Thread(new Runnable() {
 			@Override
 			public void run() {
 				number.getThree();
 			}
-		}).start();*/
-		
+		}).start();
+		*/
 	}
 }
  
@@ -63,7 +63,7 @@ class Number{
 		System.out.println("one");
 	}
 	
-	public synchronized void getTwo(){//this
+	public  synchronized void getTwo(){//this
 		System.out.println("two");
 	}
 	

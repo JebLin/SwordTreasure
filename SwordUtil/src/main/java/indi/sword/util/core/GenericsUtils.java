@@ -87,7 +87,7 @@ public class GenericsUtils
 	}
 
 	/**
-	 * 通过反射,获得方法输入参数第index个输入参数的所有泛型参数的实际类型. 如: public void add(Map<String, Buyer> maps, List<String> names){}
+	 * 通过反射,获得方法输入参数第index个输入参数的所有泛型参数的实际类型. 如: public void add(Map<String, Buyer> maps, _03_List<String> names){}
 	 * 
 	 * @param  method 方法
 	 * @param  index 第几个输入参数
@@ -118,7 +118,7 @@ public class GenericsUtils
 	}
 
 	/**
-	 * 通过反射,获得方法输入参数第一个输入参数的所有泛型参数的实际类型. 如: public void add(Map<String, Buyer> maps, List<String> names){}
+	 * 通过反射,获得方法输入参数第一个输入参数的所有泛型参数的实际类型. 如: public void add(Map<String, Buyer> maps, _03_List<String> names){}
 	 * 
 	 * @param  method 方法
 	 * @return 输入参数的泛型参数的实际类型集合, 如果没有实现ParameterizedType接口，即不支持泛型，所以直接返回空集合
