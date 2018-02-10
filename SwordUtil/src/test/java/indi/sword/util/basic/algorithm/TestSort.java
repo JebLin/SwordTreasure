@@ -64,7 +64,7 @@ public class TestSort {
         //straightInsertSort(a);
 
         // 2.二分排序法
-        // midInsertSort(a);
+//         midInsertSort(a);
 
         // 3.希尔排序
 //         shellSort(a);
@@ -167,9 +167,9 @@ public class TestSort {
             for (int j = i - 1; j >= left; j--) {
                 a[j + 1] = a[j];
             }
-            if (left != i) {
+//            if (left != i) {
                 a[left] = temp;
-            }
+//            }
         }
     }
 
@@ -502,8 +502,6 @@ public class TestSort {
      * 1、基本思想：将所有待比较数值（正整数）统一为同样的数位长度，数位较短的数前面补零。
      *
      * 然后，从最低位开始，依次进行一次排序。这样从最低位排序一直到最高位排序完成以后,数列就变成一个有序序列。
-     *
-     * @param
      *
      *      基数排序是稳定的排序算法
      *            　　 基数排序的时间复杂度为O(d(n+r)),d为位数，r为基数。

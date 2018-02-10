@@ -96,3 +96,4 @@ git commit -m "property"
 git push
 git pull
 git pull
+git pull
