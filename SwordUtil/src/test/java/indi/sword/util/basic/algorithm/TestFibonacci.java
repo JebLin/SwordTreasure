@@ -30,6 +30,10 @@ public class TestFibonacci {
         for (int i = 0; i < 25; i++) {
             System.out.print(fbnc4(i) + ",");
         }
+        System.out.println();
+        for (int i = 0; i < 25; i++) {
+            System.out.print(fbnc_futher(i) + ",");
+        }
 
     }
 
@@ -128,16 +132,29 @@ public class TestFibonacci {
                  = M ^ n;   （important: 关系2）
     */
     // 采用数组形式
-    public static int fbnc_futher(int n){ // 传进来的是下标
+    public static long fbnc_futher(int n){ // 传进来的是下标
+        if(n == 0 || n == 1){
+            return 1;
+        }
 
+        long[][] M = {{1,1},{1,0}};
+        long[][] result =  {{1,1},{1,0}};
+        for (int i = 0; i < n - 1 ; i++) {
+            result = getMulti(result,M);
+        }
+        return result[0][0]; // 看S(n)的第一个元素
 
-        return 0;
     }
 
-
-
-
-
+    // 矩阵相乘
+    private static long[][] getMulti(long[][] result,long[][] m) {
+        long c00 = result[0][0] * m[0][0] + result[0][1] * m[1][0];
+        long c01 = result[0][0] * m[0][1] + result[0][1] * m[1][1];
+        long c10 = result[1][0] * m[0][0] + result[1][1] * m[1][0];
+        long c11 = result[1][0] * m[0][1] + result[1][0] * m[1][1];
+        long[][] returnResult = {{c00,c01},{c10,c11}};
+        return returnResult;
+    }
 
 
 }
