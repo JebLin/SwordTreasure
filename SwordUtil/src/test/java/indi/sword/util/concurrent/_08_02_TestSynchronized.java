@@ -29,3 +29,5 @@ public class _08_02_TestSynchronized {
         testLock.print();
     }
 }
+
+
