@@ -21,8 +21,7 @@ public class TestBlankTo20 {
         int newCharArrLength = getNewCharArrLength(str);
 
         for (int i = 0; i < str.length(); i++) {
-
-
+            
         }
 
         replaceAllBlank(str.toCharArray());
