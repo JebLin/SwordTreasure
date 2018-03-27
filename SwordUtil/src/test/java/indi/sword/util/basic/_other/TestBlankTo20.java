@@ -22,6 +22,7 @@ public class TestBlankTo20 {
 
         for (int i = 0; i < str.length(); i++) {
 
+
         }
 
         replaceAllBlank(str.toCharArray());
