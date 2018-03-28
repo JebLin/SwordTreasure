@@ -1,5 +1,9 @@
 package indi.sword.util.basic._other;
 
+
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  * @Description
  * @Author jeb_lin
@@ -21,36 +25,61 @@ package indi.sword.util.basic._other;
 public class TestBlankTo20 {
 
     public static void main(String[] args) {
-        String str = "  we are family  ";
+
+        Scanner scan = new Scanner(System.in);
+        String inputStr = scan.nextLine();
+        System.out.println("your input is -> " + inputStr);
+        char[] charArr = replaceAllBlank_Enter(inputStr);
 
 
-        char[] newCharArr = replaceAllBlank(str);
+        char[] newCharArr = replaceAllBlank(charArr,inputStr.length());
         for (int i = 0; i < newCharArr.length; i++) {
             System.out.print(newCharArr[i]);
         }
-
     }
 
-    private static char[] replaceAllBlank(String str) {
+    /**
+     * @Description
+     *  用户输入完字符串后，进入这个方法,
+     *  在这里转换成数组的意义何在呢？
+     *  就是为了传入的是一个字符数组，我的意思是，上面main方法可以不用传入一个String，而是直接传入一个char数组，那么这样的好处就是说，
+     *  传入任何一个char数组，我都不用使用其他辅助空间。
+     * @Author jeb_lin
+     * @Date 6:09 PM 28/03/2018
+     * @MODIFIED BY
+     */
+    private static char[] replaceAllBlank_Enter(String str) {
+        char[] charArr = new char[999];
+        System.arraycopy(str.toCharArray(),0,charArr,0,str.length());
+        return charArr;
+    }
 
-        int newCharArrLength = getNewCharArrLength(str);
-        char[] newCharArr = new char[newCharArrLength];
-        for (int i = 0; i < str.length(); i++) {
-            newCharArr[i] = str.charAt(i);
-        }
-        int oldLastIndex = str.length() - 1 ;
+
+    /**
+     * @Description
+     *
+     * @Author jeb_lin
+     * @Date 6:16 PM 28/03/2018
+     * @MODIFIED BY
+     * @param charArr 字符数组（新的老的都是用同一个)
+     * @param originalLength 原来字符串的长度
+     */
+    private static char[] replaceAllBlank(char[] charArr,int originalLength) {
+
+        int newCharArrLength = getNewCharArrLength(charArr,originalLength);
+        int oldLastIndex = originalLength - 1 ;
         int newLastIndex = newCharArrLength - 1;
         for (int i = oldLastIndex; i >= 0 ; i--) {
-            char tempChar = str.charAt(i);
+            char tempChar = charArr[i];
             if(tempChar == ' '){
-                newCharArr[newLastIndex--] = '0';
-                newCharArr[newLastIndex--] = '2';
-                newCharArr[newLastIndex--] = '%';
+                charArr[newLastIndex--] = '0';
+                charArr[newLastIndex--] = '2';
+                charArr[newLastIndex--] = '%';
             }else{
-                newCharArr[newLastIndex--] = tempChar;
+                charArr[newLastIndex--] = tempChar;
             }
         }
-        return newCharArr;
+        return charArr;
     }
 
     /**
@@ -60,14 +89,14 @@ public class TestBlankTo20 {
      * @Date 12:21 AM 28/03/2018
      * @MODIFIED BY
      */
-    private static int getNewCharArrLength(String str){
-        int length = str.length();
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == ' ') {
+    private static int getNewCharArrLength(char[] charArr,int originalLength){
+        int length = originalLength;
+        for (int i = 0; i < originalLength; i++) {
+            if (charArr[i] == ' ') {
                 length += 2;
             }
         }
-        System.out.println(length);
+        System.out.println("after length -> " + length);
         return length;
     }
 
