@@ -1,4 +1,4 @@
-package indi.sword.util.basic._other;
+package indi.sword.util.basic.algorithm.point2offer;
 
 
 import java.util.Arrays;
