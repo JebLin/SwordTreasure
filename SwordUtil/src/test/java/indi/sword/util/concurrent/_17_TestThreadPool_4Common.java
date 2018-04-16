@@ -20,8 +20,30 @@ public class _17_TestThreadPool_4Common {
 //		method_newCachedThreadPool();
 //		method_newFixedThreadPool();
 //		newScheduledThreadPool();
-		method_newSingleThreadExecutor();
-//		System.out.println("并发数：" + Runtime.getRuntime().availableProcessors());
+//		method_newSingleThreadExecutor();
+		testDelayScheduledThreadPool();
+		System.out.println("并发数：" + Runtime.getRuntime().availableProcessors());
+	}
+
+
+	public static void testDelayScheduledThreadPool(){
+		ScheduledExecutorService imgUrlProducerThreadPool = Executors.newScheduledThreadPool(4);
+		for (int i = 0; i < 4; i++) {
+			imgUrlProducerThreadPool.scheduleAtFixedRate(new Runnable() {
+															 public void run() {
+																 System.out.println(Thread.currentThread().getName() + "- begin - ");
+																 try {
+																	 Thread.sleep(5000);
+																 } catch (InterruptedException e) {
+																	 e.printStackTrace();
+																 }
+																 System.out.println(Thread.currentThread().getName() + "- end - ");
+
+															 }
+														 },
+					1, 1, TimeUnit.SECONDS);
+		}
+
 	}
 
 	/**
@@ -39,8 +61,8 @@ public class _17_TestThreadPool_4Common {
 		for (int i = 0; i < 10; i++) {
 			final int index = i;
 			try {
-				Thread.sleep(index * 1000);
-//				Thread.sleep(0);
+//				Thread.sleep(index * 1000);
+				Thread.sleep(0);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
