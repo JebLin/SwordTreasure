@@ -79,3 +79,8 @@ It's a result return by main.so file!!
 
 
 ﻿linux 下使用 java 调用 so 动态链接库就成功了！Goodluck every one!!
+
+---
+
+
+ android 中调用 so 动态链接库 <https://blog.csdn.net/hongquan1991/article/details/12449381>
