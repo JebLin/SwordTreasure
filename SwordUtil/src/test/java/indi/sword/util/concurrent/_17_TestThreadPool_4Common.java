@@ -18,10 +18,10 @@ import java.util.concurrent.TimeUnit;
 public class _17_TestThreadPool_4Common {
 	public static void main(String[] args) throws Exception {
 //		method_newCachedThreadPool();
-//		method_newFixedThreadPool();
+		method_newFixedThreadPool();
 //		newScheduledThreadPool();
 //		method_newSingleThreadExecutor();
-		testDelayScheduledThreadPool();
+//		testDelayScheduledThreadPool();
 		System.out.println("并发数：" + Runtime.getRuntime().availableProcessors());
 	}
 
