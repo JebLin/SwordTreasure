@@ -1,14 +1,10 @@
 package indi.sword.util.jvm.gc;
 
-import org.apache.cxf.wsdl11.SOAPBindingUtil;
-
 import java.lang.ref.*;
-import java.lang.reflect.Field;
 
 /**
  * @Description
  * @Author jeb_lin
- * @EMAIL lin.jianbin@immomo.com
  * @Date Created in 11:51 AM 27/04/2018
  * @MODIFIED BY
  */
