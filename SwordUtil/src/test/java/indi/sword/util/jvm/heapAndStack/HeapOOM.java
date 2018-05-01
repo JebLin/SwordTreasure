@@ -5,7 +5,11 @@ import java.util.List;
 
 // Java堆:所有对象的实例分配都在Java堆上分配内存，堆大小由-Xmx和-Xms来调节，sample如下所示：
 /*
-    加上JVM参数-verbose:gc -Xms10M -Xmx10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:+HeapDumpOnOutOfMemoryError，就能很快报出OOM：
+    -Xms : 初始堆内存
+    -Xmx：最大堆内存
+    -Xmn：年轻代大小
+    -Xss：每个线程的栈大小
+    加上JVM参数 -verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8
     Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
     并且能自动生成Dump。
  */
@@ -23,13 +27,3 @@ public class HeapOOM {
         }
     }
 }
-/*
-    Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
-        at java.util.Arrays.copyOf(Arrays.java:3210)
-        at java.util.Arrays.copyOf(Arrays.java:3181)
-        at java.util.ArrayList.grow(ArrayList.java:261)
-        at java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:235)
-        at java.util.ArrayList.ensureCapacityInternal(ArrayList.java:227)
-        at java.util.ArrayList.add(ArrayList.java:458)
-        at indi.sword.util.jvm.heapAndStack.HeapOOM.main(HeapOOM.java:16)
- */
