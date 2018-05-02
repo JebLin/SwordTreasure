@@ -34,6 +34,8 @@ public class RuntimeConstantPoolOOM {
         String str3 = new StringBuilder("56").append("78").toString();
         System.out.println(str3.intern() == str3);
 
+        System.out.println("------");
+
         /*
             jdk 1.7测试结果下面俩个：false，false。推断1.6中也都是false。
             由于new String("890")，new StringBuilder("1234")都是两步骤过程：1、把 "890" 写入堆中常量池（1.7 之后常量池从永久代移动到堆）。
@@ -45,6 +47,8 @@ public class RuntimeConstantPoolOOM {
 
         String str5 = new String("890");
         System.out.println(str5.intern() == str5);
+        System.out.println("------");
+
 
 
 

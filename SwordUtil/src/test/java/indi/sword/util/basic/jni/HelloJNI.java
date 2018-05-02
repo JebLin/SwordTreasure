@@ -3,7 +3,6 @@ package indi.sword.util.basic.jni;
 /**
  * @Description
  * @Author jeb_lin
- * @EMAIL lin.jianbin@immomo.com
  * @Date Created in 11:34 AM 16/04/2018
  * @MODIFIED BY
  */
