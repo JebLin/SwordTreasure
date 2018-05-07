@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 
 /**
  * @Description
- *      -Xmx20M -XX:MaxDirectMemorySize=10M -XX:+PrintGCDetails
+ *      -Xmx10M -XX:MaxDirectMemorySize=5M -XX:+PrintGCDetails
  * @Author jeb_lin
  * @Date Created in 10:02 AM 02/05/2018
  * @MODIFIED BY

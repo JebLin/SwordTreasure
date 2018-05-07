@@ -1,5 +1,15 @@
 package indi.sword.util.jvm.heapAndStack;
 
+
+/**
+ * @Description
+ * @Author jeb_lin
+ * @Date 10:39 AM 02/05/2018
+ * @MODIFIED BY
+ */
+/*
+    OutOfMemoryError：unable to create new native thread
+ */
 public class StackOOM {
 
     /**

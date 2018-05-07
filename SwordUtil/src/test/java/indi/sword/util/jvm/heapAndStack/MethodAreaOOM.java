@@ -7,7 +7,13 @@ import org.springframework.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 // 方法区是存放虚拟机加载类的相关信息，如类的结构、静态变量和常量，大小由-XX:PermSize和-XX:MaxPermSize来调节，类太多有可能撑爆永久带：
-// -XX:PermSize=1M -XX:MaxPermSize=1M -XX:+PrintGCDetails
+/**
+ * @Description
+ *       -XX:PermSize=1M -XX:MaxPermSize=1M -XX:+PrintGCDetails
+ * @Author jeb_lin
+ * @Date 10:37 AM 02/05/2018
+ * @MODIFIED BY
+ */
 public class MethodAreaOOM {
     static class OOMOjbect{}
 
