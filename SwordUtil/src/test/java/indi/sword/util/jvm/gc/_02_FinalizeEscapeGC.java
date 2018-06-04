@@ -8,7 +8,7 @@ package indi.sword.util.jvm.gc;
  *          1.对象可以在被GC的时候自我拯救
  *          2.自救机会只有一次，因为一个对象的finalize()方法最多被系统自动调用一次。
  *
- *      注意：finalize方法尽量避免使用，因为它不是C/C++中的西沟函数，它的代价高昂，不确定性大，无法保证哥哥对象的调用顺序。
+ *      注意：finalize方法尽量避免使用，因为它不是C/C++中的析构函数，它的代价高昂，不确定性大，无法保证哥哥对象的调用顺序。
  *      建议使用try-finally
  * @Author jeb_lin
  * @Date Created in 3:21 PM 27/04/2018

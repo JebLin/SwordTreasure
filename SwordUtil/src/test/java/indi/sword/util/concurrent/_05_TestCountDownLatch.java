@@ -1,5 +1,6 @@
 package indi.sword.util.concurrent;
 
+import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 
 /*
@@ -15,20 +16,17 @@ public class _05_TestCountDownLatch {
 	public static void main(String[] args) {
 		final CountDownLatch latch = new CountDownLatch(50);
 		MyThread_CountDownLatch ld = new MyThread_CountDownLatch(latch);
-
 		long start = System.currentTimeMillis();
 
 		for (int i = 0; i < 50; i++) {
 			new Thread(ld).start();
 		}
-
 		try {
 			latch.await();
 		} catch (InterruptedException e) {
 		}
 
 		long end = System.currentTimeMillis();
-
 		System.out.println("耗费时间为：" + (end - start) + "ms");
 	}
 
