@@ -10,6 +10,7 @@ import lombok.Setter;
  * @Date Created in 4:16 PM 04/06/2018
  * @MODIFIED BY
  */
+// @Getter / @Setter自动生成Getter/Setter方法
 public class TestGetterSetter {
     @Getter @Setter private int age = 10;
     @Setter(AccessLevel.PROTECTED) private String name;

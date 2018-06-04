@@ -10,6 +10,7 @@ import java.io.*;
  * @Date Created in 4:11 PM 04/06/2018
  * @MODIFIED BY
  */
+// @Cleanup: 自动帮我们调用close()方法。
 public class TestCleanUp {
     public static void main(String[] args) throws IOException {
 
