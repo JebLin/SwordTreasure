@@ -14,12 +14,12 @@ Windows 中，DLL 多数情况下是带有 ".dll" 扩展名的文件，但也可
 - 编写 java 类 HelloJNI.java 
 - 编译 java 类 就生成在同一个目录就行javac (注意目录)
 ```
-momo@MOMOdeMacBook-Pro:~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java$ 
+ ~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java$ 
 javac indi/sword/util/basic/jni/HelloJNI.java
 ```
 - 使用 class 文件生成 .h 头文件 javah (注意目录)
 ```
-momo@MOMOdeMacBook-Pro:~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java$ 
+ ~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java$ 
 javah indi.sword.util.basic.jni.HelloJNI
 ﻿会在最外边的目录 /util 目录下生成 com_hongquan_jni_HelloJNI.h 的头文件,移进来一起放着
 ```
@@ -39,7 +39,7 @@ JNIEXPORT jstring JNICALL Java_indi_sword_util_basic_jni_HelloJNI_sayHi(JNIEnv *
 
 - ﻿使用如下命令生成 .o 文件 (注意目录)
 ```$xslt 
-momo@MOMOdeMacBook-Pro:~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java/indi/sword/util/basic/jni$ 
+ ~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java/indi/sword/util/basic/jni$ 
 gcc -fPIC -D_REENTRANT -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers -I/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/include -c hello.c
 ﻿﻿
   
@@ -63,7 +63,7 @@ gcc filename.c -o output_filename
 确定输出文件的名称为output_filename，同时这个名称不能和源文件同名。如果不给出这个选项，gcc就给出预设的可执行文件a.out。
 ```
 ``` 
-momo@MOMOdeMacBook-Pro:~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java/indi/sword/util/basic/jni$ 
+ ~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java/indi/sword/util/basic/jni$ 
 gcc hello.o -o main.so -shared
 
 ```
@@ -71,7 +71,7 @@ gcc hello.o -o main.so -shared
 
 - ﻿接下来我们来试试是否能够调用成功
 ```$xslt
-momo@MOMOdeMacBook-Pro:~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java$
+ ~/Documents/code/individualGithubProject/swordTreasure/SwordTreasure/SwordUtil/src/test/java$
 java indi.sword.util.basic.jni.HelloJNI
 结果：
 It's a result return by main.so file!! 

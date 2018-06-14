@@ -3,7 +3,6 @@ package indi.sword.util.concurrent;
 /**
  * @Description
  * @Author jeb_lin
- * @EMAIL lin.jianbin@immomo.com
  * @Date Created in 11:52 AM 24/05/2018
  * @MODIFIED BY
  */

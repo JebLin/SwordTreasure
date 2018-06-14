@@ -17,5 +17,7 @@ JNIEXPORT jstring JNICALL Java_indi_sword_util_basic_jni_HelloJNI_sayHi
 
 #ifdef __cplusplus
 }
+
+
 #endif
 #endif
