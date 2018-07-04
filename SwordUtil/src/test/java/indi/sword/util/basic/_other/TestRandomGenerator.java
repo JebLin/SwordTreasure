@@ -68,14 +68,14 @@ public class TestRandomGenerator {
          * jdk 1.2
          * RandomArray 一个线程一个Random实例！！！Waring!Waring!Waring!种子都是一样的，生成的随机表都是一样的
          */
-        _02_testRandomArray(COUNT_THREADS, COUNT, 1); // 0.61 0.66 0.70
-        _02_testRandomArray(COUNT_THREADS, COUNT, 2); // 0.59 0.67 0.72
+//        _02_testRandomArray(COUNT_THREADS, COUNT, 1); // 0.61 0.66 0.70
+//        _02_testRandomArray(COUNT_THREADS, COUNT, 2); // 0.59 0.67 0.72
 
         /**
          *  jdk 1.2
          *  使用java.lang.ThreadLocal<T>  进行随机数生成
          */
-        _03_testRandom_ThreadLocalRandom(COUNT_THREADS, COUNT); // 0.587 0.714 0.74
+//        _03_testRandom_ThreadLocalRandom(COUNT_THREADS, COUNT); // 0.587 0.714 0.74
 
 
         /**
@@ -83,7 +83,7 @@ public class TestRandomGenerator {
          * 使用java.util.concurrent.ThreadLocalRandom   highly recommend !!!
          * ThreadLocalRandom.current()
          */
-//        _04_testRandom_ThreadLocal(COUNT_THREADS, COUNT); // 0.118 0.132 0.123
+        _04_testRandom_ThreadLocal(COUNT_THREADS, COUNT); // 0.118 0.132 0.123
 
 
     }
@@ -115,7 +115,8 @@ public class TestRandomGenerator {
                 final long start = System.currentTimeMillis();
                 int sum = 0;
                 for (long j = 0; j < count; ++j) {
-                    sum += random.nextInt();
+                    int temp = random.nextInt();
+                    sum += temp;
                 }
                 final long time = System.currentTimeMillis() - start;
                 System.out.println("Thread #" + id + " Time = " + time / 1000.0
