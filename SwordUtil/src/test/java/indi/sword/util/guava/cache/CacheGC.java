@@ -92,24 +92,24 @@ public class CacheGC {
                 .expireAfterAccess(2, TimeUnit.SECONDS) //!!! expireAfterAccess 注意区别，这个有人读的话，也不会销毁  !!!
                 .build(CacheLoaderCreatetor.createCacheLoader());
 
-        cache.getUnchecked("wangji");
-        String str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        cache.getUnchecked("JebLin");
+        String str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
 
         TimeUnit.SECONDS.sleep(1);
-        str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
 
         TimeUnit.SECONDS.sleep(1);
-        str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
 
         TimeUnit.SECONDS.sleep(1);
-        str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
 
         TimeUnit.SECONDS.sleep(1);
-        str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
     }
 
@@ -123,24 +123,24 @@ public class CacheGC {
                 .expireAfterWrite(2, TimeUnit.SECONDS)  //!!! expireAfterWrite 注意区别，这个要有人写，才不会销毁  !!!
                 .build(CacheLoaderCreatetor.createCacheLoader());
 
-        cache.getUnchecked("wangji");
-        String str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        cache.getUnchecked("JebLin");
+        String str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
 
         TimeUnit.SECONDS.sleep(1);
-        str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
 
         TimeUnit.SECONDS.sleep(1);
-        str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
 
         TimeUnit.SECONDS.sleep(1);
-        str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
 
         TimeUnit.SECONDS.sleep(1);
-        str = cache.getIfPresent("wangji"); //不会重新加载创建cache
+        str = cache.getIfPresent("JebLin"); //不会重新加载创建cache
         System.out.println("被销毁：" + (str == null ? "是的" : "否"));
 
 
@@ -164,7 +164,7 @@ public class CacheGC {
 //                .softValues()
                 .build(CacheLoaderCreatetor.createCacheLoader());
         cache.getUnchecked("guava");
-        cache.getUnchecked("wangji");
+        cache.getUnchecked("JebLin");
 
         System.gc();
         TimeUnit.MILLISECONDS.sleep(100);
