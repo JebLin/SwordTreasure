@@ -1,4 +1,4 @@
-package indi.sword.util.guava.collections2;
+package indi.sword.util.guava.collection;
 
 import com.google.common.collect.Sets;
 
