@@ -27,7 +27,6 @@
     </properties>
 
     <dependencies>
-
         <!--===================== 日志相关 ===================== -->
         <dependency>
             <groupId>org.slf4j</groupId>
