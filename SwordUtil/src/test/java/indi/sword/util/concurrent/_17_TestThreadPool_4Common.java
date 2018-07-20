@@ -190,7 +190,7 @@ public class _17_TestThreadPool_4Common {
                 .newFixedThreadPool(4);
         try {
             final List<Future<Integer>> resultFromParts = executorPool.invokeAll(partitions);
-            for (Future<Integer> future:resultFromParts){
+            for (Future<Integer> future : resultFromParts) {
                 System.out.println(future.get());
             }
         } catch (Exception e) {
