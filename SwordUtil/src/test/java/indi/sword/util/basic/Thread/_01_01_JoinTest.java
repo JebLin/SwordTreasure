@@ -36,8 +36,8 @@ public class _01_01_JoinTest implements Runnable {
     }
 
     public static void main(String[] args) {
-        Thread thread1 = new Thread(new _01_01_JoinTest("One"));
-        Thread thread2 = new Thread(new _01_01_JoinTest("Two"));
+        Thread thread1 = new Thread(new _01_01_JoinTest("One"),"One");
+        Thread thread2 = new Thread(new _01_01_JoinTest("Two"),"Two");
         thread1.start();
         thread2.start();
         try {
@@ -45,13 +45,24 @@ public class _01_01_JoinTest implements Runnable {
                 Waits for this thread to die. 阻塞main线程，等待跑完这个线程
                 join(10)的话，表示main线程等你thread1运行10ms，不管你是否执行完毕，都跑Main相关的了
              */
-            thread1.join();
+//            thread1.join();
+            simulateJoin(thread1);
+
             thread2.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
         System.out.println("Main thread is finished");
+    }
+
+    private static void simulateJoin(Thread thread1) throws InterruptedException{
+        synchronized (thread1){
+            while (thread1.isAlive()) {
+                thread1.wait(0);
+            }
+        }
+
     }
 
 }

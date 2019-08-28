@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class _01_00_JoinTest {
-
     public static void main(String[] args) throws InterruptedException {
         JoinThreadDemo demo = new JoinThreadDemo();
         Thread thread = new Thread(demo, "MyThread");
@@ -20,20 +19,16 @@ public class _01_00_JoinTest {
         //
         System.out.println("Main Begin");
         System.out.println("-------------");
-        thread.join(); //   As a thread terminates the {@code this.notifyAll} method is invoked.
-        Thread.currentThread().join();
-//
-//
-//        synchronized (demo) {
-//            System.out.println("synchronzied ... " + demo);
-////            errorTest01thread,demo);
-////            normal01(thread,demo);
+
+        synchronized (demo) {
+            System.out.println("synchronzied ... " + demo);
 //            normal02(thread, demo);
-//
-//        }
+            errorTest01(thread,demo);
+//            normal01(thread,demo);
+
+        }
         System.out.println("--------------");
         System.out.println("Main End");
-
     }
 
 
@@ -44,7 +39,7 @@ public class _01_00_JoinTest {
                 main线程，让出对象锁 ObjectMonitor
              */
             demo.wait();
-            System.out.println("wake up ...");
+            System.out.println("wake up Main thread ...");
 
         }
     }
@@ -57,13 +52,13 @@ public class _01_00_JoinTest {
     private static void errorTest01(Thread thread, JoinThreadDemo demo) throws InterruptedException {
         while (thread.isAlive()) {
             System.out.println("0000");
-//            demo.wait(0);
+            demo.wait(0);
 
             /*
                 如果 wait 1的话，也就是阻塞 1s，自动唤醒。
                 wait 0，让出对象锁，无限阻塞，等待唤醒。
              */
-//            demo.wait(1);
+//            demo.wait(10);
             System.out.println("wake up ...");
         }
     }
