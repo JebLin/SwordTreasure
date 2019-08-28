@@ -40,12 +40,14 @@ public class _01_01_JoinTest implements Runnable {
         Thread thread2 = new Thread(new _01_01_JoinTest("Two"));
         thread1.start();
         thread2.start();
-
         try {
-            thread1.join(); // Waits for this thread to die. 阻塞main线程，等待跑完这个线程
-            thread2.join(); //
+            /*
+                Waits for this thread to die. 阻塞main线程，等待跑完这个线程
+                join(10)的话，表示main线程等你thread1运行10ms，不管你是否执行完毕，都跑Main相关的了
+             */
+            thread1.join();
+            thread2.join();
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 

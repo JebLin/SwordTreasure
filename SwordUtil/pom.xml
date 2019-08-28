@@ -27,6 +27,12 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
         <!--===================== 日志相关 ===================== -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -46,12 +52,6 @@
             <version>1.2.17</version>
         </dependency>
         <!--===================== 本地测试相关 ===================== -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
