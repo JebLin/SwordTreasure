@@ -6,20 +6,20 @@ public class _02_01_WaitTest {
         final MyWaitThreadDemo obj = new MyWaitThreadDemo();
 
         //final Object oo = new Object();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                synchronized (obj) {
-                    System.err.println(1);
-                    try {
-                        obj.wait(0); // 把obj的锁释放掉
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    System.err.println(2);
+        new Thread(() -> {
+            synchronized (obj) {
+                System.out.println(1);
+                System.out.println(Thread.currentThread().getName() + "," + System.currentTimeMillis());
+                try {
+                    Thread.sleep(10000);
+                    System.out.println(Thread.currentThread().getName() + " begin to wait ." );
+                    obj.wait(0); // 把obj的锁释放掉
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
+                System.out.println(2);
             }
-        }).start();
+        },"new").start();
 
         obj.start();
     }
@@ -32,11 +32,12 @@ public class _02_01_WaitTest {
         @Override
         public void run() {
             try {
+                System.out.println(Thread.currentThread().getName() + "," + System.currentTimeMillis());
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.err.println("MyLockThread");
+            System.out.println("MyLockThread");
         }
 
     }

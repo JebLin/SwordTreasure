@@ -19,26 +19,24 @@ package indi.sword.util.basic.Thread;
         所以上面之所以会抛出异常，是因为在调用wait方式时没有获取到monitor对象的所有权.
  */
 public class _02_00_WaitTest {
-
-    public synchronized void testWait(){
-        System.out.println("Start-----");
+    public void testWait(){
+        System.out.println(Thread.currentThread().getName() + ", Start-----");
         try {
             wait(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("End-------");
+        System.out.println(Thread.currentThread().getName() + ", End-------");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         final _02_00_WaitTest test = new _02_00_WaitTest();
-        System.out.println("test begin...");
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                test.testWait(); // thread调用wait方法
-            }
-        }).start();
-        System.out.println("test end...");
+        System.out.println("Main begin...");
+        Thread.sleep(1000); // 停顿的目的都是为了保证打印的顺序
+        new Thread(() -> {
+            test.testWait(); // thread调用wait方法,释放所对象，让给了Main线程先走
+        },"childThreadDemo").start();
+        Thread.sleep(1000);
+        System.out.println("Main end...");
     }
 }

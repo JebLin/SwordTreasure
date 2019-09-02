@@ -10,20 +10,20 @@ package indi.sword.util.concurrent;
 public class _10_TestProductorAndConsumer {
 
 	public static void main(String[] args){
-		Saler saler = new Saler();
+		Salesperson salesperson = new Salesperson();
 		
 		for(int i = 0;i < 2;i++){
-			new Thread(new Productor(saler)).start();
+			new Thread(new Producer(salesperson)).start();
 		}
 		
 		for(int i = 0;i < 2;i++){
-			new Thread(new Consumer(saler)).start();
+			new Thread(new Consumer(salesperson)).start();
 		}
 		
 	}
 }
 
-class Saler {
+class Salesperson {
 
 	private int number = 0;
 
@@ -41,7 +41,6 @@ class Saler {
 			try {
 				this.wait();
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -64,7 +63,6 @@ class Saler {
 			try {
 				this.wait();
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -74,34 +72,34 @@ class Saler {
 
 }
 
-class Productor implements Runnable {
+class Producer implements Runnable {
 
-	private Saler saler;
+	private Salesperson salesperson;
 
-	public Productor(Saler saler) {
-		this.saler = saler;
+	public Producer(Salesperson salesperson) {
+		this.salesperson = salesperson;
 	}
 
 	@Override
 	public void run() { //生产20次
 		for(int i = 0; i < 20 ;i++){
-			saler.get();
+			salesperson.get();
 		}
 	}
 }
 
 class Consumer implements Runnable {
 
-	private Saler saler;
+	private Salesperson salesperson;
 
-	public Consumer(Saler saler) {
-		this.saler = saler;
+	public Consumer(Salesperson salesperson) {
+		this.salesperson = salesperson;
 	}
 
 	@Override
 	public void run() { //消费20次
 		for(int i = 0; i < 20 ;i++){
-			saler.sale();
+			salesperson.sale();
 		}
 	}
 

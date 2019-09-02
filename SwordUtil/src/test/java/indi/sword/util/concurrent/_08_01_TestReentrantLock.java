@@ -17,6 +17,7 @@ public class _08_01_TestReentrantLock {
     public void print() throws InterruptedException {
         System.out.println("do print");
         lock.lock();
+        lock.lock(); // 无所谓的
         doAdd();
         System.out.println("unlock do print");
         lock.unlock();

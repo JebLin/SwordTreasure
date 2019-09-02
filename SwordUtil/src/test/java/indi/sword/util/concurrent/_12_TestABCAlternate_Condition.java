@@ -15,36 +15,21 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class _12_TestABCAlternate_Condition {
 	public static void main(String[] args) {
-
 		AlternateDemo demo = new AlternateDemo();
-		new Thread(new Runnable() {
-
-			@Override
-			public void run() {
-				for (int i = 1; i < 5; i++) {
-					demo.LoopA(i);
-				}
+		new Thread(() -> {
+			for (int i = 1; i < 5; i++) {
+				demo.LoopA(i);
 			}
 		}, "A").start();
 		
-		new Thread(new Runnable() {
-
-			@Override
-			public void run() {
-				for (int i = 1; i < 5; i++) {
-					demo.LoopB(i);
-				}
+		new Thread(() -> {
+			for (int i = 1; i < 5; i++) {
+				demo.LoopB(i);
 			}
 		}, "B").start();
-		
-		
-		new Thread(new Runnable() {
-
-			@Override
-			public void run() {
-				for (int i = 1; i < 5; i++) {
-					demo.LoopC(i);
-				}
+		new Thread(() -> {
+			for (int i = 1; i < 5; i++) {
+				demo.LoopC(i);
 			}
 		}, "C").start();
 
@@ -73,8 +58,7 @@ class AlternateDemo {
 			number = 2; 
 			condition2.signal();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace(); 
+			e.printStackTrace();
 		} finally {
 			lock.unlock();
 		}
@@ -90,7 +74,6 @@ class AlternateDemo {
 			number = 3;
 			condition3.signal();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			lock.unlock();
@@ -108,7 +91,6 @@ class AlternateDemo {
 			number = 1;
 			condition1.signal();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			lock.unlock();

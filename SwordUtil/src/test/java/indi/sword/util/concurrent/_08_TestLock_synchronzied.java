@@ -31,8 +31,8 @@ public class _08_TestLock_synchronzied {
 		final int NUM = 1000;
 
 		CountDownLatch latch = new CountDownLatch(NUM);
-		MyThread_lock mt = new MyThread_lock(latch);
-//		MyThread_Synchronzied mt = new MyThread_Synchronzied(latch);
+//		MyThread_lock mt = new MyThread_lock(latch);
+		MyThread_Synchronzied mt = new MyThread_Synchronzied(latch);
 		
 		long startTime = System.currentTimeMillis();
 		for (int i = 0; i < NUM; i++) {
@@ -42,10 +42,9 @@ public class _08_TestLock_synchronzied {
 		try {
 			latch.await();
 			long endTime = System.currentTimeMillis();
-			System.out.println(endTime - startTime + "millisecond"); //38230   37718
+			System.out.println(endTime - startTime + " ms"); //38230   37718
 
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -59,8 +58,7 @@ class MyThread_lock implements Runnable {
 	private CountDownLatch latch;
 
 	private Lock lock = new ReentrantLock(); // 底层使用 CAS 算法  锁住对象
-	
-	
+
 	public MyThread_lock(CountDownLatch latch) {
 		this.latch = latch;
 	}
@@ -75,7 +73,6 @@ class MyThread_lock implements Runnable {
 					try {
 						Thread.sleep(10000);
 					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
@@ -110,7 +107,7 @@ class MyThread_Synchronzied implements Runnable {
 			try {
 				if(Thread.currentThread().getName().equals("Thread-100")){
 					try {
-						Thread.sleep(5000);
+						Thread.sleep(10000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();

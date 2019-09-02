@@ -10,26 +10,24 @@ package indi.sword.util.concurrent;
  * @Modified By
  */
 public class _08_03_TestSynchronized {
-
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Child child = new Child();
         child.print();
     }
 }
-
+class Child extends Father{
+    public synchronized void print() {
+        System.out.println("Child do print");
+        doAdd();
+        System.out.println("Child unlock do print");
+    }
+}
 class Father{
     public synchronized void doAdd(){
-        System.out.println("father do add");
-        System.out.println("father unlock do add");
+        System.out.println("Father do add");
+        System.out.println("Father unlock do add");
     }
 }
-class Child extends Father{
 
-    public synchronized void print() {
-        System.out.println("do print");
-        doAdd();
-        System.out.println("unlock do print");
-    }
-}
 
 
