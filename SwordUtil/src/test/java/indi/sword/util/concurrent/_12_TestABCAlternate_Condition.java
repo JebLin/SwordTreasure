@@ -1,5 +1,6 @@
 package indi.sword.util.concurrent;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -14,31 +15,36 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Date Sep 3, 2017 4:58:18 PM
  */
 public class _12_TestABCAlternate_Condition {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
+
 		AlternateDemo demo = new AlternateDemo();
-		new Thread(() -> {
-			for (int i = 1; i < 5; i++) {
-				demo.LoopA(i);
-			}
-		}, "A").start();
-		
-		new Thread(() -> {
-			for (int i = 1; i < 5; i++) {
-				demo.LoopB(i);
-			}
-		}, "B").start();
+
 		new Thread(() -> {
 			for (int i = 1; i < 5; i++) {
 				demo.LoopC(i);
 			}
 		}, "C").start();
 
+		Thread.sleep(15000);
+//
+//		new Thread(() -> {
+//			for (int i = 1; i < 5; i++) {
+//				demo.LoopB(i);
+//			}
+//		}, "B").start();
+//
+//		Thread.sleep(15000);
+//		new Thread(() -> {
+//			for (int i = 1; i < 5; i++) {
+//				demo.LoopA(i);
+//			}
+//		}, "A").start();
 	}
 }
 
 class AlternateDemo {
-	private int number = 1; //当前正在执行线程的标记
-	private Lock lock = new ReentrantLock();
+	private AtomicInteger number = new AtomicInteger(1); //当前正在执行线程的标记
+	private ReentrantLock lock = new ReentrantLock();
 	private Condition condition1 = lock.newCondition();
 	private Condition condition2 = lock.newCondition();
 	private Condition condition3 = lock.newCondition();
@@ -46,16 +52,17 @@ class AlternateDemo {
 	 * @param totalLoop : 循环第几轮
 	 */
 	public void LoopA(int totalLoop) {
+
 		lock.lock();
 		try {
 			//1. 判断
-			if (number != 1) {
+			if (number.intValue() != 1) {
 				condition1.await();
 			}
 			//2. 打印
 			System.out.println(Thread.currentThread().getName() + "-" + totalLoop);
 			//3. 唤醒
-			number = 2; 
+			number.incrementAndGet();
 			condition2.signal();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -67,11 +74,11 @@ class AlternateDemo {
 	public void LoopB(int totalLoop) {
 		lock.lock();
 		try {
-			if (number != 2) {
+			if (number.intValue() != 2) {
 				condition2.await();
 			}
 			System.out.println(Thread.currentThread().getName() + "-" + totalLoop);
-			number = 3;
+			number.incrementAndGet();
 			condition3.signal();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -83,12 +90,12 @@ class AlternateDemo {
 	public void LoopC(int totalLoop) {
 		lock.lock();
 		try {
-			if (number != 3) {
+			if (number.intValue() != 3) {
 				condition3.await();
 			}
 			System.out.println(Thread.currentThread().getName() + "-" + totalLoop);
 			System.out.println("--------------------------------------------------");
-			number = 1;
+			number = new AtomicInteger(1);
 			condition1.signal();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -96,5 +103,4 @@ class AlternateDemo {
 			lock.unlock();
 		}
 	}
-
 }

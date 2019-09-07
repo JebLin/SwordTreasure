@@ -5,7 +5,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 多线程下的 生产者与消费者 案例,使用 Lock  Condition替换
+ * 多线程下的 生产者与消费者 案例,使用 Lock Condition替换
  * 
  * @Descrption
  * @author rd_jianbin_lin
@@ -49,7 +49,6 @@ class Saler_Lock {
 				try {
 					condition.await();  // await -->  wait 
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -57,7 +56,7 @@ class Saler_Lock {
 			System.out.println(Thread.currentThread().getName() + "生产了，现存量" + ++number);
 			condition.signalAll(); // signalAll --> notifyAll 
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			e.printStackTrace();
 		} finally{
 			lock.unlock();
 		}
@@ -80,7 +79,6 @@ class Saler_Lock {
 				try {
 					condition.await();
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
