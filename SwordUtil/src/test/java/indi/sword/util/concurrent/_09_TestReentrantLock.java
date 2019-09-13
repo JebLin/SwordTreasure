@@ -58,14 +58,15 @@ public class _09_TestReentrantLock {
 
 class MyThread_Interrupted implements Runnable {
 
-    private static ReentrantLock lock = new ReentrantLock();
+    private static ReentrantLock lock = new ReentrantLock(true);
 
     private boolean hasLock = false;
     public void run() {
         try {
             System.out.println(Thread.currentThread().getName() + " wait to lock .");
-            lock.lock(); //被中断，继续等待
-//            lock.lockInterruptibly(); //被中断，直接抛出异常
+//            lock.lock(); //被中断，继续等待
+
+            lock.lockInterruptibly(); //被中断，直接抛出异常
             hasLock = true;
             System.out.println(Thread.currentThread().getName() + " get the lock and running .");
 
