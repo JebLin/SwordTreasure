@@ -7,9 +7,9 @@ package indi.sword.util.concurrent;
  * 2. 新增 Thread.sleep() 给 getOne() ,打印? //one  two
  * 3. 新增普通方法 getThree() , 打印? //three  one   two
  * 4. 两个普通同步方法，两个 Number 对象，打印?  //two  one
- * 5. 修改 getOne() 为静态同步方法，打印?  //two   one
+ * 5. 修改 getOne() 为静态同步方法，打印?  //two   one （重点）
  * 6. 修改两个方法均为静态同步方法，一个 Number 对象?  //one   two
- * 7. 一个静态同步方法，一个非静态同步方法，两个 Number 对象?  //two  one
+ * 7. 一个静态同步方法，一个非静态同步方法，两个 Number 对象?  //two  one  （重点）
  * 8. 两个静态同步方法，两个 Number 对象?   //one  two
  * 
  * 线程八锁的关键：
@@ -21,40 +21,28 @@ package indi.sword.util.concurrent;
  *  不互斥
  *  
  */
-public class _15_TestSynchronized_static {
-	
-	public static void main(String[] args) throws Exception{
-		Number number = new Number();
-//		Number number2 = new Number();
-		
-		new Thread(() -> number.getOne(),"A").start();
-		Thread.sleep(10);
-		new Thread(() -> {
-				number.getTwo();
-//			number2.getTwo();
-		},"B").start();
 
-//		new Thread(() -> number.getThree()).start();
+// 7. 一个静态同步方法，一个非静态同步方法，两个 Number 对象?  //two  one 对比5
+public class _15_07_TestSynchronized {
+	public static void main(String[] args) throws Exception{
+		Number07 number = new Number07();
+		Number07 number2 = new Number07();
+
+		new Thread(() -> number.getOne(),"A").start();
+		Thread.sleep(50);
+		new Thread(() -> number2.getTwo(),"B").start();
 	}
 }
- 
-class Number{
-	
-	public synchronized void getOne(){//Number.class
+
+class Number07{
+	public static synchronized void getOne(){//Number.class
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 		}
-//
 		System.out.println(Thread.currentThread().getName() + "_one");
 	}
-	
-	public  synchronized void getTwo(){//this
+	public synchronized void getTwo(){//this
 		System.out.println(Thread.currentThread().getName() + "_two");
 	}
-	
-	public void getThree(){
-		System.out.println(Thread.currentThread().getName() + "_three");
-	}
-	
 }
