@@ -1,6 +1,5 @@
 package indi.sword.util.concurrent;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 
 /*

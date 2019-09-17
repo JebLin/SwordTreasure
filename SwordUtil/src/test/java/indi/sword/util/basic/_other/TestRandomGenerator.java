@@ -53,7 +53,7 @@ public class TestRandomGenerator {
     private static final int COUNT_THREADS = 3; // 线程数目
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
 
         /**
@@ -110,8 +110,8 @@ public class TestRandomGenerator {
         public void run() {
             try {
                 final Random random = getRandom();
-                latch.countDown();
-                latch.await();
+
+
                 final long start = System.currentTimeMillis();
                 int sum = 0;
                 for (long j = 0; j < count; ++j) {
@@ -123,6 +123,8 @@ public class TestRandomGenerator {
                         + " sec, sum = " + sum);
             } catch (Exception e) {
 
+            } finally {
+                latch.countDown();
             }
         }
     }
@@ -170,7 +172,7 @@ public class TestRandomGenerator {
      * @Author:rd_jianbin_lin
      * @Date: 15:04 2017/9/16
      */
-    private static void _03_testRandom_ThreadLocalRandom(final int threads, final long count) {
+    private static void _03_testRandom_ThreadLocalRandom(final int threads, final long count) throws Exception{
         System.out.println("java.lang.ThreadLocal<Random>");
         final CountDownLatch latch = new CountDownLatch(threads);
         final ThreadLocal<Random> randomThreadLocal = new ThreadLocal<Random>() {
@@ -189,6 +191,7 @@ public class TestRandomGenerator {
                     });
             thread.start();
         }
+        latch.await();
     }
 
     /**
@@ -196,7 +199,7 @@ public class TestRandomGenerator {
      * @Author:rd_jianbin_lin
      * @Date: 15:04 2017/9/16
      */
-    private static void _04_testRandom_ThreadLocal(final int threads, final long count) {
+    private static void _04_testRandom_ThreadLocal(final int threads, final long count) throws Exception{
         System.out.println("java.util.concurrent.ThreadLocalRandom");
         final CountDownLatch latch = new CountDownLatch(threads);
         for (int i = 0; i < threads; ++i) {
@@ -210,6 +213,7 @@ public class TestRandomGenerator {
                     });
             thread.start();
         }
+        latch.await();
     }
 
 
