@@ -1,49 +1,86 @@
 package indi.sword.util.concurrent;
 
+import java.util.function.Supplier;
+
 /**
  * @Description
  * @Author jeb_lin
- * @Date Created in 11:52 AM 24/05/2018
- * @MODIFIED BY
  */
+//每个人都有一个账户，每次买东西都会进行扣费，每个人花的是自己的钱，每个人的账户存款都不一样。一个人就是一条线程，账户存款就是线程内的局部变量。
 public class _22_TestThreadLocal {
-    // ①通过匿名内部类覆盖ThreadLocal的initialValue()方法，指定初始值
-    private static ThreadLocal<Integer> seqNum = new ThreadLocal<Integer>() {
-        public Integer initialValue() {
-            return 0;
-        }
-    };
-
-    // ②获取下一个序列值
-    public int getNextNum() {
-        seqNum.set(seqNum.get() + 1);
-        return seqNum.get();
-    }
-
     public static void main(String[] args) {
-        _22_TestThreadLocal sn = new _22_TestThreadLocal();
-        // ③ 3个线程共享sn，各自产生序列号
-        TestClient t1 = new TestClient(sn);
-        TestClient t2 = new TestClient(sn);
-        TestClient t3 = new TestClient(sn);
-        t1.start();
-        t2.start();
-        t3.start();
+        wallet wallet = new wallet();
+        // 3.  3个线程共享wallet，各自消费
+        new Thread(new TaskDemo(wallet), "A").start();
+        new Thread(new TaskDemo(wallet), "B").start();
+        new Thread(new TaskDemo(wallet), "C").start();
     }
 
-    private static class TestClient extends Thread {
-        private _22_TestThreadLocal sn;
+    private static class TaskDemo implements Runnable { //一个人就像一个线程
+        private wallet wallet;
 
-        public TestClient(_22_TestThreadLocal sn) {
-            this.sn = sn;
+        public TaskDemo(wallet wallet) {
+            this.wallet = wallet;
         }
 
         public void run() {
-            for (int i = 0; i < 3; i++) {
-                // ④每个线程打出3个序列值
-                System.out.println(Thread.currentThread().getName() + " --> sn["
-                        + sn.getNextNum() + "]");
+            try{
+                for (int i = 0; i < 3; i++) {
+                    wallet.spendMoney();
+
+                    // 4. 每个线程打出3个
+                    System.out.println(Thread.currentThread().getName() + " --> balance["
+                            + wallet.getBalance() + "] ," + "cost [" + wallet.getCost() + "]");
+                }
+            }finally {
+                wallet.removeAll();
             }
+
+        }
+    }
+
+    private static class wallet { //一个人就像一个线程
+        // 1.通过匿名内部类覆盖ThreadLocal的initialValue()方法，指定初始值
+        private static ThreadLocal<Integer> balance = ThreadLocal.withInitial(new Supplier<Integer>() {
+            @Override
+            public Integer get() {
+                return 100;
+            }
+        }); // 假设初始账户有100块钱
+
+
+        private static ThreadLocal<Integer> cost = ThreadLocal.withInitial(() -> 0); // 假设初始账户有100块钱
+//        private static ThreadLocal<Integer> balance = new ThreadLocal<>();
+//        private static ThreadLocal<Integer> cost = new ThreadLocal<>();
+
+        public int getBalance() {
+            return balance.get();
+        }
+
+        public int getCost() {
+            return cost.get();
+        }
+
+        // 2。 消费
+        public void spendMoney() {
+            int balanceNow = balance.get();
+            int costNow = cost.get();
+            balance.set(balanceNow - 10); // 每次花10块钱
+            cost.set(costNow + 10);
+        }
+
+
+        public void removeBalance(){
+            balance.remove();
+        }
+
+        public void removeCost(){
+            cost.remove();
+        }
+
+        public void removeAll(){
+            removeBalance();
+            removeCost();
         }
     }
 }

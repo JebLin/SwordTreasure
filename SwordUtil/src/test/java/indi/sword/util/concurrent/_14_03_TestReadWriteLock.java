@@ -19,7 +19,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 // 场景三：thread1 在 read，thread2-N 准备来 write
 public class _14_03_TestReadWriteLock {
 	public static void main(String[] args) throws Exception{
-		ReadWriteLock lock = new ReentrantReadWriteLock();
+		ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 		new Thread(() -> {
 			System.out.println(Thread.currentThread().getName() + " wait to read lock  ...");
 			lock.readLock().lock();

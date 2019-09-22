@@ -20,7 +20,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class _14_02_TestReadWriteLock {
 	public static void main(String[] args) throws Exception{
 		new Thread(() -> {
-			ReadWriteLock lock = new ReentrantReadWriteLock();
+			ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 			System.out.println(Thread.currentThread().getName() + " wait to read lock  ...");
 			lock.readLock().lock();
 			System.out.println(Thread.currentThread().getName() + " get the read lock ... ===");
