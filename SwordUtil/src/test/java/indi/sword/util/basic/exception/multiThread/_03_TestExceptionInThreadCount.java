@@ -1,8 +1,6 @@
 package indi.sword.util.basic.exception.multiThread;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.*;
 
 /**
  * @Description 测试一下Exception之后，线程池中的异常线程有没有被剔除掉
@@ -12,30 +10,25 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 public class _03_TestExceptionInThreadCount {
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService exec = Executors.newCachedThreadPool();
-        for (int i = 0; i < 5; i++) {
-            Thread.sleep(200);
-            exec.execute(new ExceptionThreadDemo01());
-        }
-        System.out.println("--------------------");
-        Thread.sleep(1000);
-        for (int i = 0; i < 5; i++) {
-            Thread.sleep(200);
-            exec.execute(new NormalThread());
-        }
-        exec.shutdown();
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(0, Integer.MAX_VALUE,
+                60L, TimeUnit.SECONDS,
+                new SynchronousQueue<Runnable>());
+        threadPoolExecutor.execute(() -> {
+            throw new RuntimeException("aaa");
+        });
+
+        threadPoolExecutor.execute(() -> {
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        System.out.println(threadPoolExecutor.getActiveCount());
+        System.out.println(threadPoolExecutor.getTaskCount());
+
+        threadPoolExecutor.shutdown();
     }
 }
 
-class NormalThread implements Runnable{
-
-    @Override
-    public void run() {
-        try {
-            Thread.sleep(20);
-            System.out.println(Thread.currentThread().getName());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-}

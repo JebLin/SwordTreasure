@@ -3,6 +3,7 @@ package indi.sword.util.concurrent;
 import org.junit.Test;
 
 import java.util.Random;
+import java.util.Scanner;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 
@@ -30,9 +31,9 @@ import java.util.concurrent.TimeUnit;
 
  */
 public class _21_04_TestBlockingQueue_SynchronousQueue {
-    public static void main(String[] args) {
-        // 如果为 true，则等待线程以 FIFO 的顺序竞争访问；否则顺序是未指定的。
-        // SynchronousQueue<Integer> sc =new SynchronousQueue<>(true);//fair
+    public static void main(String[] args) throws Exception{
+        // 如果为 true566，则等待线程以 FIFO 的顺序竞争访问；否则顺序是未指定的。
+        // SynchronousQueue<Integer> sc = new SynchronousQueue<>(true);//fair
         SynchronousQueue<Integer> sc = new SynchronousQueue<>(); // 默认不指定的话是false，不公平的
         new Thread(() ->{ // 生产者线程
             while (true){
@@ -42,25 +43,25 @@ public class _21_04_TestBlockingQueue_SynchronousQueue {
                     // 如果另一个线程正在等待以便接收指定元素，则将指定元素插入到此队列。如果没有等待接受数据的线程则直接返回false
 //                     System.out.println("sc.offer(new Random().nextInt(50)): "+sc.offer(new Random().nextInt(50)));
                     //如果没有等待的线程，则等待指定的时间。在等待时间还没有接受数据的线程的话，直接返回false
-                    System.out.println("sc.offer(new Random().nextInt(50),5,TimeUnit.SECONDS) :" + sc.offer(new Random().nextInt(50),5,TimeUnit.SECONDS));
+                    int temp = new Random().nextInt(50);
+                    Thread.sleep(500);
+                    System.out.println("put : " + temp +  ", 操作运行完毕..." ); //是操作完毕，并不是添加或获取元素成功!
+                    sc.offer(temp,5,TimeUnit.SECONDS);
 
-
-
-                    System.out.println("添加操作运行完毕..." ); //是操作完毕，并不是添加或获取元素成功!
-                    Thread.sleep(1000);
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
-
             }
         }).start();
+
+        Thread.sleep(1000);
+
         new Thread(() ->{ //消费者线程。
             while (true){
                 try {
-                    System.out.println("----------------> sc.take: " + sc.take());
-                    System.out.println("----------------> 获取操作运行完毕..."); // 是操作完毕，并不是添加或者获取元素成功！
+                    // 是操作完毕，并不是添加或者获取元素成功！
+                    System.out.println("----------------> sc.take: " + sc.take() + ",获取操作运行完毕..");
                     Thread.sleep(1000);
 
 
@@ -69,18 +70,51 @@ public class _21_04_TestBlockingQueue_SynchronousQueue {
                 }
             }
         }).start();
-
-
     }
     @Test
-    public void firstDemo(){
-        SynchronousQueue<Integer> sc = new SynchronousQueue<>(); // 默认不指定的话是false，不公平锁
-        sc.offer(2); // 没有线程等待获取元素的话，不阻塞在此处，如果该元素已添加到此队列，则返回 true；否则返回 false
-        try {
-            sc.offer(2,5, TimeUnit.SECONDS);// 没有线程等待获取元素的话，阻塞在此处等待指定时间，如果该元素已添加到此队列，则返回true；否则返回 false
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    public void firstDemo()throws Exception{
+        SynchronousQueue<Integer> sc = new SynchronousQueue<>(true); // 默认不指定的话是false，不公平锁
+        sc.offer(1,5,TimeUnit.SECONDS);
+        new Thread(() -> {
+            try {
+                Thread.sleep(2000);
+                System.out.println("2 put ...");
+                sc.put(2);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        },"A").start();
+//        new Thread(() -> {
+//            try {
+//                Thread.sleep(8000);
+//                int result = sc.take();
+//                System.out.println("3 take ... result -> " + result);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        },"B").start();
+
+
+//        new Thread(() -> {
+//            try {
+//                sc.offer(1,1,TimeUnit.SECONDS);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        },"C").start();
+//
+//        System.out.println("put ok ");
+
+
+
+
+//        sc.take();
+//        sc.offer(2); // 没有线程等待获取元素的话，不阻塞在此处，如果该元素已添加到此队列，则返回 true；否则返回 false
+//        try {
+//            sc.offer(2,5, TimeUnit.SECONDS);// 没有线程等待获取元素的话，阻塞在此处等待指定时间，如果该元素已添加到此队列，则返回true；否则返回 false
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
 }

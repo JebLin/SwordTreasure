@@ -27,8 +27,18 @@ public class _01_TestReference {
     public static void main(String[] args) throws Exception {
 //        soft();
 //        weak();
-        phantom();
+//        phantom();
+
+        int a = 1;
+        int b = 1;
+        byte[] ab = String.valueOf(a).getBytes();
+        byte[] abc = String.valueOf(b).getBytes();
+        System.out.println(ab.equals(abc));
+        System.out.println(ab == abc);
+
+        System.out.println(new String(ab).equals(new String(abc)));
     }
+
 
 
     /*

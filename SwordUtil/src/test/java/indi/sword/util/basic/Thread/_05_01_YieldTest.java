@@ -19,7 +19,7 @@ public class _05_01_YieldTest implements Runnable {
         }
         for (int i = 0; i < 3; i++) {
             System.out.println(Thread.currentThread() + ": " + i);
-//            Thread.yield();
+            Thread.yield();
 //            try {
 //                Thread.sleep(1000);
 //            } catch (InterruptedException e) {
@@ -35,6 +35,7 @@ public class _05_01_YieldTest implements Runnable {
 
         t1.start();
         t2.start();
+        t1.interrupt();
         Thread.sleep(1000);
         for (int i = 0; i < 3; i++) {
             System.out.println("Main " + Thread.currentThread() + ": " + i);
@@ -45,6 +46,7 @@ public class _05_01_YieldTest implements Runnable {
                 e.printStackTrace();
             }
         }
+
     }
 }
 /*

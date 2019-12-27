@@ -9,7 +9,7 @@ package indi.sword.util.concurrent;
 
 public class _08_05_SynchronizedBlocked implements Runnable{
     public synchronized void test() {
-        System.out.println(Thread.currentThread() + " test begin ");
+        System.out.println(Thread.currentThread() + " testQueue begin ");
         while(true){
             if(Thread.currentThread().isInterrupted()){
                 Thread.yield(); // yield 也是不释放锁的

@@ -2,11 +2,7 @@ package indi.sword.util.concurrent;
 
 import java.time.Duration;
 import java.time.Instant;
-import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.ForkJoinTask;
-import java.util.concurrent.RecursiveAction;
-import java.util.concurrent.RecursiveTask;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * Created by rd_jianbin_lin on 2017/9/5.
@@ -55,8 +51,7 @@ import java.util.concurrent.TimeUnit;
 public class _20_TestForkJoinPool_RecursiveAction {
     public static void main(String[] args) throws Exception{
         Instant start = Instant.now();
-        
-        
+
         ForkJoinPool pool = new ForkJoinPool();
         pool.submit(new ForkJoin_RecursiveAction(0L,50000l)); // submit execute invoke 我觉得都一样
         pool.awaitTermination(5, TimeUnit.SECONDS);  // 任务全部完成之后呢，等待2秒再往下跑

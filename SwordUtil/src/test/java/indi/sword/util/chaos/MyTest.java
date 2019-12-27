@@ -1,55 +1,124 @@
 package indi.sword.util.chaos;
 
-import java.util.Random;
+import com.google.common.collect.Lists;
+import org.apache.cxf.wsdl11.SOAPBindingUtil;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
 
 public class MyTest {
+    private Object obj = new Object();
 
-	public static void main(String[] args){
-//		test01();
-		test02();
+    private Object anotherObj = new Object();
+
+    @Test
+    public void produce() {
+        synchronized (anotherObj) {
+            try {
+                anotherObj.notify();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
 
-	}
+    public static void main(String[] args) throws Exception {
 
-	public static void test01(){
-		String s = new String("1");
-		s.intern();
-		String s2 = "1";
-		System.out.println(s == s2);
+//        test01();
+//        test02();
+//        test03();
+//        test04();
 
-		String s3 = new String("1") + new String("1");
-		s3.intern();
-		String s4 = "11";
-		System.out.println(s3 == s4);
-	}
-	public static void test02(){
-		String s = new String("1");
-		String s2 = "1";
-		s.intern();
-		System.out.println(s == s2);
+        String s3 = new String("11");
 
-		String s3 = new String("1") + new String("1");
-		String s4 = "11";
-		s3.intern();
-		System.out.println(s3 == s4);
-	}
+        s3.intern();
+        String s4 = "11";
+        System.out.println(s3 == s4);
 
-	static final int MAX = 1000 * 10000;
-	static final String[] arr = new String[MAX];
+    }
 
-	public static void test03(){
-		Integer[] DB_DATA = new Integer[10];
-		Random random = new Random(10 * 10000);
-		for (int i = 0; i < DB_DATA.length; i++) {
-			DB_DATA[i] = random.nextInt();
-		}
-		long t = System.currentTimeMillis();
-		for (int i = 0; i < MAX; i++) {
-			//arr[i] = new String(String.valueOf(DB_DATA[i % DB_DATA.length]));
-			arr[i] = new String(String.valueOf(DB_DATA[i % DB_DATA.length])).intern();
-		}
+    private static void test01() {
+//        ArrayList<String> stringList = new ArrayList<>(1); // 162ms  VS 9000ms
+        ArrayList<String> stringList = new ArrayList<>(1); // 162ms  VS 9000ms
 
-		System.out.println((System.currentTimeMillis() - t) + "ms");
-		System.gc();
-	}
+        long begin = System.currentTimeMillis();
+
+        for (int i = 0; i < 100000000; i++) {
+            stringList.add("A");
+        }
+
+        long end = System.currentTimeMillis();
+        System.out.println("ArrayList -> " + (end - begin));
+
+
+//		LinkedList<String> stringLinkedLis = Lists.newLinkedList();
+//		long begin2 = System.currentTimeMillis();
+//
+//		for (int i = 0; i < 10000000; i++) {
+//			stringLinkedLis.add("A");
+//		}
+//
+//		long end2 = System.currentTimeMillis();
+//		System.out.println("LinkedList -> " + (end2 - begin2));
+    }
+
+    private static void test02() {
+        List<A> list = Lists.newArrayList();
+        list.add(new A());
+
+        List<B> list2 = Lists.newArrayList();
+        list2.add(new B());
+
+
+        System.out.println(list.removeAll(list2));
+        System.out.println(list.contains(new B()));
+    }
+
+
+
+    private static class A{}
+    private static class B{}
+
+    private static void test03(){
+        Object[] a = new Object[10];
+
+        a[0] = "A";
+        a[1] = "B";
+
+        Object[] b = new Object[10];
+
+        System.arraycopy(a, 0,
+                b, 0,
+                2);
+
+        b[1] = "X";
+        System.out.println(a[1]);
+        System.out.println(b[1]);
+
+        Object[] c = a.clone();
+        c[1] = "c1";
+        System.out.println(a[1]);
+    }
+
+
+    private static void test04() throws Exception{
+        ArrayBlockingQueue<String> arrayBlockingQueue = new ArrayBlockingQueue(2);
+
+        new Thread(() -> {
+            try {
+                Thread.sleep(2000);
+                System.out.println(Thread.currentThread().getName() + "--- put A");
+                arrayBlockingQueue.put("A");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
+        System.out.println("first take ...");
+        System.out.println(arrayBlockingQueue.take());
+        System.out.println("end take ...");
+    }
 }

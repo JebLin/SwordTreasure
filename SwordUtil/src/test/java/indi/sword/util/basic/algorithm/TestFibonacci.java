@@ -10,7 +10,7 @@ package indi.sword.util.basic.algorithm;
 /*
     斐波那契数列指的是这样一个数列 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233，377，610，987，1597，2584，4181，6765，10946，17711，28657，46368........
     这个数列从第3项开始，每一项都等于前两项之和
-    test(0) = 1 , test(1) = 1.
+    testQueue(0) = 1 , testQueue(1) = 1.
  */
 public class TestFibonacci {
 

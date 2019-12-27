@@ -82,7 +82,7 @@ class Singleton03 {
     }
 
     public static void test() {
-        System.out.println("test");
+        System.out.println("testQueue");
     }
 }
 

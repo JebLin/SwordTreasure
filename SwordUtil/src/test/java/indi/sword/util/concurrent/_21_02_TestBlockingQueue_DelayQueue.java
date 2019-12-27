@@ -11,7 +11,6 @@ import java.util.concurrent.*;
  */
 public class _21_02_TestBlockingQueue_DelayQueue {
     static final int STUDENT_SIZE = 30;
-
     public static void main(String[] args) throws InterruptedException {
         Random r = new Random();
 
@@ -27,12 +26,8 @@ public class _21_02_TestBlockingQueue_DelayQueue {
         while(! students.isEmpty()){
             executorService.execute(students.take());
         }
-
         executorService.shutdown();
-
-
     }
-
 }
 
 
@@ -63,6 +58,4 @@ class Student implements Runnable,Delayed{
         Student other = (Student)o;
         return costTime >= other.costTime ? 1: -1;
     }
-
-
 }

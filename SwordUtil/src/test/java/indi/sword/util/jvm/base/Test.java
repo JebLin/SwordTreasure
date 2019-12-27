@@ -15,7 +15,7 @@ class FinalTest007{
     public static final int x = 2;
 
     //静态常量，运行时常量 -- "加载链接初始化"的第三阶段 "初始化" 才赋值的
-    public static final int y = "test".length();
+    public static final int y = "testQueue".length();
 
     // 静态变量 -- 会变的量
     public static int z = 2;

@@ -1,5 +1,7 @@
 package indi.sword.util.concurrent;
 
+import lombok.ToString;
+
 import java.util.concurrent.DelayQueue;
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
@@ -16,20 +18,18 @@ import java.util.concurrent.TimeUnit;
     从 Delayed 接口定义可以看到，它还继承了Comparable接口，这是因为DelayedQueue中的元素需要进行排序，一般情况，我们都是按元素过期时间的优先级进行排序。
  */
 public class _21_01_TestBlockingQueue_DelayQueue {
-
     public static void main(String[] args) throws InterruptedException {
         DelayQueue<DelayedElement> queue = new DelayQueue<>();
         DelayedElement ele = new DelayedElement("cache 3 seconds",3000);
         queue.put(ele);
+        System.out.println("has put into queue ...");
         System.out.println(queue.take());
     }
-
-
-
 }
 
-class DelayedElement implements Delayed{
 
+@ToString
+class DelayedElement implements Delayed{
     private long expired;
     private long delay;
     private String name;
@@ -51,15 +51,6 @@ class DelayedElement implements Delayed{
     public long getDelay(TimeUnit unit) {
 
         return ( this.getExpired() -  System.currentTimeMillis());
-    }
-
-    @Override
-    public String toString() {
-        return "DelayedElement{" +
-                "expired=" + expired +
-                ", delay=" + delay +
-                ", name='" + name + '\'' +
-                '}';
     }
 
     public long getExpired() {

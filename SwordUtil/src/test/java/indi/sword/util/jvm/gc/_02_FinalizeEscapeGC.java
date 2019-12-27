@@ -23,6 +23,8 @@ public class _02_FinalizeEscapeGC {
         super.finalize();
         System.out.println("===  finalize ===");
         _02_FinalizeEscapeGC.SAVE_HOOK = this;
+
+        System.out.println( 10 / 0);
     }
 
     public static void main(String[] args) throws Exception {

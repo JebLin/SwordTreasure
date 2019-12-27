@@ -46,7 +46,7 @@ public class _03_NotifyTest {
                         }
                         System.out.println(Thread.currentThread().getName() + " End-------");
                     }
-//                    test.testWait();
+//                    testQueue.testWait();
                 }
             }).start();
         }

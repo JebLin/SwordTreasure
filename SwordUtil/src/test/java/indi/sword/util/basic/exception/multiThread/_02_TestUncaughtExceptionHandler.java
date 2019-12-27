@@ -17,7 +17,6 @@ import java.util.concurrent.ThreadPoolExecutor;
         实现 Thread.UncaughtExceptionHandler 规范。
  */
 class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandler {
-
     /*
         Thread.UncaughtExceptionHandle.uncaughtException()
             会在线程因未捕获的异常而临近死亡时被调用
@@ -37,15 +36,15 @@ class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandler {
     工厂就是用来产生线程
  */
 class MyHandlerThreadFactory implements ThreadFactory {
-
     @Override
     public Thread newThread(Runnable r) {
-        System.out.println(this + " creating new Thread");
+        System.out.println("MyHandlerThreadFactory creating new Thread ==== Begin ====");
         Thread thread = new Thread(r);
-        System.out.println("created " + thread);
+        System.out.println("MyHandlerThreadFactory created " + thread);
         // 设定线程工程的异常处理器
         thread.setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
         System.out.println("eh = " + thread.getUncaughtExceptionHandler());
+        System.out.println("MyHandlerThreadFactory creating new Thread ==== End ====");
         return thread;
     }
 }
@@ -57,7 +56,6 @@ class MyHandlerThreadFactory implements ThreadFactory {
     显示的抛出一个exception
  */
 class ExceptionThreadDemo implements Runnable {
-
     @Override
     public void run() {
         Thread t = Thread.currentThread();
@@ -72,13 +70,11 @@ public class _02_TestUncaughtExceptionHandler {
     /**
      * 必须注意一件事情，线程抛出异常之后，不会退出JVM，这点很危险，很容易耗光内存，
      * 接下来的测试类会说道 _03_TestExceptionInThreadCount
-     *
-     *
-     * @param args
      */
     public static void main(String[] args) {
 //        test01();
-        test02();
+//        test02();
+        test03();
     }
     /*
         这是第四步，使用线程工厂创建线程池，并调用其 execute 方法
@@ -86,7 +82,6 @@ public class _02_TestUncaughtExceptionHandler {
     public static void test01(){
         ExecutorService exec = Executors.newCachedThreadPool(new MyHandlerThreadFactory());
         exec.execute(new ExceptionThreadDemo());
-        System.out.println( "--------"  + ((ThreadPoolExecutor)exec).getActiveCount());
         exec.shutdown();
     }
 
@@ -101,5 +96,17 @@ public class _02_TestUncaughtExceptionHandler {
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(new ExceptionThreadDemo());
         exec.shutdown();
+    }
+
+
+    public static void test03(){
+        Thread.setDefaultUncaughtExceptionHandler((t,e) -> {
+            if(e instanceof RuntimeException){
+                System.out.println("### default catch " + e);
+            }
+        });
+        ExecutorService exec2 = Executors.newCachedThreadPool(new MyHandlerThreadFactory());
+        exec2.execute(new ExceptionThreadDemo());
+        exec2.shutdown();
     }
 }

@@ -1,46 +1,40 @@
 package indi.sword.util.chaos;
 
-import java.util.concurrent.atomic.AtomicInteger;
+
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.Lists;
+
+import java.util.List;
+import java.util.Vector;
 
 /**
  * @author jeb_lin
  * 11:13 AM 2019/9/20
  */
 public class Test02 {
-    private final int threadLocalHashCode = nextHashCode();
-
-    /**
-     * The next hash code to be given out. Updated atomically. Starts at
-     * zero.
-     */
-    private static AtomicInteger nextHashCode =
-            new AtomicInteger();
-
-    /**
-     * The difference between successively generated hash codes - turns
-     * implicit sequential thread-local IDs into near-optimally spread
-     * multiplicative hash values for power-of-two-sized tables.
-     */
-    private static final int HASH_INCREMENT = 0x61c88647;
-
-    /**
-     * Returns the next hash code.
-     */
-    private static int nextHashCode() {
-        return nextHashCode.getAndAdd(HASH_INCREMENT);
-    }
-
-
-
     public static void main(String[] args) {
-        Test02 test02 = new Test02();
+        List<String> list = Lists.newArrayList();
+        list.add("1");
+        list.add("2");
 
+        Object[] arr = list.toArray();
+        System.out.println(arr[0]);
+        arr[0] = "4";
+        System.out.println(arr[0]);
+        System.out.println(list.get(0));
 
-        new Thread(() -> {System.out.println(Thread.currentThread().getName() + " _ " + test02.threadLocalHashCode);}).start();
-        new Thread(() -> {System.out.println(Thread.currentThread().getName() + " _ " + test02.threadLocalHashCode);}).start();
-        new Thread(() -> {System.out.println(Thread.currentThread().getName() + " _ " + test02.threadLocalHashCode);}).start();
+        List<String> list2 = Lists.newArrayList();
+        list2.add(null);
+        list2.add(null);
 
+        List<String> list3 = Lists.newLinkedList();
+        list3.add(null);
+        list3.add(null);
 
+        Vector<String> vector = new Vector<>();
+        vector.add(null);
+
+        List<String> list4 = ImmutableList.of("A","A","A",null);
 
     }
 }

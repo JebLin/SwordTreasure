@@ -1,7 +1,12 @@
 package indi.sword.util.basic.algorithm;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Sword
@@ -50,6 +55,7 @@ import java.util.List;
 
 public class A_TestSort {
     public static void main(String[] args) {
+
         int[] a = { 1, 2, 49, 38, 65, 97, 76, 13, 27, 49, 78, 34, 12, 64, 2, 1};
 
         System.out.println("排序之前：");
@@ -61,7 +67,7 @@ public class A_TestSort {
         // 一、插入排序
 
         // 1.直接插入排序
-        //straightInsertSort(a);
+//        straightInsertSort(a);
 
         // 2.二分排序法
 //         midInsertSort(a);
@@ -80,13 +86,13 @@ public class A_TestSort {
         // 三、交换排序
 
         // 1.冒泡排序
-         bubbleSort(a);
+//         bubbleSort(a);
 
         // 2.快速排序
-        // quickSort1(a);
+//         quickSort1(a);
 
         // 四、归并排序
-//         mergeSort(a);
+         mergeSort(a);
 
         // 五、基数排序
         //radixSort(a);
@@ -374,9 +380,7 @@ public class A_TestSort {
             for (int j = 0; j < a.length - i - 1; j++) {
                 // 这里-i主要是每遍历一次都把最大的i个数沉到最底下去了，没有必要再替换了
                 if (a[j] > a[j + 1]) {
-                    int temp = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
+                    swap(a,j,j+1);
                 }
             }
         }
@@ -470,30 +474,30 @@ public class A_TestSort {
 
     public static void merge(int[] a, int left, int middle,int right) {
         int[] tempArr = new int[a.length]; // 申请一个新的数组
-        int mid = middle + 1; // 右边的起始位置
-        int tempIndex = left; // 暂时不变的，以后用来赋值给原数组的
-        int third = left; // 这个是改变的，以后用来逐个增加的
+        int rightBegin = middle + 1; // 右边的起始位置
+        int sourceBeginIndex = left; // 暂时不变的，以后用来赋值给原数组的
+        int newArrayIndex = left; // 这个是改变的，以后用来逐个增加的
 
         // 从两个数组中选取较小的数放入中间数组，左右两边会有一个数组先over
-        while (left <= middle && mid <= right) {
-            if (a[left] <= a[mid]) {
-                tempArr[third++] = a[left++];
+        while (left <= middle && rightBegin <= right) {
+            if (a[left] <= a[rightBegin]) {
+                tempArr[newArrayIndex++] = a[left++];
             } else {
-                tempArr[third++] = a[mid++];
+                tempArr[newArrayIndex++] = a[rightBegin++];
             }
         }
         // 将剩余的部分放入中间数组
         while (left <= middle) {
-            tempArr[third++] = a[left++];
+            tempArr[newArrayIndex++] = a[left++];
         }
 
-        while (mid <= right) {
-            tempArr[third++] = a[mid++];
+        while (rightBegin <= right) {
+            tempArr[newArrayIndex++] = a[rightBegin++];
         }
 
         // 将中间数组复制回原数组,修改原数组
-        while (tempIndex <= right) {
-            a[tempIndex] = tempArr[tempIndex++];
+        while (sourceBeginIndex <= right) {
+            a[sourceBeginIndex] = tempArr[sourceBeginIndex++];
         }
     }
 
