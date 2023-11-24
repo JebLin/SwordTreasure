@@ -1,4 +1,7 @@
-package indi.sword.util.validator.group;
+package indi.sword.util.validator.groupSequence;
+
+import indi.sword.util.validator.group.CarChecks;
+import indi.sword.util.validator.group.DriverChecks;
 
 import javax.validation.GroupSequence;
 import javax.validation.groups.Default;

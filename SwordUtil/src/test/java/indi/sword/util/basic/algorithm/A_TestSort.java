@@ -538,9 +538,8 @@ public class A_TestSort {
         // 进行times次分配和收集
         for (int i = 0; i < times; i++) {
             // 分配
-            for (int j = 0; j < array.length; j++) {
-                int x = array[j] % (int) Math.pow(10, i + 1)
-                        / (int) Math.pow(10, i);
+            for (int j = 0; j < array.length; j++) { // 1234 % 10 = 4， 4/10 = 0
+                int x = array[j] % (int) Math.pow(10, i + 1) / (int) Math.pow(10, i);
                 ArrayList queue2 = queue.get(x);
                 queue2.add(array[j]);
                 queue.set(x, queue2);

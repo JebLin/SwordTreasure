@@ -120,5 +120,7 @@ public class MyTest {
         System.out.println("first take ...");
         System.out.println(arrayBlockingQueue.take());
         System.out.println("end take ...");
+
+
     }
 }

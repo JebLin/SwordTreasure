@@ -1,7 +1,6 @@
 package indi.sword.util.basic.algorithm.point2offer;
 
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
